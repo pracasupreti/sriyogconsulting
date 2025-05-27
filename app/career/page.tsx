@@ -1,8 +1,5 @@
-
-export default function Career(){
-  return(
-    <>
-    
-    </>
-  )
+export default function Page(){
+    return(<>
+    <p>page</p>
+    </>)
 }
