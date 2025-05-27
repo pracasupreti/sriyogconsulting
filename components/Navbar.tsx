@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="bg-[#d3d3d3] w-full sticky top-0 left-0 shadow-sm z-50">
-        <section className="lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto flex justify-between items-center">
+        <section className=" lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto flex justify-between items-center">
           <Link
             href="/"
             className="relative lg:h-[90px] h-[80px] w-[200px] lg:w-[200px]"
@@ -98,7 +98,7 @@ export default function Navbar() {
           </section>
         </section>
 
-        <div
+        <section
           className={`transition-all duration-500 ease-in-out bg-white absolute top-0 z-50 w-full overflow-hidden ${
             reqSupportOpen ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
           }`}
@@ -233,10 +233,9 @@ export default function Navbar() {
               className="px-4 hover:bg-red-800 hover:text-white py-2 border-red-800 rounded-md text-red-800 font-semibold border-2"
             />
           </form>
-        </div>
+        </section>
 
-        {/* Hamburger Menu Dropdown */}
-        <div
+        <section
           className={`transition-all duration-500 ease-in-out bg-white absolute top-full left-0 w-full overflow-hidden z-50 shadow-md rounded-b-md ${
             hamburgerOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
           }`}
@@ -266,7 +265,7 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
-        </div>
+        </section>
       </nav>
     </>
   );
