@@ -7,31 +7,32 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
-  const SampleNextArrow = ({ onClick }) => (
-    <div className="absolute bottom-0 right-0 z-10 cursor-pointer" onClick={onClick}>
-      <div className="relative h-[50px] w-[50px]">
-        <Image
-          src="/assets/icons/next-arrow.svg"
-          alt="next-arrow"
-          fill
-          className="object-contain"
-        />
-      </div>
+ const SampleNextArrow = ({ onClick }: { onClick?: () => void }) => (
+  <div className="absolute bottom-0 right-0 z-10 cursor-pointer" onClick={onClick}>
+    <div className="relative h-[50px] w-[50px]">
+      <Image
+        src="/assets/icons/next-arrow.svg"
+        alt="next-arrow"
+        fill
+        className="object-contain"
+      />
     </div>
-  );
+  </div>
+);
 
-  const SamplePrevArrow = ({ onClick }) => (
-    <div className="absolute bottom-0 right-16 z-10 max-md:left-0 cursor-pointer" onClick={onClick}>
-      <div className="relative h-[50px] w-[50px]">
-        <Image
-          src="/assets/icons/prev-arrow.svg"
-          alt="prev-arrow"
-          fill
-          className="object-contain"
-        />
-      </div>
+const SamplePrevArrow = ({ onClick }: { onClick?: () => void }) => (
+  <div className="absolute bottom-0 right-16 z-10 max-md:left-0 cursor-pointer" onClick={onClick}>
+    <div className="relative h-[50px] w-[50px]">
+      <Image
+        src="/assets/icons/prev-arrow.svg"
+        alt="prev-arrow"
+        fill
+        className="object-contain"
+      />
     </div>
-  );
+  </div>
+);
+
 
   const settings = {
     dots: true,
