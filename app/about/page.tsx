@@ -113,10 +113,11 @@ export default function Aboutpage() {
                 of healthcare, employment platforms, and tourism operations.
               </p>
 
-              <div className="flex  gap-4  md:justify-start">
+              <div className="flex  gap-4  md:justify-start 
+              flex-wrap ">
                 <Link
                   href="/meeting"
-                  className="border-[1px] px-4 py-1 shadow-[0_.5rem_1rem_rgba(0,0,0,.15)] rounded-lg bg-[#0D5D59] text-white"
+                  className="border-[1px] px-4 py-1 shadow-[0_.5rem_1rem_rgba(0,0,0,.15)] rounded-lg bg-[#0D5D59] text-white flex items-center"
                 >
                   Book a Meeting
                 </Link>
