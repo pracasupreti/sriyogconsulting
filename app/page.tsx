@@ -423,7 +423,7 @@ export default function Home() {
                 <section className=" text-sm max-h-0 translate-y-3 group-hover:max-h-36 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
                   <p className="my-2">
                     Corporate emails or business emails tied to a custom domain
-                    play a pivotal role in shaping an organization&npos;s
+                    play a pivotal role in shaping an organization&apos;s
                     identity and credibility.
                   </p>
                   <p className="text-sm">Lalita Ghimire</p>

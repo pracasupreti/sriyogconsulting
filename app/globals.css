@@ -2,9 +2,9 @@
 p{
   font-size: small;
 }
-/* Default dots (circular) */
+
 .custom-slider .slick-dots li button:before {
-  font-size: 0; /* hide the default font icon */
+  font-size: 0; 
   content: "";
   width: 10px;
   height: 10px;
@@ -14,15 +14,38 @@ p{
   transition: all 0.3s ease;
 }
 
-/* Active dot (rectangle) */
 .custom-slider .slick-dots li.slick-active button:before {
   background-color: #055D59;
   width: 27px;
   height: 10px;
-  border-radius: 4px; /* slight rounding, or use 0 for sharp corners */
+  border-radius: 4px; 
   content: "";
   font-size: 0;
   display: inline-block;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #055d59 !important;
+}
+
+.swiper-pagination-bullet {
+  width: 30px !important;
+  height: 2.5px !important;
+  background-color: #4b4b4b !important;
+  border-radius: 0 !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #055d59 !important;
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+
 }
 
 h1,h2,h3,h2{
