@@ -147,7 +147,7 @@ const Timeline = () => {
                 </div>
                 <p className="mt-[20px] block my-4 ml-0 p-2">12<sup>th</sup> September, 2019</p>
                 <p className="block my-4 ml-0 mb-[1rem] p-2">
-                  SRIYOG Consulting Pvt. to facilitate people&npos;s daily life. Ltd. has started providing such services through a website called sriyog.com (www.sriyog.com).
+                  SRIYOG Consulting Pvt. to facilitate people&apos;s daily life. Ltd. has started providing such services through a website called sriyog.com (www.sriyog.com).
                 </p>
                 <p className="block my-4 ml-0 mb-[1rem] p-2">
                   The main objective of this digital platform is to create a way of income by using the skills and experience of the human resources who are suffering from the unemployment problem in a proper manner, according to the press release issued by the company.
