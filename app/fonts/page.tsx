@@ -1,5 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import Ribbon from "@/components/Ribbon";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "SRIYOG Fonts | Professional Marketplace",
+  
+};
 
 const Fonts = () => {
   const card = [
@@ -134,19 +141,21 @@ const Fonts = () => {
       link: "/assets/download-fonts/jdr-fonts.zip",
     },
   ];
+  const name="Download JDR Fonts"
   return (
     <>
-      <section className="lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto grid grid-cols-1  gap-8 mb-[56px]">
+    <Ribbon name={name} des={""}/>
+      <section className="lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-12 mb-[56px]">
         {card.map((item, idx) => (
           <div
             key={idx}
             className="bg-[#fff] hover:-translate-y-4 transition duration-500 ease-in-out py-[40px] text-center shadow-[0_0_10px_rgba(0,0,0,0.3)] rounded-md"
           >
-            <div className="relative mb-4 h-[170px] w-full">
+            <div className="relative mb-4 h-[180px] w-full">
               <Image
                 src={item.image}
                 alt={item.name}
-                className="object-contain"
+                className="object-cover"
                 fill
               />
             </div>
@@ -155,7 +164,7 @@ const Fonts = () => {
             </p>
             <a
               href={item.link}
-              className="bg-[#4b4b4b] text-white px-5 py-3 rounded-md font-bold hover:bg-[#5a5a5a]"
+              className="border-[#055d59] text-[#055d59] border-2 hover:text-white px-5 py-3 rounded-md font-bold hover:bg-[#055d59]"
             >
               Download Font
             </a>
