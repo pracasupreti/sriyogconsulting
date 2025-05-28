@@ -2,6 +2,7 @@ import Ribbon from "@/components/Ribbon";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
 const name = " Media Coverages";
 
 const mediaItems = [
@@ -514,7 +515,9 @@ const mediaItems = [
     link: "https://techlekh.com/sriyog-makes-easy-find-local-professionals/",
   },
 ];
-
+export const metadata: Metadata = {
+  title: "SRIYOG Media | Professional Marketplace",
+};
 export default function Media() {
   return (
     <>
@@ -526,7 +529,7 @@ export default function Media() {
             {mediaItems.map((item, index) => (
               <div
                 key={index + 1}
-                className="flex  flex-col items-start p-5  border border-[#dbdbdb] hover:shadow-md rounded-md"
+                className="flex  flex-col items-start p-5  border border-[#dbdbdb] hover:shadow-md rounded-lg"
               >
                 <div className="relative w-full h-24 ">
                   <Image
