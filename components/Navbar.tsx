@@ -15,7 +15,7 @@ export default function Navbar() {
 
   const navItems = [
     { label: "Home", path: "/" },
-    { label: "About", path: "/about/" },
+    { label: "About", path: "/about" },
     { label: "Team", path: "/team" },
     { label: "Consulting", path: "/consulting" },
     { label: "Clients", path: "/clients" },
@@ -128,7 +128,6 @@ export default function Navbar() {
               )
             )}
 
-            {/* Technical Issue Dropdown */}
             <div className="relative w-full border border-[#4b4b4b] rounded-md">
               <button
                 onClick={(e) => {
@@ -172,7 +171,6 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* Support Type Dropdown */}
             <div className="relative w-full border border-[#4b4b4b] rounded-md">
               <button
                 onClick={(e) => {
