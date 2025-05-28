@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+p{
+  font-size: small;
+}
 /* Default dots (circular) */
 .custom-slider .slick-dots li button:before {
   font-size: 0; /* hide the default font icon */
@@ -21,5 +23,9 @@
   content: "";
   font-size: 0;
   display: inline-block;
+}
+
+h1,h2,h3,h2{
+  color: #141414;
 }
 
