@@ -138,8 +138,8 @@ export default function Footer() {
               All Rights Reserved. © 2018-2025 SRIYOG Consulting Pvt. Ltd.
             </p>
             <div className="flex max-md:w-full max-md:justify-center gap-3">
-              <Link href="">
-                <div className="relative md:h-[40px] h-[60px] w-[130px] md:w-[80px]">
+              <Link href="https://bit.ly/sriyog" target="_blank">
+                <div className="relative md:h-[50px] h-[60px] w-[130px] md:w-[100px]">
                   <Image
                     src="/assets/images/footer/google-play.svg"
                     fill
@@ -149,8 +149,8 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <Link href="">
-                <div className="relative md:h-[40px] h-[60px] w-[130px] md:w-[80px]">
+              <Link href="https://bit.ly/sriyogios" target="_blank">
+                <div className="relative md:h-[50px] h-[60px] w-[130px] md:w-[100px]">
                   <Image
                     src="/assets/images/footer/app-store.svg"
                     fill
@@ -162,7 +162,10 @@ export default function Footer() {
               </Link>
             </div>
             <div className="flex max-md:w-full max-md:justify-center max-md:items-center gap-3">
-              <Link href="">
+              <Link
+                href="https://www.facebook.com/sriyogdotcom"
+                target="_blank"
+              >
                 <div className="relative h-[20px] w-[20px]">
                   <Image
                     src="/assets/images/footer/facebook.svg"
@@ -173,7 +176,7 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <Link href="">
+              <Link href="https://t.me/sriyog" target="_blank">
                 <div className="relative h-[20px] w-[20px]">
                   <Image
                     src="/assets/images/footer/telegram.svg"
@@ -184,7 +187,10 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <Link href="">
+              <Link
+                href="https://www.linkedin.com/company/sriyog-consulting/"
+                target="_blank"
+              >
                 <div className="relative h-[20px] w-[20px]">
                   <Image
                     src="/assets/images/footer/linkedIn.svg"
@@ -195,7 +201,10 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <Link href="">
+              <Link
+                href="https://www.youtube.com/@sriyogdotcom8535"
+                target="_blank"
+              >
                 <div className="relative h-[20px] w-[20px]">
                   <Image
                     src="/assets/images/footer/youtube.svg"

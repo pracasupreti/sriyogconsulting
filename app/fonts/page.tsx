@@ -5,7 +5,6 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "SRIYOG Fonts | Professional Marketplace",
-  
 };
 
 const Fonts = () => {
