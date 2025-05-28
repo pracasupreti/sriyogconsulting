@@ -2,7 +2,7 @@ import Ribbon from "@/components/Ribbon";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SRIYOG Privacy | Professional Marketplace",
+  title: "Privacy Policy | SRIYOG Consulting",
 };
 export default function Privacy() {
     const name="Privacy Policy";

@@ -12,7 +12,7 @@ export default function Certificate() {
   const name = "Certificates";
 
   useEffect(() => {
-    document.title = "SRIYOG Certificates | Professional Marketplace";
+    document.title = "Certificates | SRIYOG Consulting";
   }, []);
 
   const images = [
