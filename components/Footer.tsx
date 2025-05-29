@@ -35,7 +35,7 @@ export default function Footer() {
                 { label: "Testimonials", path: "/testimonials" },
               ],
               [
-                { label: "SRIYOG App", path: "/timeline" },
+                { label: "SRIYOG App", path: "https://sriyog.app/" },
                 { label: "JDR Fonts", path: "/fonts" },
                 { label: "Certificates", path: "/certificate" },
                 { label: "Payment Details", path: "/payment" },
@@ -46,7 +46,7 @@ export default function Footer() {
                 { label: "Terms of Services", path: "/tos" },
                 { label: "Disclaimer", path: "/disclaimer" },
                 { label: "Sitemap", path: "/sitemap" },
-                { label: "Video", path: "/video" },
+                { label: "Video", path: "/tutorials" },
               ],
             ].map((group, index) => (
               <ul key={index} className="space-y-3 ">

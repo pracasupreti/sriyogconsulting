@@ -1,7 +1,11 @@
 import Ribbon from "@/components/Ribbon";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata: Metadata = {
+  title: "Contact Us | SRIYOG Consulting",
+};
 export default function Page() {
   const card = [
     {
