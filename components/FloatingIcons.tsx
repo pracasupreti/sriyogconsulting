@@ -11,7 +11,7 @@ export default function FloatingIcons() {
           target="_blank"
           className="group flex flex-col items-center "
         >
-          <div className="relative h-[30px] w-[30px]">
+          <div className="relative h-[30px] w-[30px] transition-all duration-700 ease-in-out">
             <Image
               src="/assets/icons/whatsapp.svg"
               fill
@@ -20,7 +20,7 @@ export default function FloatingIcons() {
               alt="WhatsApp"
             />
           </div>
-          <div className="max-h-0 overflow-hidden group-hover:max-h-[50px] transition-all duration-500 ease-in-out">
+          <div className="max-h-0 overflow-hidden group-hover:max-h-[50px] transition-all duration-700 ease-in-out">
             <p className="text-[14px] opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-in-out">
               SRIYOG
             </p>
@@ -34,7 +34,7 @@ export default function FloatingIcons() {
           target="_blank"
           className="group flex flex-col items-center"
         >
-          <div className="relative h-[30px] w-[30px]">
+          <div className="relative h-[30px] w-[30px] transition-all duration-700 ease-in-out">
             <Image
               src="/assets/icons/telegram.svg"
               fill
@@ -43,7 +43,7 @@ export default function FloatingIcons() {
               alt="Telegram"
             />
           </div>
-          <div className="max-h-0 overflow-hidden group-hover:max-h-[50px] transition-all duration-500 ease-in-out">
+          <div className="max-h-0 overflow-hidden group-hover:max-h-[50px] transition-all duration-700 ease-in-out">
             <p className="text-[14px] opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-in-out">
               SRIYOG
             </p>

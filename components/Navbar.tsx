@@ -43,7 +43,7 @@ export default function Navbar() {
                 <li key={idx}>
                   <Link
                     href={item.path}
-                    className={`py-2 px-3 font-semibold ${
+                    className={`py-2 px-3 font-semibold transition-all duration-300 ease-in-out ${
                       pathname === item.path
                         ? "text-[#0D5D59]"
                         : "text-[#4b4b4b] hover:text-[#0D5D59]"
