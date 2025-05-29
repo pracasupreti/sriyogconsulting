@@ -77,7 +77,7 @@ export default function Example() {
 
               {/* About pracas */}
 
-              <div className="lex-1 flex flex-col justify-start px-6 pl-10 md:px-0  text-center sm:text-start basis-[70%]">
+              <div className="lex-1 flex flex-col justify-start  text-center sm:text-start basis-[70%]">
                 <h1 className="text-3xl font-roboto font-semibold">
                   About PRACAS
                 </h1>
@@ -110,13 +110,33 @@ export default function Example() {
                 <div className="flex text-center sm:text-start flex-col gap-3">
                   <p>Follow Pracas on social media</p>
 
-                  <div>
-                    <Image
-                      src={"/assets/icons/linkedin.svg"}
-                      width={25}
-                      height={25}
-                      alt="Linkedin Image"
-                    />
+                  <div className="flex gap-3 items-center">
+                    <Link href="https://t.me/SRIYOG">
+                      <Image
+                        src={"/assets/icons/telegram1.svg"}
+                        width={20}
+                        height={20}
+                        alt="Linkedin Image"
+                      />
+                    </Link>
+
+                    <Link href='https://x.com/TheSRIYOG'>
+                      <Image
+                        src={"/assets/icons/tweeter.svg"}
+                        width={20}
+                        height={20}
+                        alt="Linkedin Image"
+                      />
+                    </Link>
+
+                    <Link href='https://np.linkedin.com/company/sriyogdotcom'>
+                      <Image
+                        src={"/assets/icons/linkedin.svg"}
+                        width={20}
+                        height={20}
+                        alt="Linkedin Image"
+                      />
+                    </Link>
                   </div>
                 </div>
               </div>

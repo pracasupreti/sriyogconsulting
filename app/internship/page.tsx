@@ -1,5 +1,33 @@
-export default function Page(){
-    return(<>
-    <p>page</p>
-    </>)
-}
+"use client"
+import { useEffect } from "react";
+import Link from "next/link";
+import Ribbon from "@/components/Ribbon";
+
+const Internship = () => {
+  useEffect(() => {
+    document.title = "Imternship | SRIYOG Consulting";
+  }, []);
+  return (
+    <>
+      <Ribbon name="Internship | SRIYOG" des="" />
+      <section className="lg:w-full md:pt-[52px]">
+        {/* form field of request quote */}
+        <div className="bg-[#fafafa] py-12">
+          <div className="lg:max-w-[1180px] mx-auto my-0 md:max-w-[920px] sm:max-w-[720px]  lg:px-12">
+            <div>
+              <iframe
+                className="airtable-embed"
+                src="https://airtable.com/embed/appcRLi3R3qIFyPIU/pagBvKYaiRmZLtsSn/form"
+                width="100%"
+                height="3125"
+                // style="background: transparent; border: 1px solid #ccc;"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Internship;
