@@ -5,17 +5,13 @@ import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaTelegram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Ribbon from "@/components/Ribbon";
 
 export default function Aboutpage() {
   return (
     <>
       {/* About section*/}
-      <div className="w-full mx-auto my-10 bg-[#0D5D59] h-[160px] mt-0 flex items-center justify-left">
-        <div className="w-[1180px] mx-auto px-6">
-          <h1 className="text-white text-4xl font-bold">About Us</h1>
-        </div>
-      </div>
-
+     <Ribbon name="About" des=''/>
       {/* */}
 
       <div className="lg:max-w-[1180px] mx-auto px-4">
@@ -107,16 +103,17 @@ export default function Aboutpage() {
           <div className="flex flex-col md:flex-row bg-white py-8 px-6 md:px-12 gap-8 md:gap-16 border rounded-xl items-center md:items-start">
             {/* Text Section */}
             <div className="flex flex-col gap-6 basis-full md:basis-1/2  md:text-left justify-center">
-              <h3 className="text-2xl font-semibold">Book a Meeting</h3>
+              <h3 className="text-2xl font-semibold text-w">Book a Meeting</h3>
               <p className="text-gray-700">
                 Our comprehensive IT services are tailored to the unique demands
                 of healthcare, employment platforms, and tourism operations.
               </p>
 
-              <div className="flex  gap-4  md:justify-start">
+              <div className="flex  gap-4  md:justify-start 
+              flex-wrap ">
                 <Link
                   href="/meeting"
-                  className="border-[1px] px-4 py-1 shadow-[0_.5rem_1rem_rgba(0,0,0,.15)] rounded-lg bg-[#0D5D59] text-white"
+                  className="border-[1px] px-4 py-1 shadow-[0_.5rem_1rem_rgba(0,0,0,.15)] rounded-lg bg-[#0D5D59] text-white flex items-center"
                 >
                   Book a Meeting
                 </Link>
@@ -144,7 +141,7 @@ export default function Aboutpage() {
         <Services />
 
         <div className="max-w-[1180px] mx-auto my-0 lg:mx-auto lg:my-0  md:mx-auto md:my-0 py-14 lg:px-12 sm:px-0">
-          <div className="flex flex-col gap-6  lg:flex-row ">
+          <div className="flex flex-col-reverse gap-6  lg:flex-row ">
             <div className="basis-[60%] flex flex-col gap-[16px] p-5 lg:basis-full pl-0">
               <span className="inline-block w-[133px] border-top-4 h-1 bg-[#0D5D59] "></span>
               <h2 className="text-[32px] text-[#0D5D59]">

@@ -1,30 +1,6 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --font-sans: "Roboto", sans-serif;
-  --font-mono: "Roboto Mono", monospace;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans);
+p{
+  font-size: small;
 }
 
 .custom-slider .slick-dots li button:before {
@@ -70,5 +46,9 @@ body {
     display: none !important;
   }
 
+}
+
+h1,h2,h3,h2{
+  color: #141414;
 }
 
