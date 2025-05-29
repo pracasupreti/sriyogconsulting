@@ -8,11 +8,11 @@ export default function Consulting() {
       <Ribbon name="Consulting" des="" />
 
       <div className="mx-auto max-w-[1180px] lg:px-10 lg:py-14 md:px-6 px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center pb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-8  justify-center pb-16">
           {consulting.map((data, index) => (
             <div
               key={index}
-              className="flex flex-col h-[390px] w-full max-w-[300px] bg-white px-6 py-6 items-center shadow-[0_.5rem_1rem_rgba(0,0,0,.15)] transition-transform duration-200 ease-in-out hover:-translate-y-2 hover:shadow-lg mx-auto"
+              className="flex flex-col h-[390px]  w-full sm:max-w-[300px] bg-white px-6 py-6 items-center shadow-[0_.5rem_1rem_rgba(0,0,0,.15)] transition-transform duration-200 ease-in-out hover:-translate-y-2 hover:shadow-lg mx-auto"
             >
               <div className="flex flex-col items-center gap-6 p-2 pb-4">
                 <div className="w-24 pt-4 text-center">
