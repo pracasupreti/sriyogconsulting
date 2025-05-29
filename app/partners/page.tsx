@@ -53,9 +53,10 @@ export default function Page() {
               />
             </section>
             <hr/>
-            <p className="text-gray-500 mb-2 p-3 ">{item.des.slice(0,480)}...</p>
+            <p className="text-gray-500 mb-2 px-4 mt-2 ">{item.des.slice(0,480)}...</p>
             <Link
-              className="absolute mx-3 my-2 bottom-0 rounded-md text-gray-500 font-medium border px-4 py-2 hover:bg-[#055d59] hover:text-white transition-all duration-300 ease-in-out"
+            target="_blank"
+              className="absolute mx-4 my-2 bottom-0 rounded-md text-gray-500 font-medium border px-4 py-2 hover:bg-[#055d59] hover:text-white transition-all duration-300 ease-in-out"
               href={item.path}
             >
               Browse More

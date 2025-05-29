@@ -1,8 +1,5 @@
 "use client";
-import { useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { FaLinkedin, FaTelegram, FaXTwitter } from "react-icons/fa6";
 import { Card } from "antd";
 import Ribbon from "@/components/Ribbon";
 const images = [
@@ -83,7 +80,7 @@ export default function Example() {
                 </h1>
                 <br />
                 <p className=" text-gray-900 font-roboto ">
-                  Pracas Upreti's journey from a startup founder to a
+                  Pracas Upreti&apos;s journey from a startup founder to a
                   technology-driven change-maker in Biratnagar, Nepal,
                   exemplifies the profound impact that individuals can have when
                   they combine innovation with a commitment to social
@@ -96,7 +93,7 @@ export default function Example() {
                   future for all.
                   <br />
                   <br />
-                  Upreti's journey into the realm of technology began over a
+                  Upreti&apos;s journey into the realm of technology began over a
                   decade ago when he founded his first IT startup in 2007 A.D.
                   as PRACAS Infosys in Biratnagar. Recognizing the potential of
                   technology to bridge gaps and catalyze progress, he embarked
