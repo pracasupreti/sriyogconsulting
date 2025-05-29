@@ -1,8 +1,5 @@
 "use client";
-import { useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { FaLinkedin, FaTelegram, FaXTwitter } from "react-icons/fa6";
 import { Card } from "antd";
 import Ribbon from "@/components/Ribbon";
 const images = [
@@ -83,7 +80,7 @@ export default function Example() {
                 </h1>
                 <br />
                 <p className=" text-gray-900 font-roboto ">
-                  Pracas Upreti's journey from a startup founder to a
+                  Pracas Upreti&apos;s journey from a startup founder to a
                   technology-driven change-maker in Biratnagar, Nepal,
                   exemplifies the profound impact that individuals can have when
                   they combine innovation with a commitment to social
