@@ -16,7 +16,7 @@ export default function Services() {
             </div>
 
             <div className="inline basis-[80%]">
-              <h2 className="inline-block text-white text-[18px] pb-1">
+              <h2 className="inline-block !text-white font-semibold text-[18px] pb-1">
                 Experienced Team
               </h2>
               <p className="text-white">
@@ -37,7 +37,7 @@ export default function Services() {
             </div>
 
             <div className="inline basis-[80%]">
-              <h2 className="inline-block text-white text-[18px] pb-1">
+              <h2 className="inline-block !text-white font-semibold text-[18px] pb-1">
                 {" "}
                 Enhancing Business Performance
               </h2>
@@ -59,7 +59,7 @@ export default function Services() {
             </div>
 
             <div className="inline basis-[80%]">
-              <h2 className="inline-block text-white text-[18px] pb-1">
+              <h2 className="inline-block !text-white font-semibold text-[18px] pb-1">
                 Multiple Opportunities
               </h2>
               <p className="text-white">
@@ -81,7 +81,7 @@ export default function Services() {
             </div>
 
             <div className="inline basis-[80%]">
-              <h2 className="inline-block text-white text-[18px] pb-1">
+              <h2 className="inline-block !text-white font-semibold text-[18px] pb-1">
                 Long-Term Sustainability.
               </h2>
               <p className="text-white">

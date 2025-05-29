@@ -103,7 +103,7 @@ export default function Aboutpage() {
           <div className="flex flex-col md:flex-row bg-white py-8 px-6 md:px-12 gap-8 md:gap-16 border rounded-xl items-center md:items-start">
             {/* Text Section */}
             <div className="flex flex-col gap-6 basis-full md:basis-1/2  md:text-left justify-center">
-              <h3 className="text-2xl font-semibold">Book a Meeting</h3>
+              <h3 className="text-2xl font-semibold text-w">Book a Meeting</h3>
               <p className="text-gray-700">
                 Our comprehensive IT services are tailored to the unique demands
                 of healthcare, employment platforms, and tourism operations.
