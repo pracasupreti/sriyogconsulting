@@ -93,7 +93,7 @@ export default function Example() {
                   future for all.
                   <br />
                   <br />
-                  Upreti's journey into the realm of technology began over a
+                  Upreti&apos;s journey into the realm of technology began over a
                   decade ago when he founded his first IT startup in 2007 A.D.
                   as PRACAS Infosys in Biratnagar. Recognizing the potential of
                   technology to bridge gaps and catalyze progress, he embarked
