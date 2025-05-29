@@ -550,7 +550,7 @@ export default function Media() {
                 <div className="w-full max-lg:[88%] max-md:w-[89%] flex justify-start">
                   <Link
                     href={item.link}
-                    className="mt-6 px-3 py-2 text-[14px] hover:bg-[#055d59]  text-[#4b4b4b] border-[1.5px] font-semibold hover:text-white  rounded-md transition-all duration-300 ease-in-out"
+                    className="mt-6 px-4 py-2 text-[14px] hover:bg-[#055d59]  text-[#4b4b4b] border font-medium hover:text-white  rounded-md transition-all duration-300 ease-in-out"
                     target="_blank"
                   >
                     Read More
