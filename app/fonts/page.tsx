@@ -148,7 +148,7 @@ const Fonts = () => {
         {card.map((item, idx) => (
           <div
             key={idx}
-            className="bg-[#fff] hover:-translate-y-4 transition duration-500 ease-in-out py-[40px] text-center shadow-[0_0_10px_rgba(0,0,0,0.3)] rounded-md"
+            className=" hover:-translate-y-4 transition duration-500 ease-in-out py-[55px] text-center shadow-md border-[#dbdbdb] border rounded-md"
           >
             <div className="relative mb-4 h-[180px] w-full">
               <Image
@@ -163,7 +163,7 @@ const Fonts = () => {
             </p>
             <a
               href={item.link}
-              className="border-[#055d59] text-[#055d59] border-2 hover:text-white px-5 py-3 rounded-md font-bold hover:bg-[#055d59]"
+              className="border-[1.5px] text-[#4b4b4b] hover:bg-[#055d59] hover:text-white px-5 py-3 rounded-md font-semibold transition-all duration-300 ease-in-out"
             >
               Download Font
             </a>

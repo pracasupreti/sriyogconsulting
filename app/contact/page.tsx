@@ -388,7 +388,7 @@ export default function Page() {
                 name=""
                 id=""
                 value="Submit"
-                className=" bg-white text-[#4b4b4b] hover:text-white py-2 px-6 font-medium hover:bg-[#055d59] rounded-md transition duration-300 ease-in-out cursor-pointer "
+                className=" border-[1.5px]  text-[#4b4b4b] hover:text-white py-2 px-6 font-medium hover:bg-[#055d59] rounded-md transition duration-300 ease-in-out cursor-pointer "
               />
             </form>
           </div>
@@ -421,7 +421,7 @@ export default function Page() {
                 <Link
                   href={item.link}
                   target="_blank"
-                  className="bg-white rounded-md text-[#4b4b4b] hover:bg-[#055d59] hover:text-white transition duration-300 ease-in-out font-medium py-2 px-5"
+                  className="bg-white rounded-md text-[#4b4b4b] border-[1.5px] hover:bg-[#055d59] hover:text-white transition duration-300 ease-in-out font-medium py-2 px-5"
                 >
                   {item.app}
                 </Link>
