@@ -1,7 +1,4 @@
 @import "tailwindcss";
-p{
-  font-size: small;
-}
 
 .custom-slider .slick-dots li button:before {
   font-size: 0; 
@@ -48,7 +45,4 @@ p{
 
 }
 
-h1,h2,h3,h2{
-  color: #141414;
-}
 

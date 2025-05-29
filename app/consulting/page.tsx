@@ -1,40 +1,114 @@
 import Ribbon from "@/components/Ribbon";
-import consulting from "@/public/data/consulting";
 import Image from "next/image";
 
 export default function Consulting() {
+  const consulting = [
+    {
+      img: "/assets/images/consulting/data-processing.svg",
+      title: "Data Processing",
+      desc: "We have a proven track record of delivering high-quality data analysis and reporting solutions that meet the needs of our clients.",
+    },
+
+    {
+      img: "/assets/images/consulting/data-management.svg",
+      title: "Database Management",
+      desc: "We offer a range of database management services, including database design, implementation, and optimization.",
+    },
+    {
+      img: "/assets/images/consulting/data-analysis.svg",
+      title: "Data Analysis",
+      desc: "Our team of experienced data analysts can help you extract insights from your data and make data-driven decisions.",
+    },
+    {
+      img: "/assets/images/consulting/software.svg",
+      title: "Software Development",
+      desc: "We offer a range of software development services, including coding, testing, and debugging.",
+    },
+    {
+      img: "/assets/images/consulting/web-application.svg",
+      title: "Web Application Development",
+      desc: "We offer a range of web application development services, including design, development, and deployment.",
+    },
+    {
+      img: "/assets/images/consulting/payment.svg",
+      title: "Payment Processing",
+      desc: "Our team of experienced developers can help you build high-quality payment processing solutions that meet your business needs.",
+    },
+    {
+      img: "/assets/images/consulting/survey.svg",
+      title: "Survey Form Development",
+      desc: "We offer a range of survey form development services, including survey creation, data collection, and analysis.",
+    },
+    {
+      img: "/assets/images/consulting/digital-marketing.svg",
+      title: "Digital Marketing",
+      desc: "We offer a range of digital marketing services, including SEO, social media management, and content creation.",
+    },
+    {
+      img: "/assets/images/consulting/seo.svg",
+      title: "SEO/SEM Services",
+      desc: `Our team of experienced SEO experts can help you improve your website's visibility and drive more traffic to your site.`,
+    },
+    {
+      img: "/assets/images/consulting/social-media.svg",
+      title: "Social Media Management",
+      desc: "Our team of experienced marketers can help you build high-quality social media campaigns that drive traffic and engagement.",
+    },
+    {
+      img: "/assets/images/consulting/business-email.svg",
+      title: "Business Email",
+      desc: "Our team of experienced marketers can help you build high-quality business eMail campaigns that drive traffic and engagement.",
+    },
+    {
+      img: "/assets/images/consulting/human-resource.svg",
+      title: "Human Resource Management",
+      desc: "We offer a range of human resource management services, including recruitment, onboarding, and performance management.",
+    },
+    {
+      img: "/assets/images/consulting/it-consulting.svg",
+      title: "IT Consultancy Management",
+      desc: "We offer a range of IT consultancy services, including system design, implementation, and support.",
+    },
+    {
+      img: "/assets/images/consulting/ui-ux.svg",
+      title: "UI/UX Designing",
+      desc: "We offer a range of UI/ UX designing services, including wireframing, prototyping, and user testing.",
+    },
+    {
+      img: "/assets/images/consulting/video-content.svg",
+      title: "Video/Content/Email Marketing",
+      desc: "We offer a range of video / email / content marketing services, including video creation, email marketing, and content creation.",
+    },
+  ];
   return (
-    <div className="bg-[#efefef]">
+    <>
       <Ribbon name="Consulting" des="" />
 
-      <div className="mx-auto max-w-[1180px] lg:px-10 lg:py-14 md:px-6 px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-8  justify-center pb-16">
+      <section className="mx-auto lg:w-[1180px] max-lg:container max-lg:px-3 mb-[45px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-content-between gap-10">
           {consulting.map((data, index) => (
             <div
-              key={index}
-              className="flex flex-col h-[390px]  w-full sm:max-w-[300px] bg-white px-6 py-6 items-center shadow-[0_.5rem_1rem_rgba(0,0,0,.15)] transition-transform duration-200 ease-in-out hover:-translate-y-2 hover:shadow-lg mx-auto"
+              key={index + 1}
+              className=" border border-[#dbdbdb] rounded-lg hover:-translate-y-4 transition duration-500 ease-in-out shadow-xl"
             >
-              <div className="flex flex-col items-center gap-6 p-2 pb-4">
-                <div className="w-24 pt-4 text-center">
+              <div className=" p-12">
+                <div className="w-32 h-32 relative mx-auto mb-4">
                   <Image
                     src={data.img}
-                    width={96}
-                    height={96}
+                    fill
                     alt={data.title}
                     className="mx-auto object-contain"
                   />
                 </div>
-                <h5 className="text-center text-[20px] font-semibold">
+                <h5 className="text-center text-[#4b4b4b] text-xl font-semibold mb-2">
                   {data.title}
                 </h5>
-                <p className="text-[16px] text-justify text-gray-600 px-2">
-                  {data.desc}
-                </p>
+                <p className=" text-justify text-gray-700">{data.desc}</p>
               </div>
             </div>
           ))}
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }

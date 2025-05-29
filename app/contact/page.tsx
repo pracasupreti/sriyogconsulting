@@ -33,7 +33,7 @@ export default function Page() {
   return (
     <>
       <>
-        <Ribbon name="Contacts" des="" />
+        <Ribbon name="Contact Us" des="" />
 
         <section className="lg:w-[1180px] mx-auto mb-[45px] grid grid-cols-1 lg:grid-cols-2 place-content-between gap-10 ">
           <div className=" text-[#333]  max-lg:container max-lg:px-3 h-[703px] max-md:h-auto mx-auto ">
@@ -140,7 +140,7 @@ export default function Page() {
                     type="text"
                     name=""
                     id="fname"
-                    className="mt-1 px-3 py-2  rounded-md w-full border-[1.5px] focus:outline-none border-[#4b4b4b]  max-md:mb-4"
+                    className="mt-1 px-3 py-2  rounded-md w-full bg-white focus:outline-none  max-md:mb-4"
                     placeholder="first Name"
                     required
                   />
@@ -152,7 +152,7 @@ export default function Page() {
                     type="text"
                     name=""
                     id="lname"
-                    className="mt-1 px-3 py-2 border-[1.5px] focus:outline-none border-[#4b4b4b] rounded-md w-full"
+                    className="mt-1 px-3 py-2 bg-white focus:outline-none rounded-md w-full"
                     placeholder="Last Name"
                     required
                   />
@@ -165,7 +165,8 @@ export default function Page() {
                   type="email"
                   name=""
                   id="mail"
-                  className="mt-1 px-3 py-2 rounded-md w-full border-[1.5px] focus:outline-none border-[#4b4b4b]"
+                  placeholder="Email"
+                  className="mt-1 px-3 py-2 rounded-md w-full bg-white focus:outline-none border-[#4b4b4b]"
                   required
                 />
                 <span className="text-[12px] text-[#333]">
@@ -179,7 +180,7 @@ export default function Page() {
                   <select
                     name="countryCode"
                     id="country"
-                    className="w-full px-2 py-[0.65rem] mt-1 rounded-md border-[1.5px] focus:outline-none border-[#4b4b4b]   max-md:mb-4"
+                    className="w-full px-2 py-[0.65rem] mt-1 rounded-md bg-white focus:outline-none   max-md:mb-4"
                     required
                   >
                     <option value="+977-">Nepal (+977)</option>
@@ -335,7 +336,7 @@ export default function Page() {
                     name=""
                     id="phone"
                     placeholder="Phone"
-                    className="mt-1 px-3 py-2 rounded-md w-full border-[1.5px] focus:outline-none border-[#4b4b4b] max-md:mb-4"
+                    className="mt-1 px-3 py-2 rounded-md w-full bg-white focus:outline-none max-md:mb-4"
                     required
                   />
                 </div>
@@ -347,7 +348,7 @@ export default function Page() {
                     name=""
                     id="ext"
                     placeholder="Extension"
-                    className="mt-1 px-3 py-2 rounded-md w-full border-[1.5px] focus:outline-none border-[#4b4b4b]"
+                    className="mt-1 px-3 py-2 rounded-md w-full bg-white focus:outline-none border-[#4b4b4b]"
                     required
                   />
                 </div>
@@ -360,7 +361,7 @@ export default function Page() {
                 <select
                   name="help"
                   id="help"
-                  className="w-full px-3 py-2 mt-1 rounded-md border-[1.5px]  focus:outline-none border-[#4b4b4b]"
+                  className="w-full px-3 py-2 mt-1 rounded-md bg-white  focus:outline-none border-[#4b4b4b]"
                   required
                 >
                   <option value="">Sales</option>
@@ -378,7 +379,7 @@ export default function Page() {
                 <textarea
                   name=""
                   id=""
-                  className="w-full h-[90px] px-3 rounded-md py-2 border-[1.5px] focus:outline-none border-[#4b4b4b]"
+                  className="w-full h-[90px] px-3 rounded-md py-2 bg-white focus:outline-none border-[#4b4b4b]"
                   placeholder="Message"
                 ></textarea>
               </section>
@@ -387,7 +388,7 @@ export default function Page() {
                 name=""
                 id=""
                 value="Submit"
-                className=" border-[1.5px] text-[#4b4b4b] hover:text-white py-2 px-6 font-medium hover:bg-[#055d59] rounded-md transition duration-300 ease-in-out cursor-pointer "
+                className=" bg-white text-[#4b4b4b] hover:text-white py-2 px-6 font-medium hover:bg-[#055d59] rounded-md transition duration-300 ease-in-out cursor-pointer "
               />
             </form>
           </div>
@@ -420,7 +421,7 @@ export default function Page() {
                 <Link
                   href={item.link}
                   target="_blank"
-                  className="border-[1.5px] rounded-md text-[#4b4b4b] hover:bg-[#055d59] hover:text-white transition duration-300 ease-in-out font-medium py-2 px-5"
+                  className="bg-white rounded-md text-[#4b4b4b] hover:bg-[#055d59] hover:text-white transition duration-300 ease-in-out font-medium py-2 px-5"
                 >
                   {item.app}
                 </Link>

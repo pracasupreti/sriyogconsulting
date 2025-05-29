@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+  <g>
+    <g>
+      <path d="M58,8h-2v2h2v6h-2v2h2v40H2V18h16v-2H2v-6h16V8H2c-1.2,0-2,0.8-2,2v48c0,1.2,0.8,2,2,2h56c1.2,0,2-0.8,2-2V10 C60,8.8,59.2,8,58,8z" style="fill: rgb(5, 93, 89);"/>
+      <rect x="5" y="12" width="4" height="2" style="fill: rgb(5, 93, 89);"/>
+      <rect x="12" y="12" width="4" height="2" style="fill: rgb(5, 93, 89);"/>
+      <path d="M21,24h24.6l6.7,5.8c0.2,0.1,0.5,0.2,0.7,0.2c0.1,0,0.3,0,0.4-0.1c0.4-0.2,0.6-0.5,0.6-0.9V1c0-0.6-0.4-1-1-1H21 c-0.6,0-1,0.4-1,1v22C20,23.6,20.4,24,21,24z M22,2h30v24.8l-5.3-4.6C46.5,22.1,46.2,22,46,22H22V2z" style="fill: rgb(5, 93, 89);"/>
+      <path d="M6,27c-0.6,0-1,0.4-1,1v26c0,0.4,0.2,0.7,0.6,0.9C5.7,55,5.9,55,6,55c0.2,0,0.5-0.1,0.7-0.2l6.7-5.8H35c0.6,0,1-0.4,1-1 V28c0-0.6-0.4-1-1-1H6z M34,47H13c-0.3,0-0.5,0-0.7,0.2L7,51.8V29l0,0h27V47z" style="fill: rgb(5, 93, 89);"/>
+      <rect x="25" y="6" width="24" height="2" style="fill: rgb(5, 93, 89);"/>
+      <rect x="25" y="11" width="24" height="2" style="fill: rgb(5, 93, 89);"/>
+      <rect x="25" y="16" width="15" height="2" style="fill: rgb(5, 93, 89);"/>
+      <rect x="43" y="16" width="6" height="2" style="fill: rgb(5, 93, 89);"/>
+      <rect x="16" y="32" width="14" height="2" style="fill: rgb(5, 93, 89);"/>
+      <rect x="11" y="37" width="19" height="2" style="fill: rgb(5, 93, 89);"/>
+      <rect x="11" y="42" width="19" height="2" style="fill: rgb(5, 93, 89);"/>
+      <rect x="40" y="34" width="9" height="2" style="fill: rgb(5, 93, 89);"/>
+      <rect x="40" y="39" width="14" height="2" style="fill: rgb(5, 93, 89);"/>
+      <rect x="40" y="44" width="14" height="2" style="fill: rgb(5, 93, 89);"/>
+      <rect x="40" y="49" width="14" height="2" style="fill: rgb(5, 93, 89);"/>
+    </g>
+  </g>
+</svg>
