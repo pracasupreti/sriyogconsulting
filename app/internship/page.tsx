@@ -1,6 +1,5 @@
 "use client"
 import { useEffect } from "react";
-import Link from "next/link";
 import Ribbon from "@/components/Ribbon";
 
 const Internship = () => {
