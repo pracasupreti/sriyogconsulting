@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Ribbon from "@/components/Ribbon";
 import Link from "next/link";
-import { useRef } from "react";
 const images = [
   "/assets/images/team/1.png",
   "/assets/images/team/2.png",
@@ -49,9 +48,6 @@ const roles = [
 
 const pracasImage = "/assets/images/team/pracas.png";
 export default function Example() {
-  const hoverEffect = ()=>{
-
-  }
   return (
     <>
       <Ribbon name="Team" des="" />
@@ -59,16 +55,16 @@ export default function Example() {
       <section className="">
         {/*About Pracas */}
         <div className="max-w-[1180px] flex justify-center items-center  mx-auto px-6  ">
-          <div className=" !bg-gray-200 text-black w-full border border-gray-300 md:p-0 ">
-            <div className="flex flex-col sm:flex-row w-full h-full pb-2 pt-6 px-10">
+          <div className=" bg-[#efefef] rounded-lg text-black w-full border border-gray-300 md:p-0 ">
+            <div className="flex flex-col sm:flex-row w-full h-full py-6 md:px-10 px-3">
               {/*Pracas Image */}
-              <div className=" h-[390px] flex flex-col items-center justify-center pl-6 md:p-0 basis-full w-full sm:basis-[30%] py-6 ">
+              <div className=" h-[390px] flex flex-col items-center justify-center  md:p-0 basis-full w-full sm:basis-[30%] py-6 ">
                 <Image
                   src={pracasImage}
                   alt="Pracas Upreti"
                   width={200}
                   height={200}
-                  className="w-[67%] mx-auto "
+                  className="mx-auto"
                 />
                 <br />
                 <h2 className="font-bold text-2xl text-center">PRACAS</h2>
@@ -78,12 +74,12 @@ export default function Example() {
 
               {/* About pracas */}
 
-              <div className="flex-1 flex flex-col justify-start  text-center sm:text-start basis-[70%]">
-                <h1 className="text-3xl font-roboto font-semibold">
+              <div className="flex-1 flex flex-col justify-start basis-[70%]">
+                <h1 className="text-3xl font-roboto font-semibold max-lg:text-center">
                   About PRACAS
                 </h1>
                 <br />
-                <p className=" text-gray-900  text-[13px] ">
+                <p className=" text-gray-900  text-[14px] ">
                   Pracas Upreti&apos;s journey from a startup founder to a
                   technology-driven change-maker in Biratnagar, Nepal,
                   exemplifies the profound impact that individuals can have when
@@ -108,9 +104,8 @@ export default function Example() {
                 </p>
                 {/*Soical Media icons */}
                 <br />
-                <div className="flex text-center sm:text-start flex-col gap-3">
+                <div className="flex  flex-col gap-3">
                   <p>Follow Pracas on social media</p>
-
                   <div className="flex gap-3 items-center">
                     <Link href="https://t.me/SRIYOG">
                       <Image

@@ -1,4 +1,3 @@
-
 import Services from "@/components/Services";
 import Image from "next/image";
 import Link from "next/link";
@@ -53,7 +52,10 @@ export default function Aboutpage() {
 
         <div className="flex flex-col gap-6 md:flex-row  text-center pt-[56px] pb-6 ">
           {cardData.map((item, index) => (
-            <div className="border border-gray-200 flex flex-col items-center " key={index}>
+            <div
+              className="border border-gray-200 flex flex-col items-center "
+              key={index}
+            >
               <Image
                 src={item.image}
                 height={337}
@@ -63,7 +65,7 @@ export default function Aboutpage() {
               />
 
               <span className="border-t-[1px] border-gray-200 w-[100%] inline-block py-3 ">
-               {item.title}
+                {item.title}
               </span>
             </div>
           ))}
@@ -90,11 +92,13 @@ export default function Aboutpage() {
 
         {/*banner */}
 
-        <div className="bg-[#0d5d59ec] mt-[56px] py-8 px-6 md:px-12 mb-[26px]">
-          <div className="flex flex-col md:flex-row bg-white py-8 px-6 md:px-12 gap-8 md:gap-16 border rounded-xl items-center md:items-start">
+        <div className="bg-[#055d59] rounded-md mt-[56px] py-12 px-6 md:px-12 mb-[26px]">
+          <div className="flex flex-col md:flex-row bg-white py-8 px-6 md:px-12 gap-8 md:gap-16 border  border-[#055d59] rounded-xl items-center ">
             {/* Text Section */}
-            <div className="flex flex-col gap-6 basis-full md:basis-1/2  md:text-left justify-center">
-              <h3 className="text-2xl font-semibold text-w">Book a Meeting</h3>
+            <div className="flex flex-col gap-6 basis-full md:basis-1/2  md:text-left justify-center ">
+              <h3 className="text-2xl font-semibold text-[#055d59]">
+                Book a Meeting
+              </h3>
               <p className="text-gray-700">
                 Our comprehensive IT services are tailored to the unique demands
                 of healthcare, employment platforms, and tourism operations.
@@ -106,13 +110,13 @@ export default function Aboutpage() {
               >
                 <Link
                   href="/meeting"
-                  className="border-[1px] px-4 py-1 shadow-[0_.5rem_1rem_rgba(0,0,0,.15)] rounded-lg bg-[#0D5D59] text-white flex items-center"
+                  className="border-[1.5px]  px-4 py-2 font-medium border-[#055d59] text-white shadow-md rounded-md  bg-[#055d59] transition-all duration-300 ease-in-out"
                 >
                   Book a Meeting
                 </Link>
                 <Link
                   href="/timeline"
-                  className="border px-4 py-2 shadow-md rounded-lg text-sm"
+                  className="border-[1.5px] border-[#4b4b4b] px-4 py-2 font-medium hover:text-white hover:border-[#055d59] shadow-md rounded-md  hover:bg-[#055d59] transition-all duration-300 ease-in-out"
                 >
                   View Timeline
                 </Link>
@@ -120,7 +124,7 @@ export default function Aboutpage() {
             </div>
 
             {/* Image Section */}
-            <div className="basis-full md:basis-[40%] flex justify-center md:justify-end">
+            <div className="basis-full md:basis-[40%] flex justify-center md:justify-end ">
               <Image
                 src="/assets/images/about/aboutdemo.png"
                 alt="aboutDemo"
@@ -133,7 +137,7 @@ export default function Aboutpage() {
         </div>
         <Services />
 
-        <div className="max-w-[1180px] mx-auto my-0 lg:mx-auto lg:my-0  md:mx-auto md:my-0 py-14 lg:px-12 sm:px-0">
+        <div className="max-w-[1180px] mx-auto mb-[45px]">
           <div className="flex flex-col-reverse gap-6  lg:flex-row ">
             <div className="basis-[60%] flex flex-col gap-[16px] p-5 lg:basis-full pl-0">
               <span className="inline-block w-[133px] border-top-4 h-1 bg-[#0D5D59] "></span>
@@ -144,9 +148,8 @@ export default function Aboutpage() {
                 At SRIYOG Consulting, our mission is to harness the power of
                 technology to drive impactful change across sectors that are
                 fundamental to the growth of our society—healthcare, employment,
-                and tourism.{" "}
-                  <br />
-                  <br />
+                and tourism. <br />
+                <br />
                 As someone who has spent over a decade navigating the
                 intersection of innovation and social responsibility, I firmly
                 believe in technology’s ability to unlock new opportunities and
@@ -164,8 +167,8 @@ export default function Aboutpage() {
                 experiences. Our tailored solutions help organizations in these
                 sectors optimize their operations, expand their reach, and adapt
                 to the rapidly changing digital landscape.
-                 <br />
-                 <br />
+                <br />
+                <br />
                 We’re committed to building smarter, more resilient systems that
                 not only meet the needs of today but also prepare our clients
                 for the challenges of tomorrow. Together, we’re shaping the
@@ -173,23 +176,37 @@ export default function Aboutpage() {
                 of technology.
               </p>
 
-              
               <div className="pt-12 flex flex-col gap-1">
                 <p className="font-bold">PRACAS Upreti</p>
                 <ul className="flex gap-2 items-center">
                   <li>
                     <Link href="https://t.me/SRIYOG">
-                      <Image src={'/assets/icons/telegram1.svg'} width={20} height={20} alt='telegram'/>
+                      <Image
+                        src={"/assets/icons/telegram1.svg"}
+                        width={20}
+                        height={20}
+                        alt="telegram"
+                      />
                     </Link>
                   </li>
                   <li>
                     <Link href="https://x.com/TheSRIYOG">
-                      <Image src={'/assets/icons/tweeter.svg'} width={20} height={20} alt='Tweeter'/>
+                      <Image
+                        src={"/assets/icons/tweeter.svg"}
+                        width={20}
+                        height={20}
+                        alt="Tweeter"
+                      />
                     </Link>
                   </li>
                   <li>
                     <Link href="https://np.linkedin.com/company/sriyogdotcom">
-                      <Image src={'/assets/icons/linkedin.svg'} width={20} height={20} alt='telegram'/>
+                      <Image
+                        src={"/assets/icons/linkedin.svg"}
+                        width={20}
+                        height={20}
+                        alt="telegram"
+                      />
                     </Link>
                   </li>
                 </ul>

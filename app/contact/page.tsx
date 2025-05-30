@@ -62,7 +62,7 @@ export default function Page() {
                       fill
                     />
                   </div>
-                  Registration
+                  <span className="text-[#055d59] ">Registration</span>
                 </div>
                 <p className="text-[14px] max-md:text-[16px]">
                   Easy Registration system to join as professional.
@@ -78,7 +78,7 @@ export default function Page() {
                       fill
                     />
                   </div>
-                  Membership
+                  <span className="text-[#055d59] ">Membership</span>
                 </div>
 
                 <p className="text-[14px] max-md:text-[16px]">
@@ -95,7 +95,7 @@ export default function Page() {
                       fill
                     />
                   </div>
-                  Promotion
+                  <span className="text-[#055d59] ">Promotion</span>
                 </div>
                 <p className="text-[14px] max-md:text-[16px]">
                   Various ways to promote your skills and profile.
@@ -111,7 +111,7 @@ export default function Page() {
                       fill
                     />
                   </div>
-                  Security
+                  <span className="text-[#055d59] ">Security</span>
                 </div>
                 <p className="text-[14px] max-md:text-[16px]">
                   Verified and secured platform to showcase your skills.
@@ -388,7 +388,7 @@ export default function Page() {
                 name=""
                 id=""
                 value="Submit"
-                className=" border-[1.5px]  text-[#4b4b4b] hover:text-white py-2 px-6 font-medium hover:bg-[#055d59] rounded-md transition duration-300 ease-in-out cursor-pointer "
+                className=" border-[1.5px]  text-white  py-2 px-6 font-medium bg-[#055d59] rounded-md transition duration-300 ease-in-out cursor-pointer "
               />
             </form>
           </div>
