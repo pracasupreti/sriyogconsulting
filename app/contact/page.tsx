@@ -25,7 +25,7 @@ export default function Page() {
     {
       img: "/assets/images/contact/madan.png",
       name: "Madan",
-      field: "Information Officer",
+      field: "React Js Developer",
       app: "Telegram",
       link: "https://t.me/madantamang",
     },

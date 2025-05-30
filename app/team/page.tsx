@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Card } from "antd";
 import Ribbon from "@/components/Ribbon";
+import Link from "next/link";
 const images = [
   "/assets/images/team/1.png",
   "/assets/images/team/2.png",
@@ -52,7 +53,7 @@ export default function Example() {
     <>
       <Ribbon name="Team" des="" />
 
-      <section className="pb-[90px] lg:pt-[60px] md:pt-[52px]">
+      <section className="">
         {/*About Pracas */}
         <div className="max-w-[1180px] flex justify-center items-center  mx-auto px-6  ">
           <Card className=" !bg-gray-100 text-black w-full border border-gray-300 md:p-0">

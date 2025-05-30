@@ -1,4 +1,4 @@
-"use client";
+
 import Services from "@/components/Services";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,7 +6,11 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaTelegram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Ribbon from "@/components/Ribbon";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "About Us | SRIYOG Consulting",
+};
 export default function Aboutpage() {
   return (
     <>

@@ -1,7 +1,37 @@
 import Ribbon from "@/components/Ribbon";
-import testimonialsData from "@/public/data/testomonial-data";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Testimonials | SRIYOG Consulting",
+};
 export default function Testimonials() {
+  const testimonialsData = [
+    {
+      id: 1,
+      title: "Lorem Ipsum!",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      name: "Niranjan",
+      stack: "Project Manager",
+      image: "/assets/images/testimonials/1.png",
+    },
+    {
+      id: 2,
+      title: "Lorem Ipsum!",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      name: "Rahul",
+      stack: "Stack Co-ordinator",
+      image: "/assets/images/testimonials/2.png",
+    },
+    {
+      id: 3,
+      title: "Lorem Ipsum!",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      name: "Bitisha",
+      stack: "React js Developer",
+      image: "/assets/images/testimonials/3.png",
+    },
+  ];
   return (
     <>
       <Ribbon name="Testimonials" des="" />
