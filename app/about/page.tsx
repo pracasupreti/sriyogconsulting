@@ -2,9 +2,6 @@
 import Services from "@/components/Services";
 import Image from "next/image";
 import Link from "next/link";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaTelegram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import Ribbon from "@/components/Ribbon";
 import { Metadata } from "next";
 
@@ -12,10 +9,24 @@ export const metadata: Metadata = {
   title: "About Us | SRIYOG Consulting",
 };
 export default function Aboutpage() {
+  const cardData = [
+    {
+      title: "7 Years of Service",
+      image: "/assets/images/about/year.png",
+    },
+    {
+      title: "Dedicated Team",
+      image: "/assets/images/about/team.jpg",
+    },
+    {
+      title: "Reliable Service",
+      image: "/assets/images/about/service.jpg",
+    },
+  ];
   return (
     <>
       {/* About section*/}
-     <Ribbon name="About" des=''/>
+      <Ribbon name="About" des="" />
       {/* */}
 
       <div className="lg:max-w-[1180px] mx-auto px-4">
@@ -41,45 +52,21 @@ export default function Aboutpage() {
         {/* cards with no images */}
 
         <div className="flex flex-col gap-6 md:flex-row  text-center pt-[56px] pb-6 ">
-          <div className="border-[1px] ">
-            <Image
-              src={"/assets/images/about/noimage.png"}
-              height={337}
-              width={377}
-              alt=""
-              className=" "
-            />
+          {cardData.map((item, index) => (
+            <div className="border border-gray-200 flex flex-col items-center " key={index}>
+              <Image
+                src={item.image}
+                height={337}
+                width={377}
+                alt=""
+                className="w-full h-auto object-cover"
+              />
 
-            <span className="border-t-[1px] w-[100%] inline-block py-3 ]">
-              7 Years of Service
-            </span>
-          </div>
-
-          <div className="border-[1px]">
-            <Image
-              src={"/assets/images/about/noimage.png"}
-              height={253}
-              width={377}
-              alt=""
-            />
-
-            <span className="border-t-[1px] w-[100%] inline-block py-3 ]">
-              7 Years of Service
-            </span>
-          </div>
-
-          <div className="border-[1px]">
-            <Image
-              src={"/assets/images/about/noimage.png"}
-              height={253}
-              width={377}
-              alt=""
-            />
-
-            <span className="border-t-[1px] w-[100%] inline-block py-3 ]">
-              7 Years of Service
-            </span>
-          </div>
+              <span className="border-t-[1px] border-gray-200 w-[100%] inline-block py-3 ">
+               {item.title}
+              </span>
+            </div>
+          ))}
         </div>
 
         {/*texts below cards */}
@@ -113,8 +100,10 @@ export default function Aboutpage() {
                 of healthcare, employment platforms, and tourism operations.
               </p>
 
-              <div className="flex  gap-4  md:justify-start 
-              flex-wrap ">
+              <div
+                className="flex  gap-4  md:justify-start 
+              flex-wrap "
+              >
                 <Link
                   href="/meeting"
                   className="border-[1px] px-4 py-1 shadow-[0_.5rem_1rem_rgba(0,0,0,.15)] rounded-lg bg-[#0D5D59] text-white flex items-center"
@@ -148,17 +137,16 @@ export default function Aboutpage() {
           <div className="flex flex-col-reverse gap-6  lg:flex-row ">
             <div className="basis-[60%] flex flex-col gap-[16px] p-5 lg:basis-full pl-0">
               <span className="inline-block w-[133px] border-top-4 h-1 bg-[#0D5D59] "></span>
-              <h2 className="text-[32px] text-[#0D5D59]">
+              <h2 className="text-[32px] font-bold text-[#0D5D59]">
                 Message from The CTO
               </h2>
-              <p>
+              <p className="text-[15px]">
                 At SRIYOG Consulting, our mission is to harness the power of
                 technology to drive impactful change across sectors that are
                 fundamental to the growth of our society—healthcare, employment,
                 and tourism.{" "}
-              </p>
-              <p>
-                {" "}
+                  <br />
+                  <br />
                 As someone who has spent over a decade navigating the
                 intersection of innovation and social responsibility, I firmly
                 believe in technology’s ability to unlock new opportunities and
@@ -168,53 +156,53 @@ export default function Aboutpage() {
                 accelerate economic growth. From those early days with PRACAS
                 Infosys to the establishment of SRIYOG Consulting, I’ve been
                 driven by the idea that technology can be a force for good.
-              </p>
-              <p>
-                {" "}
+                <br />
+                <br />
                 Today, we are empowering industries to transform digitally,
                 whether it’s streamlining agricultural processes, creating
                 innovative platforms for employment, or enhancing tourism
                 experiences. Our tailored solutions help organizations in these
                 sectors optimize their operations, expand their reach, and adapt
                 to the rapidly changing digital landscape.
-              </p>
-              <p>
-                {" "}
+                 <br />
+                 <br />
                 We’re committed to building smarter, more resilient systems that
                 not only meet the needs of today but also prepare our clients
                 for the challenges of tomorrow. Together, we’re shaping the
                 future of agriculture, employment, and tourism through the power
                 of technology.
               </p>
+
+              
               <div className="pt-12 flex flex-col gap-1">
                 <p className="font-bold">PRACAS Upreti</p>
-                <ul className="flex gap-2">
+                <ul className="flex gap-2 items-center">
                   <li>
                     <Link href="https://t.me/SRIYOG">
-                      <FaTelegram className="text-[1.3rem]" />
+                      <Image src={'/assets/icons/telegram1.svg'} width={20} height={20} alt='telegram'/>
                     </Link>
                   </li>
                   <li>
                     <Link href="https://x.com/TheSRIYOG">
-                      <FaXTwitter className="text-[1.3rem]" />
+                      <Image src={'/assets/icons/tweeter.svg'} width={20} height={20} alt='Tweeter'/>
                     </Link>
                   </li>
                   <li>
                     <Link href="https://np.linkedin.com/company/sriyogdotcom">
-                      <FaLinkedin className="text-[1.3rem]" />
+                      <Image src={'/assets/icons/linkedin.svg'} width={20} height={20} alt='telegram'/>
                     </Link>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div className="w-full lg:w-[40%] flex justify-center items-center px-4">
+            <div className="w-full lg:w-[50%] flex justify-center items-center px-4">
               <Image
                 src="/assets/images/about/pracas_large.png"
                 alt="about_photo"
                 width={500}
                 height={500}
-                className="max-w-[280px] w-full h-auto object-contain"
+                className="max-w-full h-auto object-cover"
               />
             </div>
           </div>
