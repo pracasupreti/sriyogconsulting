@@ -132,19 +132,25 @@ export default function Home() {
     {
       img: "/assets/images/homepage/latest/1.jpg",
       title: "Birat Informatics Registered",
-      date: " 28 Feb 2025 ",
+      date: " 21 May 2025 ",
       category: "Press releases",
     },
     {
       img: "/assets/images/homepage/latest/1.jpg",
       title: "Address Updated to Kamalpokhari",
-      date: " 27 Feb 2025 ",
+      date: " 15 May 2025 ",
       category: "News",
+    },
+     {
+      img: "/assets/images/homepage/latest/1.jpg",
+      title: "SRIYOG App has a new homepage",
+      date: " 12 May 2025 ",
+      category: "Press releases",
     },
     {
       img: "/assets/images/homepage/latest/1.jpg",
       title: "MoU with Islington College",
-      date: " 28 Feb 2025 ",
+      date: " 3 Apr 2025 ",
       category: "News",
     },
     {
@@ -156,7 +162,7 @@ export default function Home() {
     {
       img: "/assets/images/homepage/latest/1.jpg",
       title: "Operating from Kamalpokhari, Kathmandu  ",
-      date: " 28 Feb 2025 ",
+      date: " 03 Feb 2025 ",
       category: "News",
     },
     {
@@ -165,6 +171,7 @@ export default function Home() {
       date: " 03 Feb 2025 ",
       category: "Press releases",
     },
+    
   ];
 
   return (
@@ -568,21 +575,21 @@ export default function Home() {
         </div>
         <Slider {...settings} className="custom-slider w-full pb-[55px]">
           {latest.map((item, idx) => (
-            <section key={idx} className="px-2 ">
+            <section key={idx} className="px-3 ">
               <div className="border border-[#dbdbdb] rounded-lg overflow-hidden">
-                <div className="relative max-md:h-[250px] h-[140px] w-full mx-auto ">
+                <div className="relative max-md:h-[250px] h-[140px] w-full mx-auto  ">
                   <Image
                     src={item.img}
                     alt={item.title}
-                    className="object-cover"
+                    className="object-contain"
                     fill
                   />
                 </div>
                 <div className="px-4">
-                  <p className="text-xl text-[#4b4b4b]  font-semibold mb-2 mt-1">
+                  <p className="text-[18px] text-[#4b4b4b]  font-semibold mb-2 mt-1">
                     {item.title.slice(0, 22)}...
                   </p>
-                  <p className="text-gray-500">{item.category}</p>
+                  {/* <p className="text-gray-500">{item.category}</p> */}
                   <p className="text-gray-500 mb-3">{item.date}</p>
                 </div>
               </div>
