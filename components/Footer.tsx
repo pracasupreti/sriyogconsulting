@@ -112,7 +112,7 @@ export default function Footer() {
               </Link>
             </div>
             <Link
-              href="/"
+              href="/quote"
               className="block mb-4 bg-[#0D5D59] hover:bg-[#2e5250] text-white text-center font-semibold py-2 rounded-lg transition"
             >
               Request a Quote

@@ -14,7 +14,7 @@ const _6 = "https://www.youtube.com/embed/3y1_MxeOq8s?autoplay=1";
 const _7 = "https://www.youtube.com/embed/3y1_MxeOq8s?autoplay=1";
 const _8 = "https://www.youtube.com/embed/3y1_MxeOq8s?autoplay=1";
 
-const videos = () => {
+const page = () => {
   const tutorialVideo = [
     {
       id: 1,
@@ -145,4 +145,4 @@ const videos = () => {
   );
 };
 
-export default videos;
+export default page;

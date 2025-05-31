@@ -208,7 +208,7 @@ export default function Home() {
               competitive in a fast-changing digital world.
             </p>
             <Link
-              href="/"
+              href="/meeting"
               className="border rounded-lg p-2 hover:bg-[#055D59] font-semibold text-[#4b4b4b] hover:text-white transition-all duration-300 ease-in-out"
             >
               Book a Meeting
@@ -233,7 +233,7 @@ export default function Home() {
             competitive in a fast-changing digital world.
           </p>
           <Link
-            href="/"
+            href="/meeting"
             className="border rounded-lg p-2 hover:bg-[#055D59] font-semibold text-[#4b4b4b] hover:text-white transition-all duration-300 ease-in-out"
           >
             Book a Meeting
