@@ -27,7 +27,7 @@ const Welcome = () => {
             </div>
           </div>
           <div className="px-10 max-md:px-0 max-sm:px-0">
-            <p className="text-base  ">
+            <div className="text-base  ">
               Established on June 14, 2018, SRIYOG Consulting Pvt. Ltd. is a
               premier Managed IT Services provider based in Kamalpokhari,
               Kathmandu, Nepal. We specialize in delivering innovative,
@@ -44,23 +44,31 @@ const Welcome = () => {
               solutions are tailored to help organizations optimize their
               digital infrastructure, enhance productivity, and drive business
               success.
-              <br />
-              <br />
-              Technology has been connecting everyone from one corner of the
-              globe to another corner in the very fastest way. Businesses and
-              almost all organisations need to have their proper digital
-              presence in a very effective way and their main motive is to beat
-              the competition and stay ahead.
-              <br />
-              <br />
-              My journey into the realm of technology began over a decade ago
-              when I founded my first IT startup in 2007 A.D. as PRACAS Infosys
-              in Biratnagar. Recognizing the potential of technology to bridge
-              gaps and catalyze progress, I always tried to embark on a mission
-              to leverage digital solutions to address local challenges and
-              foster economic development.
-              <br />
-              <br />
+              <div className="grid grid-cols-1 sm:grid-cols-5 place-content-between gap-8 place-items-center mb-3">
+                <p className="col-span-3">
+                  Technology has been connecting everyone from one corner of the
+                  globe to another corner in the very fastest way. Businesses
+                  and almost all organisations need to have their proper digital
+                  presence in a very effective way and their main motive is to
+                  beat the competition and stay ahead.
+                  <br />
+                  <br />
+                  My journey into the realm of technology began over a decade
+                  ago when I founded my first IT startup in 2007 A.D. as PRACAS
+                  Infosys in Biratnagar. Recognizing the potential of technology
+                  to bridge gaps and catalyze progress, I always tried to embark
+                  on a mission to leverage digital solutions to address local
+                  challenges and foster economic development.
+                </p>
+                <div className=" h-68 relative  w-full col-span-2">
+                  <Image
+                    src="/assets/images/about/pracas_large.png"
+                    alt="About Us"
+                    fill
+                    className="w-full h-auto object-contain border"
+                  />
+                </div>
+              </div>
               My vision was not merely to create successful businesses but to
               effect meaningful change in my community where I have contributed
               in more than 500 clients in my entire career spreading 15
@@ -78,7 +86,7 @@ const Welcome = () => {
               disasters like data loss, hacking, identity theft, ransomware
               attacks and other various issues which we may face anytime,
               anywhere.
-            </p>
+            </div>
           </div>
 
           <div className="relative w-40 h-40  mx-10 max-md:mx-0 ">

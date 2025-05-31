@@ -8,26 +8,27 @@ export const metadata: Metadata = {
 };
 export default function Page() {
   const card = [
-    {
-      img: "/assets/images/contact/pracas.png",
-      name: "PRACAS",
-      field: "CTO",
-      app: "Telegram",
-      link: "https://t.me/SRIYOG",
-    },
+   
     {
       img: "/assets/images/contact/niranjan.png",
       name: "Niranjan ",
       field: "Project Manager",
-      app: "Telegram",
-      link: "https://t.me/niranjanpm",
+      app: "WhatsApp",
+      link: "https://wa.me/9779852024365 ",
     },
     {
       img: "/assets/images/contact/madan.png",
       name: "Madan",
-      field: "React Js Developer",
-      app: "Telegram",
-      link: "https://t.me/madantamang",
+      field: "Information Officer",
+      app: "WhatsApp",
+      link: "https://wa.me/9779818869166",
+    },
+     {
+      img: "/assets/images/contact/pracas.png",
+      name: "PRACAS",
+      field: "CTO",
+      app: "WhatsApp",
+      link: "https://wa.me/9779852025735",
     },
   ];
   return (
@@ -41,7 +42,7 @@ export default function Page() {
               Welcome to SRIYOG Consulting
             </p>
             <p className="mb-[45px]">
-              Welcome to SRIYOG! We&apos;re located at Rem.Work, Kamalpokhari,
+              Welcome to SRIYOG Consulting! We&apos;re located at Rem.Work, Kamalpokhari,
               Kathmandu, Nepal.
             </p>
             <iframe
@@ -62,10 +63,10 @@ export default function Page() {
                       fill
                     />
                   </div>
-                  <span className="text-[#055d59] ">Registration</span>
+                  <span className="text-[#055d59] ">Training</span>
                 </div>
                 <p className="text-[14px] max-md:text-[16px]">
-                  Easy Registration system to join as professional.
+                  Join our team to sharpen your skills.
                 </p>
               </div>
               <div className="w-[238.5px] mb-[25px] max-md:w-full">
@@ -78,11 +79,11 @@ export default function Page() {
                       fill
                     />
                   </div>
-                  <span className="text-[#055d59] ">Membership</span>
+                  <span className="text-[#055d59] ">Workshop</span>
                 </div>
 
                 <p className="text-[14px] max-md:text-[16px]">
-                  Reasonable verification fee for yearly membership
+                  Host an IT workshop & seminar.
                 </p>
               </div>
               <div className="w-[238.5px] mb-[25px] max-md:w-full">
@@ -95,10 +96,10 @@ export default function Page() {
                       fill
                     />
                   </div>
-                  <span className="text-[#055d59] ">Promotion</span>
+                  <span className="text-[#055d59] ">Meeting</span>
                 </div>
                 <p className="text-[14px] max-md:text-[16px]">
-                  Various ways to promote your skills and profile.
+                   Book a Meeting to discuss and clarify your needs.
                 </p>
               </div>
               <div className="w-[238.5px] mb-[25px] max-md:w-full">
@@ -111,10 +112,10 @@ export default function Page() {
                       fill
                     />
                   </div>
-                  <span className="text-[#055d59] ">Security</span>
+                  <span className="text-[#055d59] ">Internship</span>
                 </div>
                 <p className="text-[14px] max-md:text-[16px]">
-                  Verified and secured platform to showcase your skills.
+                  Get experienced in real time projects.
                 </p>
               </div>
             </div>
@@ -141,7 +142,7 @@ export default function Page() {
                     name=""
                     id="fname"
                     className="mt-1 px-3 py-2  rounded-md w-full bg-white focus:outline-none  max-md:mb-4"
-                    placeholder="first Name"
+                    placeholder="eg: Madan"
                     required
                   />
                 </div>
@@ -153,7 +154,7 @@ export default function Page() {
                     name=""
                     id="lname"
                     className="mt-1 px-3 py-2 bg-white focus:outline-none rounded-md w-full"
-                    placeholder="Last Name"
+                    placeholder="eg: Tamang"
                     required
                   />
                 </div>
@@ -165,7 +166,7 @@ export default function Page() {
                   type="email"
                   name=""
                   id="mail"
-                  placeholder="Email"
+                  placeholder="eg: madan@sriyog.com"
                   className="mt-1 px-3 py-2 rounded-md w-full bg-white focus:outline-none border-[#4b4b4b]"
                   required
                 />

@@ -9,13 +9,14 @@ export const metadata: Metadata = {
 };
 export default function Aboutpage() {
   const cardData = [
-    {
-      title: "7 Years of Service",
-      image: "/assets/images/about/year.png",
-    },
+  
     {
       title: "Dedicated Team",
       image: "/assets/images/about/team.jpg",
+    },
+      {
+      title: "7 Years of Service",
+      image: "/assets/images/about/year.png",
     },
     {
       title: "Reliable Service",
@@ -26,8 +27,7 @@ export default function Aboutpage() {
     <>
       {/* About section*/}
       <Ribbon name="About" des="" />
-      {/* */}
-
+  
       <div className="lg:max-w-[1180px] mx-auto px-4">
         <div className="  mx-auto flex flex-col items-center justify-center gap-5 my-10 ">
           <Image

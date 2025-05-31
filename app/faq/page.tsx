@@ -46,7 +46,7 @@ const faq1 = [
   {
     id: 6,
     question:
-      "What does the website development & maintenance service include?",
+      "Difference between website development & maintenance.",
     answer:
       "It includes custom web design, responsive UI/UX, hosting, domain registration, and SEO.",
   },
@@ -80,6 +80,9 @@ const faq1 = [
     answer:
       "They offer full-stack development, UI/UX design, database optimization, and secure hosting solutions.",
   },
+  
+];
+const faq2=[
   {
     id: 12,
     question: "Does SRIYOG provide cloud hosting services?",
@@ -148,8 +151,7 @@ const faq1 = [
     question: "Can I join a Training?",
     answer: "Yes, we offer various IT training courses.",
   },
-];
-
+]
 const FaqItem = ({ title, content }: FaqItemProps) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -157,10 +159,10 @@ const FaqItem = ({ title, content }: FaqItemProps) => {
       <section className="group">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-full text-left px-4 py-5 hover:cursor-pointer shadow-xl font-semibold focus:outline-none flex justify-between items-center"
+          className="w-full text-left px-4 py-5 hover:cursor-pointer shadow-xl focus:outline-none flex justify-between items-center"
         >
           <div
-            className={`text-[1.1rem] max-md:font-bold font-semibold group-hover:text-[#055d59] ${
+            className={`text-[1.1rem]  group-hover:text-[#055d59] ${
               isOpen ? "text-[#055d59]" : "text-[#4b4b4b]"
             }`}
           >
@@ -195,11 +197,20 @@ export default function Page() {
     <>
       <Ribbon name="Frequently Asked Questions" des="" />
       <section className="lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto mb-[45px] grid grid-cols-1 lg:grid-cols-2 place-content-between gap-4">
-          {faq1.map((item) => (
+          <div>
+            {faq1.map((item) => (
             <span key={item.id}>
               <FaqItem title={item.question} content={item.answer} />
             </span>
           ))}
+          </div>
+          <div>
+            {faq2.map((item) => (
+            <span key={item.id}>
+              <FaqItem title={item.question} content={item.answer} />
+            </span>
+          ))}
+          </div>
       </section>
     </>
   );

@@ -525,19 +525,19 @@ export default function Media() {
 
       <div className="w-full px-4 max-md:px-0  lg:px-8 mb-[56px]">
         <div className="lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
             {mediaItems.map((item, index) => (
               <div
                 key={index + 1}
-                className="flex  flex-col items-start p-5  border border-[#dbdbdb] hover:shadow-md rounded-lg"
+                className="flex  flex-col items-start px-8 py-12  border border-[#dbdbdb] hover:shadow-md rounded-lg"
               >
-                <div className="relative w-full h-24 ">
+                <div className="relative w-full h-24 border-b border-[#dbdbdb] ">
                   <Image
                     src={item.img}
                     alt="media"
                     fill
                     priority
-                    className="object-contain"
+                    className="object-contain pb-2"
                   />
                 </div>
 
@@ -550,7 +550,7 @@ export default function Media() {
                 <div className="w-full max-lg:[88%] max-md:w-[89%] flex justify-start">
                   <Link
                     href={item.link}
-                    className="mt-6 px-4 py-2 text-[14px] hover:bg-[#055d59]  text-[#4b4b4b] border font-medium hover:text-white  rounded-md transition-all duration-300 ease-in-out"
+                    className="mt-6 px-4 py-2 text-[14px] hover:bg-[#055d59]  text-[#4b4b4b] border border-[#dbdbdb] font-medium hover:text-white  rounded-md transition-all duration-300 ease-in-out"
                     target="_blank"
                   >
                     Read More

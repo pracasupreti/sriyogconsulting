@@ -4,7 +4,7 @@ import Ribbon from "@/components/Ribbon";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Fonts | SRIYOG Consulting",
+  title: "JDR Fonts | SRIYOG Consulting",
 };
 
 const Fonts = () => {

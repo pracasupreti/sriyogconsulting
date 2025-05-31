@@ -29,15 +29,15 @@ export default function Footer() {
               ],
               [
                 { label: "Timeline", path: "/timeline" },
-                { label: "Submit Feedback", path: "/feedback" },
-                { label: "Pitch Deck", path: "/pitchdeck" },
+                { label: "Feedback", path: "/feedback" },
+                { label: "Pitch Deck", path: "/pitch" },
                 { label: "Internship", path: "/internship" },
                 { label: "Testimonials", path: "/testimonials" },
               ],
               [
                 { label: "SRIYOG App", path: "https://sriyog.app/" },
                 { label: "JDR Fonts", path: "/fonts" },
-                { label: "Certificates", path: "/certificate" },
+                { label: "Certificates", path: "/certificates" },
                 { label: "Payment Details", path: "/payment" },
                 { label: "Partners", path: "/partners" },
               ],
@@ -46,7 +46,7 @@ export default function Footer() {
                 { label: "Terms of Services", path: "/tos" },
                 { label: "Disclaimer", path: "/disclaimer" },
                 { label: "Sitemap", path: "/sitemap" },
-                { label: "Video", path: "/tutorials" },
+                { label: "Tutorials", path: "/tutorials" },
               ],
             ].map((group, index) => (
               <ul key={index} className="space-y-3 ">

@@ -47,11 +47,11 @@ export default function Certificate() {
                 src={item.img}
                 alt={item.name || `Certificate ${item.id}`}
                 fill
-                className="object-cover rounded shadow-md"
+                className="object-contain rounded shadow-md"
                 onClick={() => setIndex(idx)}
               />
             </div>
-            <p className="mt-2 font-medium text-[#4b4b4b]">{item.name}</p>
+            <p className="mt-2 font-medium text-[#4b4b4b] text-sm">{item.name}</p>
           </div>
         ))}
       </section>

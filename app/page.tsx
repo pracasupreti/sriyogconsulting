@@ -177,7 +177,7 @@ export default function Home() {
             backgroundImage: "url('/assets/images/homepage/hero-banner.jpg')",
           }}
         ></div>
-        <div className="relative z-10 flex justify-between lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto items-center lg:pt-64 lg:pb-28 max-md:items-end max-lg:h-full max-md:pb-4">
+        <div className="relative z-10 flex justify-between lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto items-end lg:pt-64 lg:pb-28 max-md:items-end max-lg:h-full max-md:pb-4">
           <div className="text-white sm:w-[45%] lg:w-[55%] space-y-4">
             <h1 className="lg:text-5xl text-3xl font-semibold">
               Dedicated IT Consulting
@@ -194,7 +194,7 @@ export default function Home() {
               Free IT Survey
             </Link>
           </div>
-          <div className="bg-white hidden sm:block rounded-lg p-6 sm:w-[50%] lg:w-[35%] space-y-3">
+          <div className="bg-white hidden sm:block rounded-lg p-6 sm:w-[50%] lg:w-[37%] space-y-3">
             <p className="font-semibold py-2 border-b-2 border-[#dbdbdb] text-[#4b4b4b]">
               Book a Meeting
             </p>

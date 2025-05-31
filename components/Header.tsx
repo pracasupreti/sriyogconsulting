@@ -8,11 +8,11 @@ export default function Header() {
     <>
       <header className="w-full h-auto">
         {topOpen && (
-          <section className="bg-[#0D5D59] w-full py-4">
+          <section className="bg-[#0D5D59] w-full py-3">
             <div className="lg:max-w-[1180px] max-lg:container max-lg:px-3 mx-auto text-white flex justify-between items-center lg:text-[14px] sm:text-[12px] text-[14px]">
               <div className="flex gap-2">
                 <p>Helpline Number</p>
-                <Link href="tel:+977-98511-52774">+977-98511-52774</Link>
+                <Link href="tel:+977-98520-25735">+977-98520-25735</Link>
               </div>
               <div className="gap-2 flex items-center">
                 <i className="hidden md:block">
