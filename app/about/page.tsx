@@ -29,13 +29,13 @@ export default function Aboutpage() {
       <Ribbon name="About" des="" />
   
       <div className="lg:max-w-[1180px] mx-auto px-4">
-        <div className="  mx-auto flex flex-col items-center justify-center gap-5 my-10 ">
+        <div className="  mx-auto flex flex-col items-center justify-center gap-5 my-10 rounded-xl ">
           <Image
             src="/assets/images/about/topImage.jpg"
             alt="About Us"
             width={1180}
             height={500}
-            className="w-full h-auto object-cover"
+            className="w-full h-auto object-cover rounded-xl"
           />
           <p className="text-md w-full">
             Established on June 14, 2018, SRIYOG Consulting Pvt. Ltd., based in
@@ -92,7 +92,7 @@ export default function Aboutpage() {
 
         {/*banner */}
 
-        <div className="bg-[#055d59] rounded-md mt-[56px] py-12 px-6 md:px-12 mb-[26px]">
+        <div className="bg-[#055d59] rounded-xl mt-[56px] py-12 px-6 md:px-12 mb-[26px]">
           <div className="flex flex-col md:flex-row bg-white py-8 px-6 md:px-12 gap-8 md:gap-16 border  border-[#055d59] rounded-xl items-center ">
             {/* Text Section */}
             <div className="flex flex-col gap-6 basis-full md:basis-1/2  md:text-left justify-center ">
@@ -116,7 +116,7 @@ export default function Aboutpage() {
                 </Link>
                 <Link
                   href="/timeline"
-                  className="border-[1.5px] border-[#4b4b4b] px-4 py-2 font-medium hover:text-white hover:border-[#055d59] shadow-md rounded-md  hover:bg-[#055d59] transition-all duration-300 ease-in-out"
+                  className="border-[1.5px] border-[#055d59] px-4 py-2 font-medium hover:text-white  shadow-md rounded-md  hover:bg-[#055d59] transition-all duration-300 ease-in-out text-[#055d59]"
                 >
                   View Timeline
                 </Link>
