@@ -59,7 +59,7 @@ export default function Page() {
             <p className="text-gray-500 mb-2   h-[200px]  mt-12 ">{item.des}</p>
             <Link
               target="_blank"
-              className="absolute my-2 bottom-0 rounded-md border-[#dbdbdb] text-[#4b4b4b] font-medium border px-4 py-2 hover:bg-[#055d59] hover:text-white transition-all duration-300 ease-in-out"
+              className="absolute my-2 bottom-0 rounded-md border-[#dbdbdb] text-gray-500 font-medium border px-4 py-2 hover:bg-[#055d59] hover:text-white transition-all duration-300 ease-in-out"
               href={item.path}
             >
               Browse More
