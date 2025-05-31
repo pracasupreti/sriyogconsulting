@@ -9,7 +9,7 @@ const Internship = () => {
   return (
     <>
       <Ribbon name="Internship | SRIYOG" des="" />
-      <section className="lg:w-full md:pt-[52px]">
+      <section className="lg:w-full md:pt-[10px]">
         {/* form field of request quote */}
         <div className="bg-[#fafafa] py-12">
           <div className="lg:max-w-[1180px] mx-auto my-0 md:max-w-[920px] sm:max-w-[720px]  lg:px-12">
@@ -19,7 +19,6 @@ const Internship = () => {
                 src="https://airtable.com/embed/appcRLi3R3qIFyPIU/pagBvKYaiRmZLtsSn/form"
                 width="100%"
                 height="3125"
-                // style="background: transparent; border: 1px solid #ccc;"
               ></iframe>
             </div>
           </div>
