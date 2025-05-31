@@ -374,7 +374,7 @@ export default function Home() {
           <div className=" lg:h-[560px] h-[270px] lg:col-span-2 lg:row-span-2  rounded-lg overflow-hidden">
             <div className="relative group h-full w-full">
               <Image
-                src="/assets/images/homepage/blog/blog-1.avif"
+                src="/assets/images/homepage/blog/blog-1.jpg"
                 alt="blog-1"
                 className="object-cover group-hover:scale-110 transition duration-500 ease-in-out"
                 fill
@@ -404,7 +404,7 @@ export default function Home() {
           <div className=" h-[270px] lg:col-span-2 rounded-lg overflow-hidden">
             <div className="relative group  h-full w-full">
               <Image
-                src="/assets/images/homepage/blog/blog-3.avif"
+                src="/assets/images/homepage/blog/blog-3.jpg"
                 alt="blog-2"
                 className="object-fill group-hover:scale-110 transition duration-500 ease-in-out"
                 fill
@@ -435,7 +435,7 @@ export default function Home() {
           <div className=" h-[270px]  rounded-lg overflow-hidden">
             <div className="relative group h-full w-full">
               <Image
-                src="/assets/images/homepage/blog/blog-2.avif"
+                src="/assets/images/homepage/blog/blog-2.jpg"
                 alt="blog-3"
                 className="object-cover group-hover:scale-110 transition duration-500 ease-in-out"
                 fill
@@ -466,7 +466,7 @@ export default function Home() {
           <div className=" h-[270px]  rounded-lg overflow-hidden">
             <div className="relative group  h-full w-full">
               <Image
-                src="/assets/images/homepage/blog/blog-4.avif"
+                src="/assets/images/homepage/blog/blog-4.jpg"
                 alt="blog-4"
                 className="object-cover group-hover:scale-110 transition duration-500 ease-in-out"
                 fill
