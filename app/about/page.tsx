@@ -31,7 +31,7 @@ export default function Aboutpage() {
       <div className="lg:max-w-[1180px] mx-auto px-4">
         <div className="  mx-auto flex flex-col items-center justify-center gap-5 my-10 rounded-xl ">
           <Image
-            src="/assets/images/about/topImage.jpg"
+            src="/assets/images/about/mayor.jpg"
             alt="About Us"
             width={1180}
             height={500}

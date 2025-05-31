@@ -1,9 +1,12 @@
-"use client";
-import React, { useEffect } from "react";
 import Link from "next/link";
 import Ribbon from "@/components/Ribbon";
 import Image from "next/image";
+import { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+  title: "Payment | SRIYOG Consulting",
+};
 const Payment = () => {
   return (
     <>

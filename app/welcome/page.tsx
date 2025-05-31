@@ -44,23 +44,44 @@ const Welcome = () => {
               solutions are tailored to help organizations optimize their
               digital infrastructure, enhance productivity, and drive business
               success.
+              <br />
+              <br />
+              Technology has been connecting everyone from one corner of the
+              globe to another corner in the very fastest way. Businesses and
+              almost all organisations need to have their proper digital
+              presence in a very effective way and their main motive is to beat
+              the competition and stay ahead.
+              <br />
+              <br />
+              My journey into the realm of technology began over a decade ago
+              when I founded my first IT startup in 2007 A.D. as PRACAS Infosys
+              in Biratnagar. Recognizing the potential of technology to bridge
+              gaps and catalyze progress, I always tried to embark on a mission
+              to leverage digital solutions to address local challenges and
+              foster economic development.
+              <br /><br />
               <div className="grid grid-cols-1 sm:grid-cols-5 place-content-between gap-8 place-items-center mb-3">
                 <p className="col-span-3">
-                  Technology has been connecting everyone from one corner of the
-                  globe to another corner in the very fastest way. Businesses
-                  and almost all organisations need to have their proper digital
-                  presence in a very effective way and their main motive is to
-                  beat the competition and stay ahead.
+                  My vision was not merely to create successful businesses but
+                  to effect meaningful change in my community where I have
+                  contributed in more than 500 clients in my entire career
+                  spreading 15 countries in the world, developing their website,
+                  optimizing search results, developing mobile applications,
+                  managing social media, growing their digital presence,
+                  providing them a very reliable corporate business email
+                  solutions and also providing dedicated Information Technology
+                  Consulting Solution.
                   <br />
                   <br />
-                  My journey into the realm of technology began over a decade
-                  ago when I founded my first IT startup in 2007 A.D. as PRACAS
-                  Infosys in Biratnagar. Recognizing the potential of technology
-                  to bridge gaps and catalyze progress, I always tried to embark
-                  on a mission to leverage digital solutions to address local
-                  challenges and foster economic development.
+                  Having good practices of Information Technology can grow the
+                  business faster, gives a great digital presence, saves
+                  expensive man hours, optimize workforce, manages data, its
+                  privacy and also saves reputation of any organisation for any
+                  forthcoming digital disasters like data loss, hacking,
+                  identity theft, ransomware attacks and other various issues
+                  which we may face anytime, anywhere.
                 </p>
-                <div className=" h-68 relative  w-full col-span-2">
+                <div className=" h-76 relative  w-full col-span-2">
                   <Image
                     src="/assets/images/about/pracas_large.png"
                     alt="About Us"
@@ -69,23 +90,6 @@ const Welcome = () => {
                   />
                 </div>
               </div>
-              My vision was not merely to create successful businesses but to
-              effect meaningful change in my community where I have contributed
-              in more than 500 clients in my entire career spreading 15
-              countries in the world, developing their website, optimizing
-              search results, developing mobile applications, managing social
-              media, growing their digital presence, providing them a very
-              reliable corporate business email solutions and also providing
-              dedicated Information Technology Consulting Solution.
-              <br />
-              <br />
-              Having good practices of Information Technology can grow the
-              business faster, gives a great digital presence, saves expensive
-              man hours, optimize workforce, manages data, its privacy and also
-              saves reputation of any organisation for any forthcoming digital
-              disasters like data loss, hacking, identity theft, ransomware
-              attacks and other various issues which we may face anytime,
-              anywhere.
             </div>
           </div>
 
