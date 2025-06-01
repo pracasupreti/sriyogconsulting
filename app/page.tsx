@@ -13,13 +13,7 @@ export default function Home() {
   const [selectedEvents, setSelectedEvents] = useState("");
   const [eventsOpen, setEventsOpen] = useState(false);
   const [getImage, setGetImage] = useState("");
-  const [visible, setVisible] = useState(true);
   const getdate = new Date().toISOString().slice(5, 10);
-
-  const handleClose = () => {
-    setVisible(false);
-    setTimeout(() => setOverlay(false), 500);
-  };
 
   const events = [
     {
@@ -43,11 +37,10 @@ export default function Home() {
 
   useEffect(() => {
     findImage();
-    if (eventsOpen) {
+    if (overlay) {
       const timer = setTimeout(() => {
         setOverlay(false);
       }, 5000);
-
       return () => clearTimeout(timer);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -222,11 +215,10 @@ export default function Home() {
       {overlay ? (
         <section
           className={`w-full h-full bg-gray-200 fixed top-0 left-0 z-50 flex justify-center items-center
-      transition-opacity duration-500 ease-in-out ${
-        visible ? "opacity-100" : "opacity-90"
+      transition-opacity duration-500 ease-in-out 
       }`}
         >
-          <div className="relative bg-white w-[90%] md:w-[80%] lg:w-[50%] md:h-[90%] h-[60%] rounded-md p-8">
+          <div className="relative bg-white w-[90%] md:w-[85%] lg:w-[50%] md:h-[90%] h-[60%] rounded-md p-8">
             <div className="relative h-full w-full">
               {getImage && (
                 <Image
@@ -239,7 +231,7 @@ export default function Home() {
             </div>
             <button
               className="absolute top-[-10px] z-10 right-[-15px] px-3 py-1 text-xl hover:cursor-pointer rounded-sm border font-semibold bg-red-500 hover:bg-red-700 text-white transition-all duration-300 ease-in-out"
-              onClick={handleClose}
+              onClick={() => setOverlay(false)}
             >
               X
             </button>
@@ -441,9 +433,7 @@ export default function Home() {
                       <li
                         key={option}
                         className={`px-4 py-2 cursor-pointer hover:bg-gray-100 ${
-                          selectedCategories === option
-                            ? "bg-gray-200 "
-                            : ""
+                          selectedCategories === option ? "bg-gray-200 " : ""
                         }`}
                         onClick={() => {
                           setSelectedcategories(option);
@@ -648,9 +638,7 @@ export default function Home() {
                       <li
                         key={option}
                         className={`px-4 py-2 cursor-pointer hover:bg-gray-100 ${
-                          selectedEvents === option
-                            ? "bg-gray-200 "
-                            : ""
+                          selectedEvents === option ? "bg-gray-200 " : ""
                         }`}
                         onClick={() => {
                           setSelectedEvents(option);
