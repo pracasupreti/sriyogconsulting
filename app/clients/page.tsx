@@ -313,7 +313,7 @@ export default function Page() {
               <p className=" mb-2 md:h-24 h-32 ">
                 {item.description.slice(0, 160)}...
               </p>
-              <p className="font-semibold mb-2 mt-12">Services offered</p>
+              <p className="font-semibold mb-2 md:mt-12 max-lg:mb-3">Services offered</p>
               <div className="flex gap-3  flex-wrap">
                 {item.service &&
                   item.service.map((data, idx) => (
