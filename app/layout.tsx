@@ -16,7 +16,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "SRIYOG Consulting | IT Consulting Company in Nepal",
   description:
-    "Digital Professional Marketplace of Skilled Professional. Hire professional based on their skills, location and availability.",
+    "SRIYOG Consulting Pvt. Ltd. is a premier Managed IT Services provider based in Kamalpokhari, Kathmandu, Nepal.",
   keywords: "IT consulting, software development, cloud solutions, Nepal IT company",
   authors: [{ name: "SRIYOG Consulting" }],
   icons: "/assets/images/title/logo.svg",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SRIYOG Consulting | IT Consulting Company in Nepal",
     description:
-      "Digital Professional Marketplace of Skilled Professional. Hire professional based on their skills, location and availability. ",
+      "SRIYOG Consulting Pvt. Ltd. is a premier Managed IT Services provider based in Kamalpokhari, Kathmandu, Nepal.",
     url: "https://www.sriyogconsulting.com",
     siteName: "SRIYOG Consulting",
     images: [
