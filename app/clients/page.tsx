@@ -296,7 +296,7 @@ export default function Page() {
           {clientsData.map((item, idx) => (
             <div
               key={idx + 1}
-              className="relative text-gray-700 border-[#dbdbdb] border-[1.5px] rounded-lg px-4 lg:h-[460px] sm:h-[480px] h-auto  hover:shadow-lg transition duration-300 ease-in-out"
+              className="relative text-gray-700 shadow-[0_.5rem_1rem_rgba(0,0,0,.15)] rounded-lg px-4 lg:h-[460px] sm:h-[480px] h-auto  hover:shadow-lg transition duration-300 ease-in-out"
             >
               <section className=" relative h-48 md:h-32 w-full mb-2 border-b border-[#dbdbdb]">
                 <Image

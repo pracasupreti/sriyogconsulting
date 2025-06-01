@@ -49,7 +49,7 @@ export default function Page() {
         {partner.map((item, idx) => (
           <div
             key={idx + 1}
-            className="relative border px-4    border-[#dbdbdb] rounded-lg  lg:h-[460px] sm:h-[480px] h-[480px]  hover:shadow-lg transition duration-300 ease-in-out"
+            className="relative shadow-[0_.5rem_1rem_rgba(0,0,0,.15)]  px-4  rounded-lg  lg:h-[460px] sm:h-[480px] h-[480px]  hover:shadow-lg transition duration-300 ease-in-out"
           >
             <section className=" relative h-36 w-full   border-b border-[#dbdbdb]">
               <Image
