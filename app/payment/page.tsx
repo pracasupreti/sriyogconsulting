@@ -3,7 +3,6 @@ import Ribbon from "@/components/Ribbon";
 import Image from "next/image";
 import { Metadata } from "next";
 
-
 export const metadata: Metadata = {
   title: "Payment | SRIYOG Consulting",
 };
@@ -35,7 +34,7 @@ const Payment = () => {
                       Account number: 00701017502051
                     </span>
                     <span className="  text-[18px] text-black ">
-                      Branch: Biratnagar
+                      City: Kathmandu
                     </span>
                     <span className="  text-[18px] text-black">
                       SWIFT CODE: NARBNPKA

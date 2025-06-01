@@ -150,20 +150,15 @@ const clientsData = [
   },
   {
     id: 14,
-    title: "General Plastic Industries",
+    title: "CSK Nepal",
     date: " 04 Feb 2013 ",
     service: [
-      <>
-        <Link href="https://generalplasticindustries.com/" target="_blank">
-          Website
-        </Link>
-      </>,
-      "Business eMail",
+      "Digital Marketing",
     ],
     image: "/assets/images/clients/11.png",
     description:
-      "At General Plastic Industries we are committed to helping our customers by providing quality products, so that the customer can stop thinking about wastages and rejections and can focus on building their brand.",
-    path: "https://generalplasticindustries.com/",
+      "Chandra Shiva Khadya Udhyog is 6 decades old organisation, producing edible oil and rice products from Koshi Province Nepal.",
+    
   },
   {
     id: 15,
@@ -287,13 +282,10 @@ export default function Page() {
       <Ribbon name="Our Client's" des="" />
       <section className="lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto mb-[45px]">
         <h1 className="text-[32px] text-[#055D59] font-semibold text-center mb-1">
-          Drive your own revolution with SRIYOG
+          Organizations driving their revolution with SRIYOG Consulting
         </h1>
         <p className="max-w-[800px] mx-auto text-center mb-[45px]">
-          Our open source experts work with your organization to implement a
-          cloud strategy to evolve at a pace that works for you. We believethat
-          sharing ideas and building a strategy together is a better approach
-          for your long-term success than following a prescribed plan.
+          Our IT experts work with your organization to implement a tech strategy to evolve at a pace that works to uplift your organization digitally. We believe that sharing ideas and building a strategy together is a better approach for your long-term success which is packaged in a subscription plan.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-between gap-6">
           {clientsData.map((item, idx) => (
