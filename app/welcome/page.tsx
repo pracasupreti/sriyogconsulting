@@ -8,6 +8,7 @@ import Ribbon from "@/components/Ribbon";
 
 export const metadata: Metadata = {
   title: "Welcome | SRIYOG Consulting",
+  
 };
 
 const Welcome = () => {

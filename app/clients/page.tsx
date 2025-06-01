@@ -143,7 +143,7 @@ const clientsData = [
     date: " 04 Feb 2013 ",
     service: ["Business eMail"],
     image: "/assets/images/clients/10.png",
-    title: "Forum for Rural Women Ardency Development",
+    title: "FORWAD",
     description:
       "By integrating social development with economic support, we are expanding our reach to uplift livelihoods, protect biodiversity, promote agriculture, and extend humanitarian assistance to communities across the country.",
     path: "https://forward.org.np/",

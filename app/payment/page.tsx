@@ -41,7 +41,7 @@ const Payment = () => {
                     </span>
                     <span className="  text-[18px] text-black">
                       URL:{" "}
-                      <Link href="" target="blank" className="underline ">
+                      <Link href="https://www.nabilbank.com" target="blank" className="underline ">
                         www.nabilbank.com
                       </Link>
                     </span>
@@ -55,7 +55,7 @@ const Payment = () => {
               {/* CONTACT FORM CONTENT */}
               <div className="flex basis-[35%] border-[1px] w-full border-black rounded-2xl overflow-hidden ">
                 <Image
-                  className="w-full h-full"
+                  className="w-full"
                   width={300}
                   height={300}
                   src="/assets/images/payment/qr.jpeg"

@@ -18,11 +18,11 @@ export default function Home() {
   const events = [
     {
       date: "05-29",
-      img: "/assets/images/roadblock/Nepal-Republic-Day.jpg",
+      img: "/assets/images/roadblock/05-29.jpg",
     },
     {
       date: "03-08",
-      img: "/assets/images/roadblock/Happy-International-Womens-Day.jpg",
+      img: "/assets/images/roadblock/03-08.jpg",
     },
   ];
 
@@ -426,7 +426,6 @@ export default function Home() {
                     {[
                       "Digitalization",
                       "Growth",
-                      "Integrated Logistics",
                       "Resilience",
                       "Sustainability",
                     ].map((option) => (
@@ -578,10 +577,10 @@ export default function Home() {
             </div>
             <div className="w-full text-center">
               <Link
-                href="/"
+                href="/meeting"
                 className="text-[#4b4b4b] block text-center max-md:w-full md:w-[15%] mx-auto px-6 font-semibold rounded-lg hover:bg-[#055D59] border p-2 h-10 hover:text-white transition-all duration-300 ease-in-out"
               >
-                View All
+                Book a Meeting
               </Link>
             </div>
           </section>
@@ -712,14 +711,11 @@ export default function Home() {
               <p className="text-gray-700">
                 To accelerate digital transformation, we offer a skilled pool of
                 professionals specializing in frontend development, programming,
-                QA, and UI/UX design. Whether you need freelance experts,
-                short-term support, or a dedicated offshore team, our flexible
-                models are designed to meet your project goals efficiently and
-                cost-effectively.
+                QA, and UI/UX design.
               </p>
             </div>
             <Link
-              href="/"
+              href="/internship"
               className="text-[#4b4b4b] md:col-span-2 max-md:mt-3 text-center w-full font-semibold rounded-lg hover:bg-[#055D59] border p-2 h-10 hover:text-white transition-all duration-300 ease-in-out"
             >
               Apply Now

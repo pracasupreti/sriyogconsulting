@@ -29,11 +29,11 @@ const Feedback = () => {
           </div>
 
           <p className="text-justify">
-            Use this form to request new features or suggest modification to
+            Use this form to request new features or suggest modifications to
             existing features. Your use of this form is conditioned upon your
             reading and agreeing to the terms and conditions below. You can also
-            use this forms to report suspected bugs in sriyog.com. We normally
-            do not send personal replies to feature requests or bug reports . We
+            use this form to report suspected bugs in sriyog.com. We normally
+            do not send personal replies to feature requests or bug reports. We
             do, however, read each and every message. We use the information to
             improve our products and services. Your comments, suggestions, and
             ideas for improvements are very important to us.
