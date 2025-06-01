@@ -28,14 +28,14 @@ const Payment = () => {
                   </div>
                   <div className="flex flex-col pb-8 gap-3 sm:mb-0">
                     <span className=" inline-block text-[18px] text-black">
-                      Account name: <br />{" "}
+                      Account Name: <br />{" "}
                       <strong> Sriyog Consulting Pvt Ltd.</strong>
                     </span>
                     <span className="  text-[18px] text-black">
                       Account number: 00701017502051
                     </span>
                     <span className="  text-[18px] text-black ">
-                      Branch: Biratnagar
+                      Branch: Kathmandu
                     </span>
                     <span className="  text-[18px] text-black">
                       SWIFT CODE: NARBNPKA

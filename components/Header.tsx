@@ -19,7 +19,7 @@ export default function Header() {
                   SRIYOG App is having its own homepage and a new company.
                 </i>
                 <Link
-                  href=""
+                  href="https://sriyog.app/"
                   className="py-[3px] px-1 mx-2 hidden md:block rounded-lg border-2 italic font-semibold"
                   target="_blank"
                 >

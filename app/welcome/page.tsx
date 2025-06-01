@@ -109,7 +109,7 @@ const Welcome = () => {
               <br />
               <Link href="https://t.me/sriyog">p@sriyog.com</Link>
               <div className="flex gap-2 mt-1 mb-4">
-                <Link href="https://t.me/sriyog">
+                <Link href=" https://t.me/pracasupreti">
                   <FaTelegram className="text-[20px]  text-black hover:text-black inline-block" />
                 </Link>
                 <Link href="https://x.com/pracas" target="_blank">

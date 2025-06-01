@@ -29,15 +29,19 @@ export default function Page() {
   ];
   return (
     <>
-      <Ribbon name="Partner Organizations" des="" />
+      <Ribbon name="Partners" des="" />
       <section className="w-[1180px] mx-auto max-lg:container max-lg:px-3 text-center mb-[45px]">
-        <h1 className="text-[32px] text-[#0D5D59] font-semibold mb-3">
+        {/* <h1 className="text-[32px] text-[#0D5D59] font-semibold mb-3">
           Drive your own revolution with SRIYOG
-        </h1>
-        <p className="max-w-[800px] mx-auto">
-          arties. Instead of imposing a one-size-fits-all plan, we build a
-          flexible roadmap together—empowering your organization to scale at its
-          own pace while we grow alongside you through meaningful collaboration.
+        </h1> */}
+        <p className=" mx-auto">
+          SRIYOG Consulting is partnering with various organizations and service
+          providers to uplift the use of technology in digital era.
+          <br />
+          Few of are our esteemed partners.
+          <br />
+          For any partnership opportunities, we welcome your emails at&nbsp;
+          <Link href="mailto:partners@sriyog.com">partners@sriyog.com</Link>
         </p>
       </section>
 
@@ -59,7 +63,7 @@ export default function Page() {
             <p className="text-gray-500 mb-2   h-[200px]  mt-12 ">{item.des}</p>
             <Link
               target="_blank"
-              className="absolute my-2 bottom-0 rounded-md border-[#dbdbdb] text-gray-500 font-medium border px-4 py-2 hover:bg-[#055d59] hover:text-white transition-all duration-300 ease-in-out"
+              className="absolute mb-6 bottom-0 rounded-md border-[#dbdbdb] text-gray-500 font-medium border px-4 py-2 hover:bg-[#055d59] hover:text-white transition-all duration-300 ease-in-out"
               href={item.path}
             >
               Browse More

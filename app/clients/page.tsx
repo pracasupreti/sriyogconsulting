@@ -284,16 +284,17 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <Ribbon name="Our Client's" des="" />
+      <Ribbon name="Our Clients" des="" />
       <section className="lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto mb-[45px]">
         <h1 className="text-[32px] text-[#055D59] font-semibold text-center mb-1">
-          Drive your own revolution with SRIYOG
+          Organizations driving their revolution with SRIYOG Consulting
         </h1>
         <p className="max-w-[800px] mx-auto text-center mb-[45px]">
-          Our open source experts work with your organization to implement a
-          cloud strategy to evolve at a pace that works for you. We believethat
-          sharing ideas and building a strategy together is a better approach
-          for your long-term success than following a prescribed plan.
+          Our IT experts work with your organization to implement a tech
+          strategy to evolve at a pace that works to uplift your organization
+          digitally. We believe that sharing ideas and building a strategy
+          together is a better approach for your long-term success which is
+          packaged in a subscription plan.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-between gap-6">
           {clientsData.map((item, idx) => (
@@ -301,7 +302,7 @@ export default function Page() {
               key={idx + 1}
               className="relative text-gray-700 border-[#dbdbdb] border-[1.5px] rounded-lg px-4 lg:h-[460px] sm:h-[480px] h-auto  hover:shadow-lg transition duration-300 ease-in-out"
             >
-              <section className=" relative h-32 w-full mb-2 border-b border-[#dbdbdb]">
+              <section className=" relative h-48 md:h-32 w-full mb-2 border-b border-[#dbdbdb]">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -309,12 +310,14 @@ export default function Page() {
                   fill
                 />
               </section>
-              <p className="font-semibold mb-2 md:text-xl h-12">{item.title}</p>
+              <p className="font-semibold mb-2 text-xl h-12">{item.title}</p>
               <p className=" mb-2 md:h-24 h-32 ">
                 {item.description.slice(0, 160)}...
               </p>
-              <p className="font-semibold mb-2 md:mt-12 max-lg:mb-3">Services offered</p>
-              <div className="flex gap-3  flex-wrap">
+              <p className="font-semibold mb-2 md:mt-12 ">
+                Services offered
+              </p>
+              <div className="flex gap-3  flex-wrap max-lg:mb-4">
                 {item.service &&
                   item.service.map((data, idx) => (
                     <div key={idx + 1} className="border px-2 py-1 rounded-md ">

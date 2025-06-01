@@ -6,6 +6,8 @@ import { FaMinus, FaPlus } from "react-icons/fa6";
 type FaqItemProps = {
   title: string;
   content: string;
+  isOpen: boolean;
+  onClick: () => void;
 };
 
 const faq1 = [
@@ -45,8 +47,7 @@ const faq1 = [
   },
   {
     id: 6,
-    question:
-      "Difference between website development & maintenance.",
+    question: "Difference between website development & maintenance.",
     answer:
       "It includes custom web design, responsive UI/UX, hosting, domain registration, and SEO.",
   },
@@ -80,9 +81,9 @@ const faq1 = [
     answer:
       "They offer full-stack development, UI/UX design, database optimization, and secure hosting solutions.",
   },
-  
 ];
-const faq2=[
+
+const faq2 = [
   {
     id: 12,
     question: "Does SRIYOG provide cloud hosting services?",
@@ -151,66 +152,81 @@ const faq2=[
     question: "Can I join a Training?",
     answer: "Yes, we offer various IT training courses.",
   },
-]
-const FaqItem = ({ title, content }: FaqItemProps) => {
-  const [isOpen, setIsOpen] = useState(false);
-  return (
-    <>
-      <section className="group">
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="w-full text-left px-4 py-5 hover:cursor-pointer shadow-xl focus:outline-none flex justify-between items-center"
-        >
-          <div
-            className={`text-[1.1rem]  group-hover:text-[#055d59] ${
-              isOpen ? "text-[#055d59]" : "text-[#4b4b4b]"
-            }`}
-          >
-            {title}
-          </div>
-          <div
-            className={`text-[1.2rem] max-md:font-bold font-semibold group-hover:text-[#055d59] transition-all duration-300 ease-in-out ${
-              isOpen ? "text-[#055d59]" : "text-[#4b4b4b]"
-            }`}
-          >
-            {isOpen ? <FaMinus /> : <FaPlus />}
-          </div>
-        </button>
+];
 
+const FaqItem = ({ title, content, isOpen, onClick }: FaqItemProps) => {
+  return (
+    <section className="group">
+      <button
+        onClick={onClick}
+        className="w-full text-left px-4 py-5 hover:cursor-pointer bg-[#f8f8f8] mb-3 rounded-sm focus:outline-none flex justify-between items-center"
+      >
         <div
-          className={`overflow-hidden transition-all duration-300 ease-in-out px-4 text-gray-700 text-[1rem] ${
-            isOpen ? "max-h-96 py-6" : "max-h-0 py-0"
+          className={`text-[1.1rem]  group-hover:text-[#055d59]  ${
+            isOpen ? "text-[#055d59]" : "text-[#4b4b4b]"
           }`}
         >
-          {content}
+          {title}
         </div>
-      </section>
-    </>
+        <div
+          className={`text-[1.2rem] max-md:font-bold font-semibold group-hover:text-[#055d59] transition-all duration-300 ease-in-out ${
+            isOpen ? "text-[#055d59]" : "text-[#4b4b4b]"
+          }`}
+        >
+          {isOpen ? <FaMinus /> : <FaPlus />}
+        </div>
+      </button>
+
+      <div
+        className={`overflow-hidden transition-all duration-300 ease-in-out px-4 text-gray-700 text-[1rem] ${
+          isOpen ? "max-h-96 py-6" : "max-h-0 py-0"
+        }`}
+      >
+        {content}
+      </div>
+    </section>
   );
 };
 
 export default function Page() {
-    useEffect(()=>{
-        document.title="FAQ's | SRIYOG Consulting"
-    },[]);
+  const [openItemId, setOpenItemId] = useState<number | null>(null);
+
+  useEffect(() => {
+    document.title = "FAQ's | SRIYOG Consulting";
+  }, []);
+
+  const handleClick = (id: number) => {
+    setOpenItemId((prevId) => (prevId === id ? null : id));
+  };
+
   return (
     <>
       <Ribbon name="Frequently Asked Questions" des="" />
       <section className="lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto mb-[45px] grid grid-cols-1 lg:grid-cols-2 place-content-between gap-4">
-          <div>
-            {faq1.map((item) => (
+        <div>
+          {faq1.map((item) => (
             <span key={item.id}>
-              <FaqItem title={item.question} content={item.answer} />
+              <FaqItem
+                title={item.question}
+                content={item.answer}
+                isOpen={openItemId === item.id}
+                onClick={() => handleClick(item.id)}
+              />
             </span>
           ))}
-          </div>
-          <div>
-            {faq2.map((item) => (
+        </div>
+        <div>
+          {faq2.map((item) => (
             <span key={item.id}>
-              <FaqItem title={item.question} content={item.answer} />
+              <FaqItem
+                title={item.question}
+                content={item.answer}
+                isOpen={openItemId === item.id}
+                onClick={() => handleClick(item.id)}
+              />
             </span>
           ))}
-          </div>
+        </div>
       </section>
     </>
   );

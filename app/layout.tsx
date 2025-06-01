@@ -20,7 +20,6 @@ export const metadata: Metadata = {
   keywords: "IT consulting, software development, cloud solutions, Nepal IT company",
   authors: [{ name: "SRIYOG Consulting" }],
   icons: "/assets/images/title/logo.svg",
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   openGraph: {
     title: "SRIYOG Consulting | IT Consulting Company in Nepal",
