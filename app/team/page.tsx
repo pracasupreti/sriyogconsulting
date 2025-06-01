@@ -64,7 +64,7 @@ export default function Example() {
                   alt="Pracas Upreti"
                   width={200}
                   height={200}
-                  className="mx-auto"
+                  className="mx-auto w-[90%] sm:w-[80%]"
                 />
                 <br />
                 <h2 className="font-bold text-2xl text-center">PRACAS</h2>
@@ -152,7 +152,7 @@ export default function Example() {
                   alt={`Team Member ${index + 1}`}
                   width={180}
                   height={180}
-                  className="rounded-full object-cover w-[180px] h-[180px]"
+                  className="rounded-full object-cover w-[200px] h-[200px]"
                 />
                 <div className="mt-4 text-lg font-semibold text-center font-roboto">
                   {names[index]}
