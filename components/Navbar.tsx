@@ -55,7 +55,7 @@ export default function Navbar() {
               ))}
               <li>
                 <Link
-                  href="/"
+                  href="/quote"
                   className="bg-[#0D5D59] px-3 text-white font-semibold rounded-lg p-2 hover:bg-[#2e5250]"
                 >
                   Request a Quote
@@ -256,7 +256,7 @@ export default function Navbar() {
             ))}
             <li>
               <Link
-                href="/"
+                href="/quote"
                 className="bg-[#0D5D59] px-3 text-white font-semibold rounded-lg p-2 hover:bg-[#2e5250]"
               >
                 Request a Quote
