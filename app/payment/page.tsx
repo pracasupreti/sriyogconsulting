@@ -3,7 +3,6 @@ import Ribbon from "@/components/Ribbon";
 import Image from "next/image";
 import { Metadata } from "next";
 
-
 export const metadata: Metadata = {
   title: "Payment | SRIYOG Consulting",
 };

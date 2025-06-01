@@ -150,20 +150,15 @@ const clientsData = [
   },
   {
     id: 14,
-    title: "General Plastic Industries",
+    title: "CSK Nepal",
     date: " 04 Feb 2013 ",
     service: [
-      <>
-        <Link href="https://generalplasticindustries.com/" target="_blank">
-          Website
-        </Link>
-      </>,
-      "Business eMail",
+      "Digital Marketing",
     ],
     image: "/assets/images/clients/11.png",
     description:
-      "At General Plastic Industries we are committed to helping our customers by providing quality products, so that the customer can stop thinking about wastages and rejections and can focus on building their brand.",
-    path: "https://generalplasticindustries.com/",
+      "Chandra Shiva Khadya Udhyog is 6 decades old organisation, producing edible oil and rice products from Koshi Province Nepal.",
+    
   },
   {
     id: 15,
@@ -287,6 +282,7 @@ export default function Page() {
       <Ribbon name="Our Clients" des="" />
       <section className="lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto mb-[45px]">
         <h1 className="text-[32px] text-[#055D59] font-semibold text-center mb-1">
+          Organizations driving their revolution with SRIYOG Consulting
           Organizations driving their revolution with SRIYOG Consulting
         </h1>
         <p className="max-w-[800px] mx-auto text-center mb-[45px]">
