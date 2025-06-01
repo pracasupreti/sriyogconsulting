@@ -221,12 +221,12 @@ export default function Home() {
       {/*overlay */}
       {overlay ? (
         <section
-          className={`w-full h-full bg-[#efefef] fixed top-0 left-0 z-50 flex justify-center items-center
+          className={`w-full h-full bg-gray-200 fixed top-0 left-0 z-50 flex justify-center items-center
       transition-opacity duration-500 ease-in-out ${
         visible ? "opacity-100" : "opacity-90"
       }`}
         >
-          <div className="relative bg-white w-[90%] md:w-[85%] lg:w-[60%] md:h-[90%] h-[60%] rounded-md p-8">
+          <div className="relative bg-white w-[90%] md:w-[80%] lg:w-[50%] md:h-[90%] h-[60%] rounded-md p-8">
             <div className="relative h-full w-full">
               {getImage && (
                 <Image

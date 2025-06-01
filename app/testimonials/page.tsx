@@ -9,13 +9,13 @@ export default function Testimonials() {
   const testimonialsData = [
     {
       id: 1,
-      title: "UI/UX Designer",
+      title: "Front-end Developer",
       desc: [
         "My 3-month internship as a UI/UX Designer at SRIYOG Consulting Pvt. Ltd. was a transformative experience where I worked on real-time projects. I was responsible for designing intuitive user interfaces and improving user experiences through reusable and thoughtful design components. This role helped me understand the importance of visual hierarchy, consistency, and user-centered design.",
         "During the internship, I closely collaborated with developers and gained hands-on experience with tools like Figma. This not only enhanced my ability to design high-fidelity prototypes but also helped bridge the gap between design and development. It was a valuable opportunity to understand how a well-structured design system streamlines the development process.",
         "More than technical skills, the internship helped me grow personally and professionally. I significantly improved my communication, teamwork, and collaboration in a mentorship-driven environment. I am genuinely grateful for the guidance and trust provided by the team at SRIYOG, which laid a strong foundation for my journey as a designer.",
       ],
-      name: "Kritika Ghimire",
+      name: "Salina Bastola",
       stack: "Project Manager",
       image: "/assets/images/testimonials/1.png",
     },
