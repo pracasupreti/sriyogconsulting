@@ -112,9 +112,8 @@ const page = () => {
               className=" w-full h-[600px] rounded-xl shadow-xl"
               src="https://www.youtube.com/embed/ctzTleg6j1c"
               title="SRIYOG Video"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen=""
+              allowFullScreen
             ></iframe>
           </div>
         </div>
