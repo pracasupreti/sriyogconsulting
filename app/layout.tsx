@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "SRIYOG Consulting | IT Consulting Company in Nepal",
     description:
       "Discover digital innovation with SRIYOG Consulting – your trusted IT partner in Nepal.",
-    images: ["https://www.sriyogconsulting.com/assets/images/og-image.jpg"],
+    images: ["https://www.sriyog.com/assets/images/home.jpg"],
     creator: "@sriyog", 
   },
 };
