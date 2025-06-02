@@ -1,6 +1,6 @@
 import Ribbon from "@/components/Ribbon";
 import Image from "next/image";
-
+// import Link from "next/link";
 export default function Consulting() {
   const consulting = [
     {
@@ -104,6 +104,7 @@ export default function Consulting() {
                   {data.title}
                 </h5>
                 <p className=" text-justify text-gray-700">{data.desc}</p>
+                {/* <Link href={`/consulting/${data.title.split(" ").join("-")}`}>Read More</Link> */}
               </div>
             </div>
           ))}
