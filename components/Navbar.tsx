@@ -42,6 +42,8 @@ export default function Navbar() {
               {navItems.map((item, idx) => (
                 <li key={idx}>
                   <Link
+                  prefetch={true}
+                  scroll={true}
                     href={item.path}
                     className={`py-2 px-2 font-bold transition duration-300 ease-in-out ${
                       pathname === item.path
@@ -55,6 +57,7 @@ export default function Navbar() {
               ))}
               <li>
                 <Link
+                 prefetch={true}
                   href="/quote"
                   className="bg-[#0D5D59] px-3 text-white font-semibold rounded-lg p-2 hover:bg-[#2e5250]"
                 >
@@ -242,6 +245,7 @@ export default function Navbar() {
             {navItems.map((item, idx) => (
               <li key={idx}>
                 <Link
+                 prefetch={true}
                   href={item.path}
                   className={`font-semibold ${
                     pathname === item.path
@@ -257,6 +261,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/quote"
+                 prefetch={true}
                 className="bg-[#0D5D59] px-3 text-white font-semibold rounded-lg p-2 hover:bg-[#2e5250]"
               >
                 Request a Quote

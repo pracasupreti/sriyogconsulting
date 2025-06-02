@@ -14,34 +14,34 @@ export default function Footer() {
                 {
                   label: (
                     <>
-                      <Link href="/welcome">Welcome</Link>
+                      <Link  prefetch={true} href="/welcome">Welcome</Link>
                     </>
                   ),
                 },
                 {
                   label: (
                     <>
-                      <Link href="/faq">FAQs</Link>
+                      <Link  prefetch={true} href="/faq">FAQs</Link>
                     </>
                   ),
                 },
                 {
                   label: (
                     <>
-                      <Link href="/vmgo">Vision & Mission</Link>
+                      <Link  prefetch={true} href="/vmgo">Vision & Mission</Link>
                     </>
                   ),
                 },
                 {
                   label: (
                     <>
-                      <Link href="/media">Media Coverage</Link>
+                      <Link  prefetch={true} href="/media">Media Coverage</Link>
                     </>
                   ),
                 },
                 {
                   label: (
-                    <Link href="/career">
+                    <Link  prefetch={true} href="/career">
                       Career&nbsp;
                       <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
                         We&apos;re Hiring
@@ -54,35 +54,35 @@ export default function Footer() {
                 {
                   label: (
                     <>
-                      <Link href="/timeline">Timeline</Link>
+                      <Link  prefetch={true} href="/timeline">Timeline</Link>
                     </>
                   ),
                 },
                 {
                   label: (
                     <>
-                      <Link href="/feedback">Feedback</Link>
+                      <Link  prefetch={true} href="/feedback">Feedback</Link>
                     </>
                   ),
                 },
                 {
                   label: (
                     <>
-                      <Link href="/pitch">Pitch Deck</Link>
+                      <Link  prefetch={true} href="/pitch">Pitch Deck</Link>
                     </>
                   ),
                 },
                 {
                   label: (
                     <>
-                      <Link href="/internship">Internship</Link>
+                      <Link  prefetch={true} href="/internship">Internship</Link>
                     </>
                   ),
                 },
                 {
                   label: (
                     <>
-                      <Link href="/testimonials">Testimonials</Link>
+                      <Link  prefetch={true} href="/testimonials">Testimonials</Link>
                     </>
                   ),
                 },
@@ -90,7 +90,7 @@ export default function Footer() {
               [
                 {
                   label: (
-                    <Link href="https://sriyog.app/" target="_blank">
+                    <Link  prefetch={true} href="https://sriyog.app/" target="_blank">
                       SRIYOG App&nbsp;
                       <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
                         New
@@ -101,14 +101,14 @@ export default function Footer() {
                 {
                   label: (
                     <>
-                      <Link href="/fonts">JDR Fonts</Link>
+                      <Link  prefetch={true} href="/fonts">JDR Fonts</Link>
                     </>
                   ),
                 },
                 {
                   label: (
                     <>
-                      <Link href="/certificates">Certificates</Link>
+                      <Link  prefetch={true} href="/certificates">Certificates</Link>
                     </>
                   ),
                 },
@@ -116,14 +116,14 @@ export default function Footer() {
                 {
                   label: (
                     <>
-                      <Link href="/payment">Payment Details</Link>
+                      <Link  prefetch={true} href="/payment">Payment Details</Link>
                     </>
                   ),
                 },
                 {
                   label: (
                     <>
-                      <Link href="/partners">Partners</Link>
+                      <Link  prefetch={true} href="/partners">Partners</Link>
                     </>
                   ),
                 },
@@ -132,28 +132,28 @@ export default function Footer() {
                 {
                   label: (
                     <>
-                      <Link href="/privacy">Privacy Policy</Link>
+                      <Link  prefetch={true} href="/privacy">Privacy Policy</Link>
                     </>
                   ),
                 },
                 {
                   label: (
                     <>
-                      <Link href="/tos">Terms of Services</Link>
+                      <Link  prefetch={true} href="/tos">Terms of Services</Link>
                     </>
                   ),
                 },
                 {
                   label: (
                     <>
-                      <Link href="/disclaimer">Disclaimer</Link>
+                      <Link  prefetch={true} href="/disclaimer">Disclaimer</Link>
                     </>
                   ),
                 },
                 {
                   label: (
                     <>
-                      <Link href="https://www.xml-sitemaps.com/download/sriyog.com-2289d4ed/sitemap.xml?view=1" target="_blank">
+                      <Link  prefetch={true} href="https://www.xml-sitemaps.com/download/sriyog.com-2289d4ed/sitemap.xml?view=1" target="_blank">
                         Sitemap
                       </Link>
                     </>
@@ -162,7 +162,7 @@ export default function Footer() {
                 {
                   label: (
                     <>
-                      <Link href="/tutorials">Tutorials</Link>
+                      <Link  prefetch={true} href="/tutorials">Tutorials</Link>
                     </>
                   ),
                 },
@@ -224,11 +224,11 @@ export default function Footer() {
                   alt="email"
                 />
               </div>
-              <Link href="mailto:consulting@sriyog.com">
+              <Link  prefetch={true} href="mailto:consulting@sriyog.com">
                 consulting@sriyog.com
               </Link>
             </div>
-            <Link
+            <Link  prefetch={true}
               href="/quote"
               className="block mb-4 bg-[#0D5D59] hover:bg-[#2e5250] text-white text-center font-semibold py-2 rounded-lg transition"
             >
@@ -255,7 +255,7 @@ export default function Footer() {
               All Rights Reserved. © 2018-2025 SRIYOG Consulting Pvt. Ltd.
             </p>
             <div className="flex max-md:w-full max-md:justify-center gap-3">
-              <Link href="https://bit.ly/sriyog" target="_blank">
+              <Link  prefetch={true} href="https://bit.ly/sriyog" target="_blank">
                 <div className="relative md:h-[50px] h-[60px] w-[130px] md:w-[100px]">
                   <Image
                     src="/assets/images/footer/google-play.svg"
@@ -266,7 +266,7 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <Link href="https://bit.ly/sriyogios" target="_blank">
+              <Link  prefetch={true} href="https://bit.ly/sriyogios" target="_blank">
                 <div className="relative md:h-[50px] h-[60px] w-[130px] md:w-[100px]">
                   <Image
                     src="/assets/images/footer/app-store.svg"
@@ -279,7 +279,7 @@ export default function Footer() {
               </Link>
             </div>
             <div className="flex max-md:w-full max-md:justify-center max-md:items-center gap-3">
-              <Link
+              <Link  prefetch={true}
                 href="https://www.facebook.com/sriyogdotcom"
                 target="_blank"
               >
@@ -293,7 +293,7 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <Link href="https://t.me/sriyog" target="_blank">
+              <Link  prefetch={true} href="https://t.me/sriyog" target="_blank">
                 <div className="relative h-[20px] w-[20px]">
                   <Image
                     src="/assets/images/footer/telegram.svg"
@@ -304,7 +304,7 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <Link
+              <Link  prefetch={true}
                 href="https://www.linkedin.com/company/sriyog-consulting/"
                 target="_blank"
               >
@@ -318,7 +318,7 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <Link
+              <Link  prefetch={true}
                 href="https://www.youtube.com/@sriyogdotcom8535"
                 target="_blank"
               >

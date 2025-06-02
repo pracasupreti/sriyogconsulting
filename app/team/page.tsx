@@ -54,7 +54,6 @@ export default function Example() {
   return (
     <>
       <Ribbon name="Team" des="" />
-
       <section className="">
         {/*About Pracas */}
         <div className="max-w-[1180px] max-lg:container max-lg:px-3 flex justify-center items-center  mx-auto   ">

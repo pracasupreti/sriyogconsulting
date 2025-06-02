@@ -286,7 +286,7 @@ export default function Home() {
           {/*book-an-appoinment*/}
           <section className="container hidden max-md:block px-3 my-3">
             <div className="bg-white w-full rounded-lg p-6 space-y-3 border border-[#dbdbdb]">
-              <p className="font-semibold pb-2 border-b-2 border-[#dbdbdb] text-[#4b4b4b] text-2xl ">
+              <p className="font-semibold pb-2 border-b-2 border-[#055d59] text-[#4b4b4b] text-2xl ">
                 Book a Meeting
               </p>
               <p>
