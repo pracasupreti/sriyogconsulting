@@ -65,7 +65,7 @@ export default function Footer() {
                 fill
                 priority
                 className="object-contain"
-                alt="logo"
+                alt="SRIYOG Consulting Logo"
               />
             </div>
             <div className="flex items-start gap-2">

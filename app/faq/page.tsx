@@ -25,7 +25,7 @@ const faq1 = [
     id: 2,
     question: "Is SRIYOG App have a new homepage?",
     answer:
-      "Yes, SRIYOG App is now an independent company. <a href="https://sriyog.app" target="_blank">Visit SRIYOG App</a>.",
+      "Yes, SRIYOG App is now an independent company.",
   },
   {
     id: 3,
