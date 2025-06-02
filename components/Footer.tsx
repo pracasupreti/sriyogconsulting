@@ -35,19 +35,7 @@ export default function Footer() {
                 { label: "Testimonials", path: "/testimonials" },
               ],
               [
-                // { label: "SRIYOG App", path: "https://sriyog.app/" target="_blank" },
-                {
-                  label: (
-                    <>
-                      SRIYOG App&nbsp;
-                      <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
-                        Latest Update
-                      </span>
-                    </>
-                  ),
-                  path: "https://sriyog.app/" target="_blank",
-                },
-                
+                { label: "SRIYOG App", path: "https://sriyog.app/" target="_blank" },
                 { label: "JDR Fonts", path: "/fonts" },
                 { label: "Certificates", path: "/certificates" },
                 { label: "Payment Details", path: "/payment" },
