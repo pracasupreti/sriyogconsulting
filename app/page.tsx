@@ -201,12 +201,7 @@ export default function Home() {
       date: " 03 Feb 2025 ",
       category: "News",
     },
-    {
-      img: "/assets/images/homepage/latest/1.jpg",
-      title: "Office relocation to Kamalpokhari",
-      date: " 03 Feb 2025 ",
-      category: "Press releases",
-    },
+
   ];
 
   return (
@@ -266,7 +261,7 @@ export default function Home() {
                 </Link>
               </div>
               <div className="bg-white hidden sm:block rounded-lg p-6 sm:w-[50%] lg:w-[37%] space-y-5">
-                <p className="font-semibold py-2 border-b-2 border-[#dbdbdb] text-[#4b4b4b]">
+                <p className="font-semibold py-2 border-b-2 border-[#055d59] text-[#4b4b4b]">
                   Book a Meeting
                 </p>
                 <p>
@@ -280,7 +275,7 @@ export default function Home() {
                 </p>
                 <Link
                   href="/meeting"
-                  className="border  rounded-lg p-2 hover:bg-[#055D59] font-semibold text-[#4b4b4b] hover:text-white transition-all duration-300 ease-in-out"
+                  className="border-[1.5px] border-[#055d59] rounded-lg p-2 hover:bg-[#055D59] font-semibold text-[#4b4b4b] hover:text-white transition-all duration-300 ease-in-out"
                 >
                   Book a Meeting
                 </Link>
@@ -305,7 +300,7 @@ export default function Home() {
               </p>
               <Link
                 href="/meeting"
-                className="border rounded-lg p-2 hover:bg-[#055D59] font-semibold text-[#4b4b4b] hover:text-white transition-all duration-300 ease-in-out"
+                className="border-[1.5px] border-[#055d59] rounded-lg p-2 hover:bg-[#055D59] font-semibold text-[#4b4b4b] hover:text-white transition-all duration-300 ease-in-out"
               >
                 Book a Meeting
               </Link>
@@ -327,7 +322,7 @@ export default function Home() {
               </p>
               <Link
                 href="/consulting"
-                className="text-[#4b4b4b] lg:w-[15%] md:w-[25%] text-center w-full font-semibold rounded-lg hover:bg-[#055D59] border p-2 h-10 hover:text-white transition-all duration-300 ease-in-out"
+                className="text-[#4b4b4b] lg:w-[15%] md:w-[25%] text-center w-full font-semibold rounded-lg hover:bg-[#055D59] border-[1.5px] border-[#055d59] p-2 h-10 hover:text-white transition-all duration-300 ease-in-out"
               >
                 See all Solutions
               </Link>
@@ -376,7 +371,7 @@ export default function Home() {
                       sizes=""
                     />
                   </div>
-                  <p className="text-center text-lg font-semibold mt-4">
+                  <p className="text-center text-lg font-semibold mt-4 text-[#055d59]">
                     {item.name}
                   </p>
                 </div>
@@ -385,7 +380,9 @@ export default function Home() {
           </section>
 
           {/*Latest-Insights*/}
-          <section className="my-[45px] lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto">
+          <section
+            className="my-[45px] lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto"
+          >
             <p className="md:text-4xl text-3xl font-semibold text-[#055D59] mb-4">
               Latest Insights
             </p>
@@ -395,13 +392,13 @@ export default function Home() {
                 IT strategy and keep you updated on what&apos;s new in the world
                 of digital transformation and technology.
               </p>
-              <div className="relative lg:w-[15%] md:w-[25%] h-10 flex items-center w-full border border-[#dbdbdb] rounded-md">
+              <div className="relative lg:w-[15%] md:w-[25%] h-10 flex items-center w-full border-[1.5px] border-[#055d59] rounded-md">
                 <button
                   onClick={(e) => {
                     e.preventDefault();
                     setCategoriesOpen(!categoriesOpen);
                   }}
-                  className="w-full text-left p-2 flex justify-between items-center"
+                  className="w-full text-left p-2 flex justify-between items-center "
                 >
                   <span className="text-[#4b4b4b]">
                     {selectedCategories || "All Categories"}
@@ -578,7 +575,7 @@ export default function Home() {
             <div className="w-full text-center">
               <Link
                 href="/meeting"
-                className="text-[#4b4b4b] block text-center max-md:w-full md:w-[15%] mx-auto px-6 font-semibold rounded-lg hover:bg-[#055D59] border p-2 h-10 hover:text-white transition-all duration-300 ease-in-out"
+                className="text-[#4b4b4b] block text-center max-md:w-full md:w-[15%] mx-auto px-6 font-semibold rounded-lg hover:bg-[#055D59] border-[1.5px] border-[#055d59] p-2 h-10 hover:text-white transition-all duration-300 ease-in-out"
               >
                 Book a Meeting
               </Link>
@@ -599,7 +596,7 @@ export default function Home() {
                 that are shaping the future of agriculture, employment, tourism,
                 and beyond.
               </p>
-              <div className="relative lg:w-[15%] md:w-[25%] h-10 flex items-center w-full border border-[#dbdbdb] rounded-md">
+              <div className="relative lg:w-[15%] md:w-[25%] h-10 flex items-center w-full border-[1.5px] border-[#055d59] rounded-md">
                 <button
                   onClick={(e) => {
                     e.preventDefault();
@@ -678,7 +675,7 @@ export default function Home() {
           </section>
 
           {/*Internship-opportunity*/}
-          <section className="mt-[75px] mb-[45px] lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto grid grid-cols-1 md:grid-cols-12 place-content-between">
+          <section className="mt-[75px] mb-[45px] lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto grid grid-cols-1 md:grid-cols-12 place-content-between place-items-center">
             <div className="relative hidden md:block max-md:h-[50px] h-[80px] lg:w-full">
               <Image
                 src="/assets/images/homepage/update-img.svg"
@@ -709,12 +706,14 @@ export default function Home() {
                 Offering an internship opportunity
               </p>
               <p className="text-gray-700">
-                SRIYOG Consulting offers internship opportunities for candidates eager to enhance their skills, talent and contrubute in live projects. The internship period in one month ( 96 Hours).
+                SRIYOG Consulting offers internship opportunities for candidates
+                eager to enhance their skills, talent and contrubute in live
+                projects. The internship period in one month ( 96 Hours).
               </p>
             </div>
             <Link
               href="/internship"
-              className="text-[#4b4b4b] md:col-span-2 max-md:mt-3 text-center w-full font-semibold rounded-lg hover:bg-[#055D59] border p-2 h-10 hover:text-white transition-all duration-300 ease-in-out"
+              className="text-[#4b4b4b] md:col-span-2 max-md:mt-3 text-center w-full font-semibold rounded-lg hover:bg-[#055D59] border-[1.5px] border-[#055d59] p-2 h-10 hover:text-white transition-all duration-300 ease-in-out"
             >
               Apply Now
             </Link>

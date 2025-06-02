@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import {  Bellota_Text} from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -7,10 +7,10 @@ import Navbar from "@/components/Navbar";
 import FloatingIcons from "@/components/FloatingIcons";
 import Script from "next/script";
 
-const inter = Inter({
+const anaheim = Bellota_Text({
   variable: "--font-sans",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["300","400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -74,7 +74,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} antialiased`}>
+      <body className={`${anaheim.variable} antialiased`}>
         <Header />
         <Navbar />
         {children}

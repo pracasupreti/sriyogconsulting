@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Ribbon from "@/components/Ribbon";
 import Link from "next/link";
@@ -110,7 +109,7 @@ export default function Example() {
                 <div className="flex  flex-col gap-3">
                   <p>Follow Pracas on social media</p>
                   <div className="flex gap-3 items-center">
-                    <Link href="https://t.me/pracasupreti">
+                    <Link href="https://t.me/pracasupreti" target="_blank">
                       <Image
                         src={"/assets/icons/telegram1.svg"}
                         width={20}
@@ -119,7 +118,7 @@ export default function Example() {
                       />
                     </Link>
 
-                    <Link href="https://x.com/pracas">
+                    <Link href="https://x.com/pracas" target="_blank">
                       <Image
                         src={"/assets/icons/tweeter.svg"}
                         width={20}
@@ -128,7 +127,7 @@ export default function Example() {
                       />
                     </Link>
 
-                    <Link href="https://linkedin.com/in/pracasupreti">
+                    <Link href="https://linkedin.com/in/pracasupreti" target="_blank">
                       <Image
                         src={"/assets/icons/linkedin.svg"}
                         width={20}

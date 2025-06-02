@@ -23,7 +23,7 @@ export default function Navbar() {
   ];
   return (
     <>
-      <nav className="bg-[#d3d3d3] w-full sticky top-0 left-0 shadow-sm z-50">
+      <nav className="bg-white w-full sticky top-0 left-0 shadow-sm z-50">
         <section className=" lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto flex justify-between items-center">
           <Link
             href="/"
@@ -38,12 +38,12 @@ export default function Navbar() {
             />
           </Link>
           <div className="hidden lg:block">
-            <ul className="space-x-3 flex">
+            <ul className="space-x-2 flex">
               {navItems.map((item, idx) => (
                 <li key={idx}>
                   <Link
                     href={item.path}
-                    className={`py-2 px-3 font-semibold transition duration-300 ease-in-out ${
+                    className={`py-2 px-2 font-bold transition duration-300 ease-in-out ${
                       pathname === item.path
                         ? "text-[#0D5D59]"
                         : "text-[#4b4b4b] hover:text-[#0D5D59]"

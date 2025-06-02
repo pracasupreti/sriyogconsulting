@@ -184,7 +184,7 @@ export default function Aboutpage() {
                 <p className="font-bold">PRACAS Upreti</p>
                 <ul className="flex gap-2 items-center">
                   <li>
-                    <Link href="https://t.me/pracasupreti">
+                    <Link href="https://t.me/pracasupreti" target="_blank">
                       <Image
                         src={"/assets/icons/telegram1.svg"}
                         width={20}
@@ -194,7 +194,7 @@ export default function Aboutpage() {
                     </Link>
                   </li>
                   <li>
-                    <Link href=" https://x.com/pracas">
+                    <Link href=" https://x.com/pracas" target="_blank">
                       <Image
                         src={"/assets/icons/tweeter.svg"}
                         width={20}
@@ -204,7 +204,7 @@ export default function Aboutpage() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://linkedin.com/in/pracasupreti">
+                    <Link href="https://linkedin.com/in/pracasupreti" target="_blank">
                       <Image
                         src={"/assets/icons/linkedin.svg"}
                         width={20}

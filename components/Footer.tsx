@@ -11,49 +11,166 @@ export default function Footer() {
           <div className="grid grid-cols-2 pb-4 sm:grid-cols-2 md:grid-cols-4 place-content-between w-full gap-6 text-[#0D5959]  lg:w-[870px]">
             {[
               [
-                { label: "Welcome", path: "/welcome" },
-                { label: "FAQs", path: "/faq" },
-                { label: "Vision & Mission", path: "/vmgo" },
-                { label: "Media Coverage", path: "/media" },
                 {
                   label: (
                     <>
+                      <Link href="/welcome">Welcome</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link href="/faq">FAQs</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link href="/vmgo">Vision & Mission</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link href="/media">Media Coverage</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <Link href="/career">
                       Career&nbsp;
                       <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
                         We&apos;re Hiring
                       </span>
-                    </>
+                    </Link>
                   ),
-                  path: "/career",
                 },
               ],
               [
-                { label: "Timeline", path: "/timeline" },
-                { label: "Feedback", path: "/feedback" },
-                { label: "Pitch Deck", path: "/pitch" },
-                { label: "Internship", path: "/internship" },
-                { label: "Testimonials", path: "/testimonials" },
+                {
+                  label: (
+                    <>
+                      <Link href="/timeline">Timeline</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link href="/feedback">Feedback</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link href="/pitch">Pitch Deck</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link href="/internship">Internship</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link href="/testimonials">Testimonials</Link>
+                    </>
+                  ),
+                },
               ],
               [
-                { label: "SRIYOG App", path: "https://sriyog.app/" },
-                { label: "JDR Fonts", path: "/fonts" },
-                { label: "Certificates", path: "/certificates" },
-                { label: "Payment Details", path: "/payment" },
-                { label: "Partners", path: "/partners" },
+                {
+                  label: (
+                    <Link href="https://sriyog.app/" target="_blank">
+                      SRIYOG App&nbsp;
+                      <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
+                        New
+                      </span>
+                    </Link>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link href="/fonts">JDR Fonts</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link href="/certificates">Certificates</Link>
+                    </>
+                  ),
+                },
+
+                {
+                  label: (
+                    <>
+                      <Link href="/payment">Payment Details</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link href="/partners">Partners</Link>
+                    </>
+                  ),
+                },
               ],
               [
-                { label: "Privacy Policy", path: "/privacy" },
-                { label: "Terms of Services", path: "/tos" },
-                { label: "Disclaimer", path: "/disclaimer" },
-                { label: "Sitemap", path: "/sitemap" },
-                { label: "Tutorials", path: "/tutorials" },
+                {
+                  label: (
+                    <>
+                      <Link href="/privacy">Privacy Policy</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link href="/tos">Terms of Services</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link href="/disclaimer">Disclaimer</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link href="/sitemap" target="_blank">
+                        Sitemap
+                      </Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link href="/tutorials">Tutorials</Link>
+                    </>
+                  ),
+                },
               ],
             ].map((group, index) => (
               <ul key={index} className="space-y-3 ">
                 {group.map((item, idx) => (
-                  <li key={idx}>
-                    <Link href={item.path}>{item.label}</Link>
-                  </li>
+                  <li key={idx + 1}>{item.label}</li>
                 ))}
               </ul>
             ))}
@@ -138,7 +255,7 @@ export default function Footer() {
               All Rights Reserved. © 2018-2025 SRIYOG Consulting Pvt. Ltd.
             </p>
             <div className="flex max-md:w-full max-md:justify-center gap-3">
-              <Link href="https://bit.ly/sriyog">
+              <Link href="https://bit.ly/sriyog" target="_blank">
                 <div className="relative md:h-[50px] h-[60px] w-[130px] md:w-[100px]">
                   <Image
                     src="/assets/images/footer/google-play.svg"
