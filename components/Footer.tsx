@@ -138,7 +138,7 @@ export default function Footer() {
               All Rights Reserved. © 2018-2025 SRIYOG Consulting Pvt. Ltd.
             </p>
             <div className="flex max-md:w-full max-md:justify-center gap-3">
-              <Link href="https://bit.ly/sriyog" target="_blank">
+              <Link href="https://bit.ly/sriyog">
                 <div className="relative md:h-[50px] h-[60px] w-[130px] md:w-[100px]">
                   <Image
                     src="/assets/images/footer/google-play.svg"
