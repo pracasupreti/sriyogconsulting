@@ -15,10 +15,10 @@ export default function Privacy() {
             Effective Date : 1<sup>st</sup>June, 2025
           </p>
           <p className="text-[#333] mb-4 font-Normal leading-6 text-justify">
-            SRIYOG Consulting Pvt. Ltd. (also referred as “SRIYOG”, "SRIYOG COnsulting", “us”, “we”
-            or “our” throughout this policy content) operates the www.SRIYOG.com
+            SRIYOG Consulting Pvt. Ltd. (also referred as &quot;SRIYOG&quot;, &quot;SRIYOG Consulting&quot;, &quot;us&quot;, &quot;we&quot;
+            or &quot;our&quot; throughout this policy content) operates the www.SRIYOG.com
             website and mobile application (hereinafter referred to as the
-            “Service”). Our policies regarding the collection, use, and
+            &quot;Service&quot;). Our policies regarding the collection, use, and
             disclosure of basic personal data while using the service and the
             associated data are described in detail here.
           </p>
