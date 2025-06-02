@@ -326,7 +326,7 @@ export default function Home() {
                 streamline operations and support your business growth.
               </p>
               <Link
-                href="/"
+                href="/consulting"
                 className="text-[#4b4b4b] lg:w-[15%] md:w-[25%] text-center w-full font-semibold rounded-lg hover:bg-[#055D59] border p-2 h-10 hover:text-white transition-all duration-300 ease-in-out"
               >
                 See all Solutions
