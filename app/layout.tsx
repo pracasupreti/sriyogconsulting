@@ -17,7 +17,8 @@ export const metadata: Metadata = {
   title: "SRIYOG Consulting | IT Consulting Company in Nepal",
   description:
     "SRIYOG Consulting Pvt. Ltd. is a premier Managed IT Services provider based in Kamalpokhari, Kathmandu, Nepal.",
-  keywords: "IT consulting, software development, cloud solutions, Nepal IT company",
+  keywords:
+    "IT consulting, software development, cloud solutions, Nepal IT company",
   authors: [{ name: "SRIYOG Consulting" }],
   icons: "/assets/images/title/logo.svg",
   robots: "index, follow",
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
     description:
       "Discover digital innovation with SRIYOG Consulting – your trusted IT partner in Nepal.",
     images: ["https://www.sriyog.com/assets/images/home.jpg"],
-    creator: "@sriyog", 
+    creator: "@sriyog",
   },
 };
 
