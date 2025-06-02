@@ -12,7 +12,7 @@ export default function Privacy() {
       <section className=" mb-[45px] flex justify-center align-middle mt-0 w-full">
         <div className=" bg-white  text-justify w-[1180px] mx-auto max-lg:container max-lg:px-3">
           <p className="text-[17px] mb-4 font-Normal leading-6 text-[#333] text-justify">
-            Effective Date : 1<sup>st</sup>June 2025
+            Effective Date : 1<sup>st</sup>June, 2025
           </p>
           <p className="text-[#333] mb-4 font-Normal leading-6 text-justify">
             SRIYOG Consulting Pvt. Ltd. (also referred as “SRIYOG”, "SRIYOG COnsulting", “us”, “we”
