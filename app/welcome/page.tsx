@@ -108,16 +108,16 @@ const Welcome = () => {
               <br />
               <span className="font-normal">Chief Technology Officer</span>
               <br />
-              <Link href="https://t.me/sriyog">p@sriyog.com</Link>
+              <Link href="https://t.me/sriyog" target="_blank">p@sriyog.com</Link>
               <div className="flex gap-2 mt-1 mb-4">
-                <Link href=" https://t.me/pracasupreti">
+                <Link href=" https://t.me/pracasupreti" target="_blank">
                   <FaTelegram className="text-[20px]  text-black hover:text-black inline-block" />
                 </Link>
                 <Link href="https://x.com/pracas" target="_blank">
                   <FaSquareXTwitter className="text-[20px]  text-black hover:text-black inline-block" />
                 </Link>
 
-                <Link href="https://www.linkedin.com/in/pracasupreti/">
+                <Link href="https://www.linkedin.com/in/pracasupreti/" target="_blank">
                   <FaLinkedin className="text-[20px]  text-black hover:text-black inline-block" />
                 </Link>
               </div>

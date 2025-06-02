@@ -25,13 +25,13 @@ const faq1 = [
     id: 2,
     question: "Is SRIYOG App have a new homepage?",
     answer:
-      "Yes, SRIYOG App is now an independent company and can be browsed from https://sriyog.com/app",
+      "Yes, SRIYOG App is now an independent company.",
   },
   {
     id: 3,
     question: "What industries does SRIYOG serve?",
     answer:
-      "SRIYOG serves a broad range of industries, including healthcare, retail, education, finance, and agriculture.",
+      "SRIYOG serves a broad range of industries, including healthcare, employment and tourism.",
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ const faq1 = [
     id: 6,
     question: "Difference between website development & maintenance.",
     answer:
-      "It includes custom web design, responsive UI/UX, hosting, domain registration, and SEO.",
+      "Website development involves creating a website from scratch, while website maintenance focuses on regularly updating, securing, and optimizing it after launch.",
   },
   {
     id: 7,
@@ -59,7 +59,7 @@ const faq1 = [
   },
   {
     id: 8,
-    question: "What does the database/web server rental service offer?",
+    question: "What does the database/ web server rental service offer?",
     answer:
       "It provides secure server space for hosting websites, databases, and applications.",
   },
@@ -71,15 +71,15 @@ const faq1 = [
   },
   {
     id: 10,
-    question: "What kind of websites does SRIYOG develop?",
+    question: "What kind of websites does SRIYOG Consulting develop?",
     answer:
-      "They build custom, user-friendly websites including e-commerce, CMS, and SaaS applications.",
+      "We build custom, user-friendly websites including e-commerce, CMS, and SaaS applications.",
   },
   {
     id: 11,
     question: "What technologies does SRIYOG use?",
     answer:
-      "They offer full-stack development, UI/UX design, database optimization, and secure hosting solutions.",
+      "We offer full-stack development, UI/UX design, database optimization, and secure cloud solutions.",
   },
 ];
 
@@ -87,13 +87,13 @@ const faq2 = [
   {
     id: 12,
     question: "Does SRIYOG provide cloud hosting services?",
-    answer: "Yes, we provide cloud hosting and domain management.",
+    answer: "Yes, we provide cloud hosting and domain management too.",
   },
   {
     id: 13,
     question: "Is security included in the services?",
     answer:
-      "Yes, SSL certification, security audits, and cyber protection are part of their hosting services.",
+      "Yes, SSL certification, security audits, and cyber protection are part of our cloud services.",
   },
   {
     id: 14,
@@ -126,7 +126,7 @@ const faq2 = [
   },
   {
     id: 19,
-    question: "Why should businesses choose SRIYOG?",
+    question: "Why should businesses choose SRIYOG Consulting?",
     answer:
       "For their industry expertise, customized solutions, scalability, security, and full-spectrum digital services.",
   },
@@ -139,7 +139,7 @@ const faq2 = [
   {
     id: 21,
     question: "How can I apply for an Internship?",
-    answer: "Please check the link https://sriyog.com/internship",
+    answer: "Please check the link <a href='https://sriyogconsulting.com/internship' target='_blank'>Apply Internship</a>.",
   },
   {
     id: 22,
@@ -150,7 +150,7 @@ const faq2 = [
   {
     id: 23,
     question: "Can I join a Training?",
-    answer: "Yes, we offer various IT training courses.",
+    answer: "Yes, we offer various IT training coursesß.",
   },
 ];
 

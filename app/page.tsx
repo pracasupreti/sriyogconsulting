@@ -326,7 +326,7 @@ export default function Home() {
                 streamline operations and support your business growth.
               </p>
               <Link
-                href="/"
+                href="/consulting"
                 className="text-[#4b4b4b] lg:w-[15%] md:w-[25%] text-center w-full font-semibold rounded-lg hover:bg-[#055D59] border p-2 h-10 hover:text-white transition-all duration-300 ease-in-out"
               >
                 See all Solutions
@@ -709,9 +709,7 @@ export default function Home() {
                 Offering an internship opportunity
               </p>
               <p className="text-gray-700">
-                To accelerate digital transformation, we offer a skilled pool of
-                professionals specializing in frontend development, programming,
-                QA, and UI/UX design.
+                SRIYOG Consulting offers internship opportunities for candidates eager to enhance their skills, talent and contrubute in live projects. The internship period in one month ( 96 Hours).
               </p>
             </div>
             <Link

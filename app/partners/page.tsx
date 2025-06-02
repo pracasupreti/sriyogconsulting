@@ -12,7 +12,7 @@ export default function Page() {
       name: "IME-PAY",
       des: "IME Digital Solution Ltd. introduced “IME Pay,” Nepal’s first licensed digital payment platform, under its financial services initiative. Since its launch in 2017, IME Pay has provided a fast, secure, and easy-to-use solution for digital transactions.",
       img: "/assets/images/partners/1.jpg",
-      path: "https://www.imepay.com.np/#/",
+      path: "https://www.imepay.com.np/",
     },
     {
       name: "MAW-Skills-Academy",
