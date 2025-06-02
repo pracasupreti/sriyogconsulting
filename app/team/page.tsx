@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Ribbon from "@/components/Ribbon";
 import Link from "next/link";
+import { Metadata } from "next";
 const images = [
   "/assets/images/team/1.png",
   "/assets/images/team/6.png",
@@ -46,6 +47,9 @@ const roles = [
   "React JS Developer",
 ];
 
+export const metadata: Metadata = {
+  title: "Team | SRIYOG Consulting",
+};
 const pracasImage = "/assets/images/team/pracas.png";
 export default function Example() {
   return (
