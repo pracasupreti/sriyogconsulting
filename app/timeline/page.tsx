@@ -38,8 +38,7 @@ const Timeline = () => {
                   15<sup>th</sup> May, 2025
                 </p>
                 <p className="block my-4 ml-0 mb-[1rem] p-2">
-                  September and October was bleeding phase as our team worked
-                  day and night to make new app on React Native Platform
+                  SRIYOG Consulting Pvt. Ltd. has updated its location from Biratnagar to Kathmandu in the Office of Company Registrar (OCR) on 15<sup>th</sup> May, 2025.
                 </p>
               </div>
             </div>
