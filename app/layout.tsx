@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar";
 import FloatingIcons from "@/components/FloatingIcons";
 import Script from "next/script";
 
-const anaheim = Bellota_Text({
+const bellota_text = Bellota_Text({
   variable: "--font-sans",
   subsets: ["latin"],
   weight: ["300","400", "700"],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "SRIYOG Consulting | IT Consulting Company in Nepal",
     description:
       "SRIYOG Consulting Pvt. Ltd. is a premier Managed IT Services provider based in Kamalpokhari, Kathmandu, Nepal.",
-    url: "https://www.sriyogconsulting.com",
+    url: "https://www.sriyog.com",
     siteName: "SRIYOG Consulting",
     images: [
       {
@@ -74,7 +74,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${anaheim.variable} antialiased`}>
+      <body className={`${bellota_text.variable} antialiased`}>
         <Header />
         <Navbar />
         {children}
