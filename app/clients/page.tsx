@@ -283,7 +283,6 @@ export default function Page() {
       <section className="lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto mb-[45px]">
         <h1 className="text-[32px] text-[#055D59] font-semibold text-center mb-1">
           Organizations driving their revolution with SRIYOG Consulting
-          Organizations driving their revolution with SRIYOG Consulting
         </h1>
         <p className="max-w-[800px] mx-auto text-center mb-[45px]">
           Our IT experts work with your organization to implement a tech
