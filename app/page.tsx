@@ -712,6 +712,8 @@ export default function Home() {
                 To accelerate digital transformation, we offer a skilled pool of
                 professionals specializing in frontend development, programming,
                 QA, and UI/UX design.
+
+                SRIYOG Consulting offers internship opportunities for candidates eager to enhance their skills, talent and contrubute in live projects. The internship period in one month ( 96 Hours).
               </p>
             </div>
             <Link
