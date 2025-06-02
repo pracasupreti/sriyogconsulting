@@ -211,7 +211,7 @@ export default function Footer() {
                   alt="phone"
                 />
               </div>
-              <p>+977-9851152774</p>
+              <p>+977-9852025735</p>
             </div>
             <p className="text-sm">Calling Time: 11 AM to 6 PM NPT</p>
             <div className="flex items-center gap-2">

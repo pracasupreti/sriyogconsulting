@@ -47,10 +47,10 @@ export default function Home() {
   }, []);
   const SampleNextArrow = ({ onClick }: { onClick?: () => void }) => (
     <div
-      className="absolute bottom-[-30px] right-6 z-10 cursor-pointer"
+      className="absolute bottom-[-30px] right-6 max-lg:right-0 z-10 cursor-pointer"
       onClick={onClick}
     >
-      <div className="relative h-[50px] w-[50px]">
+      <div className="relative h-[60px] w-[60px]">
         <Image
           src="/assets/icons/next-arrow.svg"
           alt="next-arrow"
@@ -67,7 +67,7 @@ export default function Home() {
       className="absolute bottom-[-30px] right-20 z-10 max-md:left-0 cursor-pointer"
       onClick={onClick}
     >
-      <div className="relative h-[50px] w-[50px]">
+      <div className="relative h-[60px] w-[60px]">
         <Image
           src="/assets/icons/prev-arrow.svg"
           alt="prev-arrow"
