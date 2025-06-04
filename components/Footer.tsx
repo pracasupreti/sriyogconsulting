@@ -153,7 +153,7 @@ export default function Footer() {
                 {
                   label: (
                     <>
-                      <Link  prefetch={true} href="https://www.xml-sitemaps.com/download/sriyog.com-2289d4ed/sitemap.xml?view=1" target="_blank">
+                      <Link  prefetch={true} href="/sitemap.xml" target="_blank">
                         Sitemap
                       </Link>
                     </>

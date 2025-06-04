@@ -9,8 +9,8 @@ export default function Testimonials() {
   const testimonialsData = [
     {
       id: 1,
-      title: "React JS Developer",
-      desc: "Even though my internship was remote, it was very effective as I received continuous guidance and support throughout the period. Working in a collaborative environment with regular feedback boosted my confidence and problem-solving abilities. I also got a clearer view of how companies work in the tech field, which has motivated me to further pursue a career in web development.",
+      title: "Front-end Developer",
+      desc: "Even though my internship was remote, it was very effective as I received continuous guidance and support throughout the period. Working in a collaborative environment with regular feedback boosted my confidence and I also got a clearer view of how companies work , which has motivated me to further pursue a career in web development.",
       name: "Salina Bastola",
       stack: "Himalayan Darshan College",
       image: "/assets/images/testimonials/1.png",
@@ -34,6 +34,34 @@ export default function Testimonials() {
       image: "/assets/images/testimonials/3.png",
        addr:"Kathmandu"
     },
+    {
+      id: 4,
+      title: "UI/UX Designer",
+      desc: "My 3-month internship as a UI/UX Designer at SRIYOG Consulting Pvt. Ltd. was a transformative experience. I had the opportunity to collaborate with developers, gaining hands-on exposure to tools like Figma and work on real-time projects that involved designing intuitive interfaces and improving user experiences through thoughtful, reusable design components.",
+      name: "Kritika Ghimire",
+      stack: "Ambition College",
+      image: "/assets/images/testimonials/4.png",
+       addr:"Kathmandu"
+    },
+    {
+      id: 5,
+      title: "React Js Developer",
+      desc: "As a React JS Intern at Sriyog Consulting, I had the opportunity to contribute to the development of Kisanpedia.com, a platform focused on agriculture and farmers’ resources.Beyond technical growth, the internship deepened my understanding of user-centered design and the value of teamwork in delivering impactful digital solutions.",
+      name: "Lalita Ghimire",
+      stack: "Butwal Multiple Campus",
+      image: "/assets/images/testimonials/5.png",
+       addr:"Butwal"
+    },
+    {
+      id: 6,
+      title: "Web Developer",
+      desc: "Joining SRIYOG Consulting has been a transformative experience for me. Not only have I enhanced my technical skills, but I have also significantly developed my soft skills. Working with diverse individuals and collaborating on various tasks has taught me the value of teamwork and effective communication. It has been an enriching and rewarding journey.",
+      name: "Madan Golay Tamang",
+      stack: "Lumbini Academic College",
+      image: "/assets/images/testimonials/6.png",
+       addr:"Kathmandu"
+    },
+
   ];
   return (
     <>
