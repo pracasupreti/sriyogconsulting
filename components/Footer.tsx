@@ -153,7 +153,7 @@ export default function Footer() {
                 {
                   label: (
                     <>
-                      <Link  prefetch={true} href="https://www.xml-sitemaps.com/download/sriyog.com-2289d4ed/sitemap.xml?view=1" target="_blank">
+                      <Link  prefetch={true} href="/sitemap.xml" target="_blank">
                         Sitemap
                       </Link>
                     </>
@@ -211,7 +211,7 @@ export default function Footer() {
                   alt="phone"
                 />
               </div>
-              <p>+977-9851152774</p>
+              <p>+977-9852025735</p>
             </div>
             <p className="text-sm">Calling Time: 11 AM to 6 PM NPT</p>
             <div className="flex items-center gap-2">
