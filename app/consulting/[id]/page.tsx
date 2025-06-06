@@ -1,5 +1,4 @@
 import Ribbon from "@/components/Ribbon"
-import Image from "next/image"
 
 export default function ConsultingSiglePage(){
   return(
