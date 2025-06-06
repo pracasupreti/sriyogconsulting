@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import {  Bellota_Text} from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import FloatingIcons from "@/components/FloatingIcons";
 import Script from "next/script";
+import FooterWrapper from "@/components/FooterWrapper";
 
 const bellota_text = Bellota_Text({
   variable: "--font-sans",
@@ -79,7 +79,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <FloatingIcons />
-        <Footer />
+        <FooterWrapper />
       </body>
     </html>
   );
