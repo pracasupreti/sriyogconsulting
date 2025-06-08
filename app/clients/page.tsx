@@ -291,7 +291,7 @@ export default function Page() {
           together is a better approach for your long-term success which is
           packaged in a subscription plan.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-between gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-between gap-10">
           {clientsData.map((item, idx) => (
             <div
               key={idx + 1}
@@ -315,7 +315,7 @@ export default function Page() {
               <div className="flex gap-3  flex-wrap max-lg:mb-4">
                 {item.service &&
                   item.service.map((data, idx) => (
-                    <div key={idx + 1} className="border px-2 py-1 rounded-md ">
+                    <div key={idx + 1} className="border px-2 py-1 rounded-md hover:bg-[#055d59] hover:text-white hover:cursor-pointer transition-all duration-300 ease-in-out">
                       {data}
                     </div>
                   ))}

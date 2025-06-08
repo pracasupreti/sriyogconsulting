@@ -1,5 +1,31 @@
+import { Metadata } from "next";
 import React from "react";
 
+export const metadata: Metadata = {
+  title: "Location | SRIYOG Consulting ",
+
+  openGraph: {
+    title: "Location | SRIYOG Consulting ",
+    url: "https://www.sriyog.com/location",
+    siteName: "SRIYOG Consulting",
+    images: [
+      {
+        url: "https://www.sriyog.com/assets/images/og/location.png",
+        width: 1200,
+        height: 630,
+        alt: "SRIYOG Consulting OG Image",
+      },
+    ],
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+   title: "Location | SRIYOG Consulting ",
+    images: ["https://www.sriyog.com/assets/images/og/location.png"],
+    creator: "@sriyog",
+  },
+};
 const page = () => {
   return (
     <>

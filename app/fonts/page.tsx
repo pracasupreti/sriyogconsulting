@@ -148,7 +148,7 @@ const Fonts = () => {
         {card.map((item, idx) => (
           <div
             key={idx}
-            className=" hover:-translate-y-4 transition duration-500 ease-in-out py-[55px] text-center shadow-md border-[#dbdbdb] border rounded-md"
+            className=" hover:-translate-y-4 transition duration-500 ease-in-out py-[55px] text-center shadow-[0_.5rem_1rem_rgba(0,0,0,.15)]  rounded-md"
           >
             <div className="relative mb-4 h-[180px] w-full">
               <Image

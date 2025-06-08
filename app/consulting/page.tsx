@@ -89,7 +89,7 @@ export default function Consulting() {
           {consulting.map((data, index) => (
             <div
               key={index + 1}
-              className=" border border-[#dbdbdb] rounded-lg hover:-translate-y-4 transition duration-500 ease-in-out shadow-xl"
+              className=" rounded-lg hover:-translate-y-4 transition duration-500 ease-in-out shadow-[0_.5rem_1rem_rgba(0,0,0,.15)]"
             >
               <div className=" p-12">
                 <div className="w-32 h-32 relative mx-auto mb-4">

@@ -45,7 +45,7 @@ export default function Page() {
         </p>
       </section>
 
-      <section className="w-[1180px] mx-auto max-lg:container gap-8 max-lg:px-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-between mb-[45px]">
+      <section className="w-[1180px] mx-auto max-lg:container gap-10 max-lg:px-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-between mb-[45px]">
         {partner.map((item, idx) => (
           <div
             key={idx + 1}
