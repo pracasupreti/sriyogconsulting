@@ -68,7 +68,7 @@ export default function Home() {
       onClick={onClick}
     >
       <div className="relative h-[60px] w-[60px]">
-       <Image
+        <Image
           src="/assets/icons/prev-arrow.svg"
           alt="prev-arrow"
           fill
@@ -201,7 +201,6 @@ export default function Home() {
       date: " 03 Feb 2025 ",
       category: "News",
     },
-
   ];
 
   return (
@@ -380,9 +379,7 @@ export default function Home() {
           </section>
 
           {/*Latest-Insights*/}
-          <section
-            className="my-[45px] lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto"
-          >
+          <section className="my-[45px] lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto">
             <p className="md:text-4xl text-3xl font-semibold text-[#055D59] mb-4">
               Latest Insights
             </p>
@@ -444,10 +441,13 @@ export default function Home() {
               </div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 w-full place-content-between gap-4 mb-6">
-              <Link href="21-stages-of-web-development" className=" lg:h-[560px] h-[270px] lg:col-span-2 lg:row-span-2  rounded-lg overflow-hidden">
+              <Link
+                href="blog/21-stages-of-web-development"
+                className=" lg:h-[560px] h-[270px] lg:col-span-2 lg:row-span-2  rounded-lg overflow-hidden"
+              >
                 <div className="relative group h-full w-full">
                   <Image
-                    src="/assets/images/homepage/blog/blog-1.jpg"
+                    src="/assets/images/homepage/blog/web-development-stages.jpeg"
                     alt="blog-1"
                     className="object-cover group-hover:scale-110 transition duration-500 ease-in-out"
                     fill
@@ -458,7 +458,7 @@ export default function Home() {
                     <section className="flex gap-4 text-sm mb-1">
                       <p>Web Dev</p>
                       <p>
-                        25<sup>th</sup> May, 2025
+                        9<sup>th</sup> March , 2025
                       </p>
                     </section>
                     <p className=" text-2xl translate-y-2 group-hover:translate-y-0  transition-all duration-500 ease-in-out">
@@ -476,10 +476,13 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
-              <Link href="corporate-email" className=" h-[270px] lg:col-span-2 rounded-lg overflow-hidden">
+              <Link
+                href="blog/corporate-email"
+                className=" h-[270px] lg:col-span-2 rounded-lg overflow-hidden"
+              >
                 <div className="relative group  h-full w-full">
                   <Image
-                    src="/assets/images/homepage/blog/blog-3.jpg"
+                    src="/assets/images/homepage/blog/corporate-email.png"
                     alt="blog-2"
                     className="object-fill group-hover:scale-110 transition duration-500 ease-in-out"
                     fill
@@ -490,7 +493,7 @@ export default function Home() {
                     <section className="flex gap-4 mb-1 text-sm">
                       <p>Email</p>
                       <p>
-                        16<sup>th</sup> May, 2025
+                        9<sup>th</sup> March , 2025
                       </p>
                     </section>
                     <p className=" text-2xl translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
@@ -508,10 +511,10 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
-              <div className=" h-[270px]  rounded-lg overflow-hidden">
+              <Link href="blog/things-to-keep-in-business-website" className=" h-[270px]  rounded-lg overflow-hidden">
                 <div className="relative group h-full w-full">
                   <Image
-                    src="/assets/images/homepage/blog/blog-2.jpg"
+                    src="/assets/images/homepage/blog/things-to-keep-in-website.png"
                     alt="blog-3"
                     sizes=""
                     className="object-cover group-hover:scale-110 transition duration-500 ease-in-out"
@@ -520,30 +523,30 @@ export default function Home() {
                   />
                   <div className="absolute p-4 z-10 bottom-0 bg-[linear-gradient(180deg,_transparent,_rgba(0,_0,_0,_0.85)_30%,_rgba(0,_0,_0,_0.85))] text-white w-full">
                     <section className="flex gap-4 mb-1 text-sm">
-                      <p>Agritech</p>
+                      <p>Technology</p>
                       <p>
-                        9<sup>th</sup> May, 2025
+                        9<sup>th</sup> March, 2025
                       </p>
                     </section>
                     <p className=" text-2xl translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
-                      Digital Transformation for Economic Growth
+                      Things to keep in business website
                     </p>
                     <section className="max-h-0 translate-y-3 group-hover:max-h-36 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
                       <p className="my-2 text-sm">
-                        Agriculture remains the backbone of Nepal’s economy,
-                        with the majority of the population relying on farming
-                        for their livelihood.
+                        A website is a collection of related web pages and
+                        digital content that are typically accessible via the
+                        internet.
                       </p>
                       <p className="text-sm">Niranjan Sharma</p>
                       <p className="text-sm">Project Manager</p>
                     </section>
                   </div>
                 </div>
-              </div>
-              <div className=" h-[270px]  rounded-lg overflow-hidden">
+              </Link>
+              <Link href="blog/essential-things-to-keep-in-the-website" className=" h-[270px]  rounded-lg overflow-hidden">
                 <div className="relative group  h-full w-full">
                   <Image
-                    src="/assets/images/homepage/blog/blog-4.jpg"
+                    src="/assets/images/homepage/blog/essesntial-things-to-keep-on-website.png"
                     alt="blog-4"
                     sizes=""
                     className="object-cover group-hover:scale-110 transition duration-500 ease-in-out"
@@ -552,25 +555,26 @@ export default function Home() {
                   />
                   <div className="absolute p-4 z-10 bottom-0 bg-[linear-gradient(180deg,_transparent,_rgba(0,_0,_0,_0.85)_30%,_rgba(0,_0,_0,_0.85))] text-white w-full">
                     <section className="flex gap-4 mb-1">
-                      <p>Security</p>
+                      <p>Web</p>
                       <p>
-                        3<sup>rd</sup> May, 2025
+                        28<sup>th</sup> August, 2019
                       </p>
                     </section>
                     <p className=" text-xl translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
-                      The practice of Data Banking to avoid ransomware
+                      Essential things to Keep in the Website
                     </p>
                     <section className="max-h-0 translate-y-4 group-hover:max-h-36 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
                       <p className="my-2 text-sm">
-                        Learn how IT consulting can enhance your business’s
-                        cybersecurity and protect against evolving threats.
+                        A website is not only the few lines of code or beautiful
+                        layout. Simple websites can be built in few few hours to
+                        few days and months too.
                       </p>
                       <p className="text-sm">Madan Tamang</p>
                       <p className="text-sm">Web Developer</p>
                     </section>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
             <div className="w-full text-center">
               <Link

@@ -162,7 +162,7 @@ export default function WebDevelopmentStages() {
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
           <Image
             src="/assets/images/homepage/blog/front-end.png"
-            alt="website-layout-design"
+            alt="front-end"
             className="object-cover h-full w-full"
             fill
           />
