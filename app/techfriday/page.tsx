@@ -215,7 +215,7 @@ export default function TechFriday() {
                   width={15}
                   height={15}
                   alt="dropdown"
-                  className="rotate-180"
+                  className={`${activeAccordion === item.id?'' : 'rotate-180'}  `}
                 />
               </h3>
               {activeAccordion === item.id && (
@@ -228,9 +228,12 @@ export default function TechFriday() {
 
       {/*Banner */}
 
-      <section className="max-w-[1180px] mx-auto  mb-16 flex flex-col sm:flex-row items-stretch gap-8 bg-gray-100 py-8 px-6 lg:px-0">
+      <section className="max-w-full  mb-16 bg-gray-100 py-8 px-6 lg:px-0">
         {/*Image Container */}
-        <div className="sm:max-w-[40%] h-full w-full border ">
+        <div className="max-w-[1180px] mx-auto   flex flex-col sm:flex-row items-stretch gap-8 bg-gray-100 ">
+          
+
+           <div className="sm:max-w-[40%] h-full w-full border ">
           <Image
             src="/assets/images/vmgo/1.jpg"
             width={500}
@@ -266,6 +269,10 @@ export default function TechFriday() {
             Fugit at sapiente odit consequatur blanditiis quam sint.
           </p>
         </div>
+
+
+        </div>
+       
       </section>
 
       {/*Custom ribbon*/}
@@ -384,7 +391,7 @@ export default function TechFriday() {
       </section>
 
       {/*Subsrcibe and Follow Section */}
-      <section className="max-w-[1180px] mx-auto bg-blue-100/50 border-b border-gray-300 ">
+      <section className="max-w-full mx-auto bg-blue-100/50 border-b border-gray-300 md:px-6  ">
 
         {/*Subsrcibe Section */}
         <div className="px-4 py-4 flex flex-col sm:flex-row justify-between gap-4 w-full max-w-[90%] mx-auto">
@@ -436,7 +443,7 @@ export default function TechFriday() {
         </div>
       </section>
 
-      <footer className="max-w-[1180px] mx-auto bg-blue-100/50 px-6 py-6 pb-14 md:px-18">
+      <footer className="max-w-full mx-auto bg-blue-100/50 px-6 py-6 pb-14 md:px-28">
   <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
     {/* Follow Us Section */}
     <div className="flex flex-col gap-2">
@@ -500,15 +507,15 @@ export default function TechFriday() {
   {/* Footer Links & Description */}
   <div className="mt-6 flex flex-col gap-3 text-sm text-gray-800">
     <div className="flex flex-wrap gap-8">
-      <Link href="/contact" className="underline">Contact</Link>
-      <Link href="/about" className="underline">About us</Link>
-      <Link href="/team" className="underline">Team</Link>
-      <Link href="/clients" className="underline">Clients</Link>
-      <Link href="/career" className="underline">Careers</Link>
-      <Link href="/internship" className="underline">Internship</Link>
-      <Link href="/vmgo" className="underline">Vision and Mission</Link>
-      <Link href="/testimonials" className="underline">Testimonials</Link>
-      <Link href="/privacy" className="underline">Privacy Policy</Link>
+      <Link href="/contact" className="hover:underline">Contact</Link>
+      <Link href="/about" className="hover:underline">About us</Link>
+      <Link href="/team" className="hover:underline">Team</Link>
+      <Link href="/clients" className="hover:underline">Clients</Link>
+      <Link href="/career" className="hover:underline">Careers</Link>
+      <Link href="/internship" className="hover:underline">Internship</Link>
+      <Link href="/vmgo" className="hover:underline">Vision and Mission</Link>
+      <Link href="/testimonials" className="hover:underline">Testimonials</Link>
+      <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
     </div>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
