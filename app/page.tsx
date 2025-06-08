@@ -224,7 +224,7 @@ export default function Home() {
               )}
             </div>
             <button
-              className="absolute top-[-10px] z-10 right-[-15px] px-3 py-1 text-xl hover:cursor-pointer rounded-sm border font-semibold bg-red-500 hover:bg-red-700 text-white transition-all duration-300 ease-in-out"
+              className="absolute top-[-10px] z-10 right-[-15px] px-3 py-1 text-xl hover:cursor-pointer rounded-sm bg-[#055d59] font-semibold  hover:bg-[#315856] text-white transition-all duration-300 ease-in-out"
               onClick={() => setOverlay(false)}
             >
               X
