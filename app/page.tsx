@@ -444,7 +444,7 @@ export default function Home() {
               </div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 w-full place-content-between gap-4 mb-6">
-              <div className=" lg:h-[560px] h-[270px] lg:col-span-2 lg:row-span-2  rounded-lg overflow-hidden">
+              <Link href="21-stages-of-web-development" className=" lg:h-[560px] h-[270px] lg:col-span-2 lg:row-span-2  rounded-lg overflow-hidden">
                 <div className="relative group h-full w-full">
                   <Image
                     src="/assets/images/homepage/blog/blog-1.jpg"
@@ -475,8 +475,8 @@ export default function Home() {
                     </section>
                   </div>
                 </div>
-              </div>
-              <div className=" h-[270px] lg:col-span-2 rounded-lg overflow-hidden">
+              </Link>
+              <Link href="corporate-email" className=" h-[270px] lg:col-span-2 rounded-lg overflow-hidden">
                 <div className="relative group  h-full w-full">
                   <Image
                     src="/assets/images/homepage/blog/blog-3.jpg"
@@ -507,7 +507,7 @@ export default function Home() {
                     </section>
                   </div>
                 </div>
-              </div>
+              </Link>
               <div className=" h-[270px]  rounded-lg overflow-hidden">
                 <div className="relative group h-full w-full">
                   <Image
