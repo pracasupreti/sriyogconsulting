@@ -119,7 +119,7 @@ export default function ConsultingSiglePage() {
           Dedicated Solutions of Your Startup Growth
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-between items-center mt-8 mb-[45px]">
-          {services.map((service, _) => (
+          {services.map((service) => (
             <div
               className=" w-full sm:max-w-[316px] h-auto flex flex-col items-center gap-2 border-1 "
               key={service.id}
@@ -279,7 +279,7 @@ export default function ConsultingSiglePage() {
         </h1>
 
         <div className="flex flex-col md:flex-row gap-10 items-center justify-center mb-8  md:gap-5">
-          {pricingPlans.map((plan, _) => (
+          {pricingPlans.map((plan) => (
             <div
               key={plan.id}
               className="w-full sm:max-w-[316px] h-[600px] flex flex-col items-center py-5 gap-2 shadow-xl shadow-t-2xl  rounded-[15px] border border-gray-50"
@@ -329,7 +329,7 @@ export default function ConsultingSiglePage() {
 
         <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-between items-center mt-8 mb-[45px]">
           {
-            relatedBlogs.map((blog,_)=>(
+            relatedBlogs.map((blog)=>(
               <div key={blog.id} className="w-full sm:max-w-[316px] h-auto flex flex-col  gap-1 ">
                 <Image
                 src={blog.image}

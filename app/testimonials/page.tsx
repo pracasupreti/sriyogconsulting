@@ -62,7 +62,6 @@ export default function Testimonials() {
     //    addr:"Kathmandu"
     // },
      {
-      id: 7,
       title: "Jayshree Polymers ",
       desc: "I would like to express sincere gratitude to SRIYOG COnsulting Pvt. Ltd. for providing outstanding business email services to our organisation. We have been using Zoho Email service, expertly managed, set up, and operated by your team since june 2024. ",
       name: "Naveen Poddar",
@@ -71,7 +70,6 @@ export default function Testimonials() {
        addr:"Biratnagar"
     },
     {
-      id: 8,
       title: "Trans Nepal ",
       desc: "We have an excellent experience working with SRIYOG. They designed a professional, user friendly, website for our business and set up and supporting our business email seamlessly. Their attention to details and timely execution made the entire process smooth and stress free. ",
       name: "Anand Singh",
@@ -80,7 +78,6 @@ export default function Testimonials() {
        addr:"Biratnagar"
     },
      {
-      id: 9,
       title: "Kopila Clinic",
       desc: "SRIYOG Consulting did a great job designing our website. Prakash ji was responsive and professional and took time to understand our brand. The final website works amazing but  needs few revisions.",
       name: "Sita Rai",
