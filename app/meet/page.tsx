@@ -55,7 +55,7 @@ export default function MeetPage() {
     <>
     <section className="max-w-[1180px] mx-auto px-6 lg:px-0 mb-[45px] mt-[45px] w-full flex flex-col sm:flex-row gap-4 justify-between flex-wrap ">
         {
-        meet.map((item,_)=>(
+        meet.map((item)=>(
           <div className=" w-full sm:max-w-[316px] h-auto flex flex-col gap-1 mb-6" key={item.id}>
             <Image src={item.image} width={400} height={200} alt={item.title} 
             className="w-full rounded-[15px]  border-1 border-gray-600 "/>

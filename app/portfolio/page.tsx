@@ -60,7 +60,7 @@ export default function PortfolioPage() {
   return (
     <>
       <section className="max-w-[1180px] mx-auto px-6 lg:px-0 mb-[45px] mt-[45px] w-full flex flex-col sm:flex-row gap-4 justify-between flex-wrap ">
-        {portfolio.map((item, _) => (
+        {portfolio.map((item) => (
           <div
             className=" w-full sm:max-w-[316px] h-auto flex flex-col gap-1 mb-6"
             key={item.id}
