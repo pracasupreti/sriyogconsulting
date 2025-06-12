@@ -53,4 +53,13 @@ body {
 
 }
 
+.react-tel-input .flag-dropdown {
+  border: none;
+  background: transparent;
+}
+
+.react-tel-input input {
+  padding-left: 48px !important; /* More padding to avoid overlap */
+}
+
 
