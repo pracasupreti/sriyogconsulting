@@ -497,7 +497,6 @@ export default function TechFridayPage() {
         </Link>
       </div>
     </div>
-
     {/* App Download Section */}
     <div className="flex flex-col gap-2">
       <p className="font-semibold text-lg">Download the SRIYOG app</p>
