@@ -276,7 +276,7 @@ export default function ReferPage() {
                   placeholder={
                     focusStates.reason
                       ? ""
-                      : "Tell us why you're referring them — the more detail, the better."
+                      : "Tell us why you&apos;re referring them — the more detail, the better."
                   }
                   onFocus={() =>
                     setFocusStates({ ...focusStates, reason: true })
@@ -317,24 +317,22 @@ export default function ReferPage() {
             ></textarea>
           </div>
 
-          
-            <div className="text-sm text-[#555555] mt-6 gap-1 flex flex-col">
-              <div className="flex items-center gap-2">
-                <input type="checkbox" className="bg-[#555555]" />{" "}
-                <label htmlFor="">
-                  I confirm I have the referred client's permission to share
-                  their contact information.
-                </label>
-              </div>
-              <div className="flex items-center gap-2">
-                <input type="checkbox" />{" "}
-                <label htmlFor="">
-                  I understand that submitting this referral does not guarantee
-                  compensation unless specified in a formal agreement.
-                </label>
-              </div>
+          <div className="text-sm text-[#555555] mt-6 gap-1 flex flex-col">
+            <div className="flex items-center gap-2">
+              <input type="checkbox" className="bg-[#555555]" />{" "}
+              <label>
+                I confirm I have the referred client's permission to share
+                their contact information.
+              </label>
             </div>
-
+            <div className="flex items-center gap-2">
+              <input type="checkbox" />{" "}
+              <label>
+                I understand that submitting this referral does not guarantee
+                compensation unless specified in a formal agreement.
+              </label>
+            </div>
+          </div>
 
           <div className="w-full flex items-center justify-center mt-10">
             <button
