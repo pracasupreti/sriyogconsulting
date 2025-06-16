@@ -10,10 +10,10 @@ const Disclaimer = () => {
       <Ribbon name="Disclaimer" des="" />
       <section className="lg:w-[1180px] mx-auto max-lg:container max-lg:px-3 mb-[45px]">
         <div className="flex flex-col gap-5 bg-white p-5 border border-[#dbdbdb] ">
-          <p>Effective date:Tuesday, May 14, 2024</p>
+          <p>Effective Date: 1<sup>st</sup>June, 2025</p>
 
           <p>
-            Sriyog Consulting Pvt. Ltd. (also referred as “us”, “we” or “our”
+            SRIYOG Consulting Pvt. Ltd. (also referred as “us”, “we” or “our”
             throughout this policy content) operates
             the&nbsp;www.sriyog.com&nbsp;website and mobile application
             (hereinafter referred to as the “Service”). Our policies regarding
@@ -42,7 +42,7 @@ const Disclaimer = () => {
           </p>
 
           <p>
-            <strong>Different Types of Collected Datas</strong>
+            <strong>Different Types of Collected Data</strong>
           </p>
 
           <p>Personal Information Data</p>
@@ -50,7 +50,7 @@ const Disclaimer = () => {
           <p>
             To create your identity, we offer you to create your profile by
             providing your personally identifiable information that is later
-            used by other providers to connect you. Personally identifiable
+            used by our company to analaze and use for marketing purposes. Personally identifiable
             information includes below, but not limited to:
           </p>
 
@@ -153,7 +153,7 @@ const Disclaimer = () => {
           </p>
 
           <p>
-            Sriyog Consulting Pvt. Ltd. will take all the necessary steps to
+            SRIYOG Consulting Pvt. Ltd. will take all the necessary steps to
             ensure that your data is secure and as per this Privacy Policy and
             no transfer of your Personal Data to an organization or a country
             will take place before ensuring the security of your data and other
@@ -169,14 +169,14 @@ const Disclaimer = () => {
           </p>
 
           <p>
-            Sriyog Consulting Pvt Ltd may disclose your Personal Data in the
+            SRIYOG Consulting Pvt Ltd may disclose your public Data in the
             good faith belief that such action is necessary to:
           </p>
 
           <ul>
             <li>Complying with a legal obligation</li>
             <li>
-              Protecting and defending the rights or property of Sriyog
+              Protecting and defending the rights or property of SRIYOG
               Consulting Pvt. Ltd&nbsp;
             </li>
             <li>
@@ -207,7 +207,7 @@ const Disclaimer = () => {
           </p>
 
           <p>
-            In order to provide you our services, we may employ third party
+            In order to provide you our Consulting Services, we may employ third party
             companies and individuals (“Service Providers”), who may provide the
             Service on our behalf, perform Service-related services or assist us
             in analyzing how our Service is used.

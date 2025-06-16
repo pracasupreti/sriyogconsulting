@@ -408,12 +408,12 @@ export default function Page() {
                 key={index + 1}
                 className="w-[28%] max-md:w-[85%]  p-[25px] text-[#333] text-center rounded-md "
               >
-                <div className="relative mb-3 border border-white shadow-lg   max-md:w-[90%] h-[250px] w-[250px] mx-auto  rounded-[50%]">
+                <div className="relative mb-3  max-md:w-[90%] h-60 w-full mx-auto  rounded-[50%]">
                   <Image
                     src={item.img}
                     alt={item.name}
                     fill
-                    className="object-cover p-[2px]"
+                    className="object-contain p-[2px]"
                   />
                 </div>
 

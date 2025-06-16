@@ -7,7 +7,6 @@ const page = () => {
         <iframe
           className="airtable-embed"
           src="https://airtable.com/embed/appRt9Jfof8PTQWKl/pagMMYOZpvtTOCWgz/form"
-          frameBorder="0"
           width="100%"
           height="1385"
           style={{ background: "transparent" }}

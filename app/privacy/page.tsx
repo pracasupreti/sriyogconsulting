@@ -12,23 +12,23 @@ export default function Privacy() {
       <section className=" mb-[45px] flex justify-center align-middle mt-0 w-full">
         <div className=" bg-white  text-justify w-[1180px] mx-auto max-lg:container max-lg:px-3">
           <p className="text-[17px] mb-4 font-Normal leading-6 text-[#333] text-justify">
-            Effective Date:1<sup>st</sup>June 2024
+            Effective Date : 1<sup>st</sup>June, 2025
           </p>
           <p className="text-[#333] mb-4 font-Normal leading-6 text-justify">
-            Sriyog Consulting Pvt. Ltd. (also referred as “SRIYOG”, “us”, “we”
-            or “our” throughout this policy content) operates the www.sriyog.com
+            SRIYOG Consulting Pvt. Ltd. (also referred as &quot;SRIYOG&quot;, &quot;SRIYOG Consulting&quot;, &quot;us&quot;, &quot;we&quot;
+            or &quot;our&quot; throughout this policy content) operates the www.SRIYOG.com
             website and mobile application (hereinafter referred to as the
-            “Service”). Our policies regarding the collection, use, and
+            &quot;Service&quot;). Our policies regarding the collection, use, and
             disclosure of basic personal data while using the service and the
             associated data are described in detail here.
           </p>
           <p className="text-[#333] mb-4 font-Normal leading-6 text-justify">
             Using your data and feedback, we continue upgrading of service. By
-            using SRIYOG, we assume that you have trusted and agreed to the
+            using SRIYOG Consulting, we assume that you have trusted and agreed to the
             collection and use of information as per our policy. The terms
             defined in this privacy policy have the same meaning as in our terms
             and conditions unless especially redefined in this privacy policy in
-            www.sriyog.com.
+            www.SRIYOG.com.
           </p>
           <h4 className="text-[1.5rem] mb-2 font-semibold leading-[1.2] text-[#333] text-justify">
             Uses and collection of Information
@@ -45,7 +45,7 @@ export default function Privacy() {
             Personal Information Data
           </p>
           <p className="text-[#333] mb-4 font-Normal leading-6 text-justify">
-            To create your identity, we offer you to create your profile by
+            To create your identity, we offer you to create your account by
             providing your personally identifiable information that is later
             used by other providers to connect you. Personally identifiable
             information includes below, but not limited to:
@@ -142,7 +142,7 @@ export default function Privacy() {
             such information means that you agree with that transfer.
           </p>
           <p className="text-[#333] mb-4 font-Normal leading-6 text-justify">
-            Sriyog Consulting Pvt. Ltd. will take all the necessary steps to
+            SRIYOG Consulting Pvt. Ltd. will take all the necessary steps to
             ensure that your data is secure and as per this Privacy Policy and
             no transfer of your Personal Data to an organization or a country
             will take place before ensuring the security of your data and other
@@ -158,7 +158,7 @@ export default function Privacy() {
           <ul className="list-disc pl-[30px] mb-4">
             <li>Complying with a legal obligation</li>
             <li>
-              Protecting and defending the rights or property of Sriyog
+              Protecting and defending the rights or property of SRIYOG
               Consulting Pvt. Ltd
             </li>
             <li>
@@ -187,12 +187,12 @@ export default function Privacy() {
           <p className="text-[#333] mb-4 font-Normal leading-6 text-justify">
             In order to provide you our services, we may employ third party
             companies and individuals (“Service Providers”), who may provide the
-            Service on our behalf, perform Service-related services or assist us
+            Service on our behalf, perform consulting-related services or assist us
             in analyzing how our Service is used.
           </p>
           <p className="text-[#333] mb-4 font-Normal leading-6 text-justify">
             To provide the services on our behalf, these third parties may have
-            access to your personal data but are obligated not to disclose or
+            access to your public data but are obligated not to disclose or
             use it for any other purpose.
           </p>
           <h4 className="text-[#333] text-[1.4rem] mb-2 font-semibold leading-[1.2] text-justify">
@@ -244,7 +244,7 @@ export default function Privacy() {
           </h4>
           <p className="text-[#333] mb-4 font-Normal leading-6 text-justify">
             If you have any questions about this Privacy Policy, please contact
-            us: privacy@sriyog.com
+            us: privacy@SRIYOG.com
           </p>
         </div>
       </section>

@@ -11,16 +11,16 @@ const Tos = () => {
       <section className="mb-[45px] mx-auto max-lg:container max-lg:px-3 lg:w-[1180px] max-md:shadow-none border max-md:border-none border-[#dbdbdb] ">
         <div className=" p-[55px] max-md:p-0 ">
           <p className="mb-[15px] text-[18px]">
-            Last updated : 1<sup>st</sup>&nbsp;June, 2024
+            Last updated : 1<sup>st</sup>&nbsp;June, 2025
           </p>
           <p className=" mb-[10px]">
-            Welcome to SRIYOG. Please read these Terms and Conditions (“Terms”,
+            Welcome to SRIYOG Consulting. Please read these Terms and Conditions (“Terms”,
             “Terms and Conditions”) carefully before using the website/ mobile
             application/ social media platforms (the “Service”) operated by
             SRIYOG Consulting Pvt. Ltd. (“us”, “we”, or “our”).
           </p>
           <p className=" mb-[10px]">
-            SRIYOG may change or amend the Terms as per the requirement in the
+            SRIYOG Consulting may change or amend the Terms as per the requirement in the
             future by posting revisions here. You are allowed to use the
             Services on the basis of your acceptance of and compliance with
             these Terms. These Terms are applicable to all the visitors,
@@ -34,13 +34,13 @@ const Tos = () => {
           <p className="text-[1.4rem] font-bold mb-[10px]">Eligibility/Age</p>
           <p className="mb-[56px]  max-md:mb-[20px]">
             Anyone under the age of 18 is not authorized to provide or receive
-            services in SRIYOG
+            services in SRIYOG Consulting
           </p>
           <p className="text-[1.4rem] font-bold mb-[10px]">Accounts</p>
           <p className=" mb-[10px]">
             You are supposed to provide us with information that is accurate,
             complete, and current at all times when creating an account in
-            SRIYOG. If the provided information is misleading or incorrect, it
+            SRIYOG Consulting. If the provided information is misleading or incorrect, it
             will be considered a breach of the Terms, which may result in
             immediate termination of your account on our Service.
           </p>
@@ -57,11 +57,8 @@ const Tos = () => {
             Understanding of our Platform
           </p>
           <p className=" mb-[10px]">
-            SRIYOG is a bridge between the service seekers and service providers
-            and facilitates the communication between them with mobile
-            application, website, social media or any digital medium. We aim to
-            increase self-employment and control the problem of unemployment
-            through our platform.
+            Established on June 14, 2018, SRIYOG Consulting Pvt. Ltd. is a premier Managed IT Services provider based in Kamalpokhari, Kathmandu, Nepal. We specialize in delivering innovative, reliable, and scalable IT solutions to businesses of all sizes, helping them achieve digital transformation, operational efficiency and sustainable growth.
+ 
           </p>
           <p className=" mb-[10px]">
             We do not endorse or promote any of the information or services
@@ -73,9 +70,9 @@ const Tos = () => {
           </p>
           <p>
             Furthermore, we do not provide any insurance or assurance to any of
-            the services listed on our website, neither we will charge any fees
-            for using our platform. If you are using SRIYOG for providing or
-            receiving any service from our users, we strongly recommend you to
+            the consulting services listed on our website, neither we will charge any fees
+            for using our platform. If you are using SRIYOG Consulting for providing or
+            receiving any service from our freelancers, we strongly recommend you to
             take precautions and safety measures to protect yourself.
           </p>
           <p className=" mb-[56px] max-md:mb-[20px]">
@@ -92,7 +89,7 @@ const Tos = () => {
             are not owned or controlled by SRIYOG Consulting Pvt. Ltd.
           </p>
           <p className=" mb-[10px]">
-            SRIYOG Consulting Pvt Ltd has no control over, and assumes no
+            SRIYOG Consulting Pvt. Ltd. has no control over, and assumes no
             responsibility for, the content, privacy policies, or practices of
             any third-party web sites or services. You further acknowledge and
             agree that SRIYOG Consulting Pvt. Ltd. shall not be responsible or
@@ -107,28 +104,28 @@ const Tos = () => {
           </p>
           <p className="text-[1.4rem] font-bold mb-[10px]">Delivery/Payment</p>
           <p className=" mb-[10px]">
-            SRIYOG does not deliver any service or accepts fees from the users
+            SRIYOG Consulting does not deliver any service or accepts fees from the users
             for any of the listed services. We are not involved in providing or
             receiving services nor act as a broker, agent or middleman between
-            the Provider and Seekers.
+            the Provider and Seekers but only provide consulting services under our company name and Tax Invoice.
           </p>
           <p className=" mb-[10px]">
-            Providers are themselves responsible to determine the charges,
+            Third Party Providers are themselves responsible to determine the charges,
             deliver their service, obtain the payment or create invoices for
             their services. Likewise, the Service Seekers are also themselves
             responsible for the negotiation of the charges or verify the Service
             before releasing any payments.
           </p>
           <p className=" mb-[10px]">
-            By using our service, both the Providers and Seekers agree to take
+            By using our service, both the freelancers and the companies getting services are agreed to take
             the necessary measures regarding the transaction and obtain
-            appropriate documents related to the dealing like any other offline
+            appropriate documents related to the projects like any other business
             transactions.
           </p>
           <p className=" mb-[56px] max-md:mb-[20px]">
             Any contract, warranties, terms or conditions associate between the
-            Providers and Seekers are limited solely between them and SRIYOG is
-            not liable for such contracts in any manner.
+            Freelancers and Companies are limited solely between them and SRIYOG Consulting is
+            not liable for such contracts in any manner until unless it has any legal bindings or valid documentations.
           </p>
           <p className="text-[1.4rem] font-bold mb-[10px]">
             Copyrights/Intellectual Property Rights:
@@ -176,7 +173,7 @@ const Tos = () => {
           </p>
           <p className="text-[1.4rem] font-bold mb-[10px]">Amendments</p>
           <p className=" mb-[10px]">
-            SRIYOG reserves the right, at its sole discretion, to amend or
+            SRIYOG Consulting reserves the right, at its sole discretion, to amend or
             change these Terms at any time. If we find a revision necessary, we
             will notify you at least 15 days-notice prior to any new terms
             taking effect.

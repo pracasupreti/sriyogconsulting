@@ -12,7 +12,7 @@ export default function Page() {
       name: "IME-PAY",
       des: "IME Digital Solution Ltd. introduced “IME Pay,” Nepal’s first licensed digital payment platform, under its financial services initiative. Since its launch in 2017, IME Pay has provided a fast, secure, and easy-to-use solution for digital transactions.",
       img: "/assets/images/partners/1.jpg",
-      path: "https://www.imepay.com.np/#/",
+      path: "https://www.imepay.com.np/",
     },
     {
       name: "MAW-Skills-Academy",
@@ -29,23 +29,27 @@ export default function Page() {
   ];
   return (
     <>
-      <Ribbon name="Partner Organizations" des="" />
+      <Ribbon name="Partners" des="" />
       <section className="w-[1180px] mx-auto max-lg:container max-lg:px-3 text-center mb-[45px]">
-        <h1 className="text-[32px] text-[#0D5D59] font-semibold mb-3">
+        {/* <h1 className="text-[32px] text-[#0D5D59] font-semibold mb-3">
           Drive your own revolution with SRIYOG
-        </h1>
-        <p className="max-w-[800px] mx-auto">
-          arties. Instead of imposing a one-size-fits-all plan, we build a
-          flexible roadmap together—empowering your organization to scale at its
-          own pace while we grow alongside you through meaningful collaboration.
+        </h1> */}
+        <p className=" mx-auto">
+          SRIYOG Consulting is partnering with various organizations and service
+          providers to uplift the use of technology in digital era.
+          <br />
+          Few of are our esteemed partners.
+          <br />
+          For any partnership opportunities, we welcome your emails at&nbsp;
+          <Link href="mailto:partners@sriyog.com">partners@sriyog.com</Link>
         </p>
       </section>
 
-      <section className="w-[1180px] mx-auto max-lg:container gap-8 max-lg:px-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-between mb-[45px]">
+      <section className="w-[1180px] mx-auto max-lg:container gap-10 max-lg:px-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-between mb-[45px]">
         {partner.map((item, idx) => (
           <div
             key={idx + 1}
-            className="relative border px-4    border-[#dbdbdb] rounded-lg  lg:h-[460px] sm:h-[480px] h-[480px]  hover:shadow-lg transition duration-300 ease-in-out"
+            className="relative shadow-[0_.5rem_1rem_rgba(0,0,0,.15)]  px-4  rounded-lg  lg:h-[460px] sm:h-[480px] h-[480px]  hover:shadow-lg transition duration-300 ease-in-out"
           >
             <section className=" relative h-36 w-full   border-b border-[#dbdbdb]">
               <Image
@@ -59,7 +63,7 @@ export default function Page() {
             <p className="text-gray-500 mb-2   h-[200px]  mt-12 ">{item.des}</p>
             <Link
               target="_blank"
-              className="absolute my-2 bottom-0 rounded-md border-[#dbdbdb] text-gray-500 font-medium border px-4 py-2 hover:bg-[#055d59] hover:text-white transition-all duration-300 ease-in-out"
+              className="absolute mb-6 bottom-0 rounded-md border-[#dbdbdb] text-gray-500 font-medium border px-4 py-2 hover:bg-[#055d59] hover:text-white transition-all duration-300 ease-in-out"
               href={item.path}
             >
               Browse More

@@ -3,7 +3,6 @@ import Ribbon from "@/components/Ribbon";
 import Image from "next/image";
 import { Metadata } from "next";
 
-
 export const metadata: Metadata = {
   title: "Payment | SRIYOG Consulting",
 };
@@ -28,21 +27,21 @@ const Payment = () => {
                   </div>
                   <div className="flex flex-col pb-8 gap-3 sm:mb-0">
                     <span className=" inline-block text-[18px] text-black">
-                      Account name: <br />{" "}
+                      Account Name: <br />{" "}
                       <strong> Sriyog Consulting Pvt Ltd.</strong>
                     </span>
                     <span className="  text-[18px] text-black">
                       Account number: 00701017502051
                     </span>
                     <span className="  text-[18px] text-black ">
-                      Branch: Biratnagar
+                      Branch: Kathmandu
                     </span>
                     <span className="  text-[18px] text-black">
                       SWIFT CODE: NARBNPKA
                     </span>
                     <span className="  text-[18px] text-black">
                       URL:{" "}
-                      <Link href="" target="blank" className="underline ">
+                      <Link href="https://www.nabilbank.com" target="blank" className="underline ">
                         www.nabilbank.com
                       </Link>
                     </span>
@@ -56,7 +55,7 @@ const Payment = () => {
               {/* CONTACT FORM CONTENT */}
               <div className="flex basis-[35%] border-[1px] w-full border-black rounded-2xl overflow-hidden ">
                 <Image
-                  className="w-full h-full"
+                  className="w-full"
                   width={300}
                   height={300}
                   src="/assets/images/payment/qr.jpeg"

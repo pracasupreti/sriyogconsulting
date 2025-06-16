@@ -1,6 +1,6 @@
 import Ribbon from "@/components/Ribbon";
 import Image from "next/image";
-
+// import Link from "next/link";
 export default function Consulting() {
   const consulting = [
     {
@@ -89,7 +89,7 @@ export default function Consulting() {
           {consulting.map((data, index) => (
             <div
               key={index + 1}
-              className=" border border-[#dbdbdb] rounded-lg hover:-translate-y-4 transition duration-500 ease-in-out shadow-xl"
+              className=" rounded-lg hover:-translate-y-4 transition duration-500 ease-in-out shadow-[0_.5rem_1rem_rgba(0,0,0,.15)]"
             >
               <div className=" p-12">
                 <div className="w-32 h-32 relative mx-auto mb-4">
@@ -104,6 +104,7 @@ export default function Consulting() {
                   {data.title}
                 </h5>
                 <p className=" text-justify text-gray-700">{data.desc}</p>
+                {/* <Link href={`/consulting/${data.title.split(" ").join("-")}`}>Read More</Link> */}
               </div>
             </div>
           ))}

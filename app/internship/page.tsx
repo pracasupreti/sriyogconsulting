@@ -1,11 +1,10 @@
-"use client"
-import { useEffect } from "react";
 import Ribbon from "@/components/Ribbon";
+import { Metadata } from "next";
 
+// export const metadata: Metadata = {
+//   title: "Internship | SRIYOG Consulting",
+// };
 const Internship = () => {
-  useEffect(() => {
-    document.title = "Internship | SRIYOG Consulting";
-  }, []);
   return (
     <>
       <Ribbon name="Internship | SRIYOG" des="" />

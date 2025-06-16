@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function FloatingIcons() {
   return (
-    <div className="fixed z-[9999] bottom-[20px] right-[10px] text-center">
+    <div className="fixed z-[9999] bottom-36 right-0 text-center">
         
       <div className="border-b-2 pb-2 border-[#4b4b4b] flex gap-2">
         <Link

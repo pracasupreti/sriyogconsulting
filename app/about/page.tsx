@@ -9,12 +9,11 @@ export const metadata: Metadata = {
 };
 export default function Aboutpage() {
   const cardData = [
-  
     {
       title: "Dedicated Team",
       image: "/assets/images/about/team.jpg",
     },
-      {
+    {
       title: "7 Years of Service",
       image: "/assets/images/about/year.png",
     },
@@ -27,7 +26,7 @@ export default function Aboutpage() {
     <>
       {/* About section*/}
       <Ribbon name="About" des="" />
-  
+
       <div className="lg:max-w-[1180px] mx-auto px-4">
         <div className="  mx-auto flex flex-col items-center justify-center gap-5 my-10 rounded-xl ">
           <Image
@@ -79,15 +78,20 @@ export default function Aboutpage() {
           data processing, software and web application development, digital
           marketing, database management, business process automation, and
           expert IT consultancy—each tailored to the unique needs of
-          agriculture, employment platforms, and tourism operations. By
-          optimizing digital infrastructure, we help our clients streamline
+          agriculture, employment platforms, and tourism operations.
+          <br />
+          <br />
+          By optimizing digital infrastructure, we help our clients streamline
           their services, engage users effectively, and scale sustainably. We
           specialize in crafting robust and user-friendly web solutions with a
           focus on modern UI/UX design, full-stack development, and
           industry-specific platforms—be it for agritech, job-matching portals,
-          or tourism management systems. Our offerings include e-commerce
-          platforms, CMS, SaaS-based solutions, and Progressive Web Applications
-          (PWA) for mobile-first experiences with offline functionality.
+          or tourism management systems.
+          <br />
+          <br />
+          Our offerings include e-commerce platforms, CMS, SaaS-based solutions,
+          and Progressive Web Applications (PWA) for mobile-first experiences
+          with offline functionality.
         </p>
 
         {/*banner */}
@@ -180,7 +184,7 @@ export default function Aboutpage() {
                 <p className="font-bold">PRACAS Upreti</p>
                 <ul className="flex gap-2 items-center">
                   <li>
-                    <Link href="https://t.me/SRIYOG">
+                    <Link href="https://t.me/pracasupreti" target="_blank">
                       <Image
                         src={"/assets/icons/telegram1.svg"}
                         width={20}
@@ -190,7 +194,7 @@ export default function Aboutpage() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://x.com/TheSRIYOG">
+                    <Link href=" https://x.com/pracas" target="_blank">
                       <Image
                         src={"/assets/icons/tweeter.svg"}
                         width={20}
@@ -200,7 +204,7 @@ export default function Aboutpage() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://np.linkedin.com/company/sriyogdotcom">
+                    <Link href="https://linkedin.com/in/pracasupreti" target="_blank">
                       <Image
                         src={"/assets/icons/linkedin.svg"}
                         width={20}

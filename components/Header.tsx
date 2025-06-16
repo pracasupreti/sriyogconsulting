@@ -8,7 +8,7 @@ export default function Header() {
     <>
       <header className="w-full h-auto">
         {topOpen && (
-          <section className="bg-[#0D5D59] w-full py-3">
+          <section className="bg-[#055d59] w-full py-3">
             <div className="lg:max-w-[1180px] max-lg:container max-lg:px-3 mx-auto text-white flex justify-between items-center lg:text-[14px] sm:text-[12px] text-[14px]">
               <div className="flex gap-2">
                 <p>Helpline Number</p>
@@ -19,15 +19,15 @@ export default function Header() {
                   SRIYOG App is having its own homepage and a new company.
                 </i>
                 <Link
-                  href=""
-                  className="py-[3px] px-1 mx-2 hidden md:block rounded-lg border-2 italic font-semibold"
+                  href="https://sriyog.app/"
+                  className="py-[3px] px-1 mx-2 hidden md:block rounded-lg border-[1.5px] italic font-semibold hover:bg-white hover:text-[#055d59] hover:border-white transition-all duration-300 ease-in-out"
                   target="_blank"
                 >
                   View Now
                 </Link>
                 <button
                   onClick={() => setTopOpen(false)}
-                  className="border-2 w-[30px] h-[30px] rounded-lg font-semibold hover:cursor-pointer"
+                  className="border-[1.5px] text-lg w-[30px] h-[30px] rounded-lg font-bold hover:cursor-pointer hover:bg-white hover:text-[#055d59] hover:border-white transition-all duration-300 ease-in-out"
                 >
                   X
                 </button>

@@ -82,7 +82,7 @@ export default function Services() {
 
             <div className="inline basis-[80%]">
               <h2 className="inline-block !text-white font-semibold text-[18px] pb-1">
-                Long-Term Sustainability.
+                Long-Term Sustainability
               </h2>
               <p className="text-white">
                 {" "}

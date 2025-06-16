@@ -11,49 +11,166 @@ export default function Footer() {
           <div className="grid grid-cols-2 pb-4 sm:grid-cols-2 md:grid-cols-4 place-content-between w-full gap-6 text-[#0D5959]  lg:w-[870px]">
             {[
               [
-                { label: "Welcome", path: "/welcome" },
-                { label: "FAQs", path: "/faq" },
-                { label: "Vision & Mission", path: "/vmgo" },
-                { label: "Media Coverage", path: "/media" },
                 {
                   label: (
                     <>
+                      <Link  prefetch={true} href="/welcome">Welcome</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/faq">FAQs</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/vmgo">Vision & Mission</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/media">Media Coverage</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <Link  prefetch={true} href="/career">
                       Career&nbsp;
                       <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
                         We&apos;re Hiring
                       </span>
-                    </>
+                    </Link>
                   ),
-                  path: "/career",
                 },
               ],
               [
-                { label: "Timeline", path: "/timeline" },
-                { label: "Feedback", path: "/feedback" },
-                { label: "Pitch Deck", path: "/pitch" },
-                { label: "Internship", path: "/internship" },
-                { label: "Testimonials", path: "/testimonials" },
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/timeline">Timeline</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/feedback">Feedback</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/pitch">Pitch Deck</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/internship">Internship</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/testimonials">Testimonials</Link>
+                    </>
+                  ),
+                },
               ],
               [
-                { label: "SRIYOG App", path: "https://sriyog.app/" },
-                { label: "JDR Fonts", path: "/fonts" },
-                { label: "Certificates", path: "/certificates" },
-                { label: "Payment Details", path: "/payment" },
-                { label: "Partners", path: "/partners" },
+                {
+                  label: (
+                    <Link  prefetch={true} href="https://sriyog.app/" target="_blank">
+                      SRIYOG App&nbsp;
+                      <span className="bg-[#0D5D59] px-[5px] py-[2px] text-[11px] text-white rounded-[3px]">
+                        New
+                      </span>
+                    </Link>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/fonts">JDR Fonts</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/certificates">Certificates</Link>
+                    </>
+                  ),
+                },
+
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/payment">Payment Details</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/partners">Partners</Link>
+                    </>
+                  ),
+                },
               ],
               [
-                { label: "Privacy Policy", path: "/privacy" },
-                { label: "Terms of Services", path: "/tos" },
-                { label: "Disclaimer", path: "/disclaimer" },
-                { label: "Sitemap", path: "/sitemap" },
-                { label: "Tutorials", path: "/tutorials" },
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/privacy">Privacy Policy</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/tos">Terms of Services</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/disclaimer">Disclaimer</Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/sitemap.xml" target="_blank">
+                        Sitemap
+                      </Link>
+                    </>
+                  ),
+                },
+                {
+                  label: (
+                    <>
+                      <Link  prefetch={true} href="/tutorials">Tutorials</Link>
+                    </>
+                  ),
+                },
               ],
             ].map((group, index) => (
               <ul key={index} className="space-y-3 ">
                 {group.map((item, idx) => (
-                  <li key={idx}>
-                    <Link href={item.path}>{item.label}</Link>
-                  </li>
+                  <li key={idx + 1}>{item.label}</li>
                 ))}
               </ul>
             ))}
@@ -65,7 +182,7 @@ export default function Footer() {
                 fill
                 priority
                 className="object-contain"
-                alt="logo"
+                alt="SRIYOG Consulting Logo"
               />
             </div>
             <div className="flex items-start gap-2">
@@ -94,7 +211,7 @@ export default function Footer() {
                   alt="phone"
                 />
               </div>
-              <p>+977-9851152774</p>
+              <p>+977-9852025735</p>
             </div>
             <p className="text-sm">Calling Time: 11 AM to 6 PM NPT</p>
             <div className="flex items-center gap-2">
@@ -107,11 +224,11 @@ export default function Footer() {
                   alt="email"
                 />
               </div>
-              <Link href="mailto:consulting@sriyog.com">
+              <Link  prefetch={true} href="mailto:consulting@sriyog.com">
                 consulting@sriyog.com
               </Link>
             </div>
-            <Link
+            <Link  prefetch={true}
               href="/quote"
               className="block mb-4 bg-[#0D5D59] hover:bg-[#2e5250] text-white text-center font-semibold py-2 rounded-lg transition"
             >
@@ -138,7 +255,7 @@ export default function Footer() {
               All Rights Reserved. © 2018-2025 SRIYOG Consulting Pvt. Ltd.
             </p>
             <div className="flex max-md:w-full max-md:justify-center gap-3">
-              <Link href="https://bit.ly/sriyog" target="_blank">
+              <Link  prefetch={true} href="https://bit.ly/sriyog" target="_blank">
                 <div className="relative md:h-[50px] h-[60px] w-[130px] md:w-[100px]">
                   <Image
                     src="/assets/images/footer/google-play.svg"
@@ -149,7 +266,7 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <Link href="https://bit.ly/sriyogios" target="_blank">
+              <Link  prefetch={true} href="https://bit.ly/sriyogios" target="_blank">
                 <div className="relative md:h-[50px] h-[60px] w-[130px] md:w-[100px]">
                   <Image
                     src="/assets/images/footer/app-store.svg"
@@ -162,7 +279,7 @@ export default function Footer() {
               </Link>
             </div>
             <div className="flex max-md:w-full max-md:justify-center max-md:items-center gap-3">
-              <Link
+              <Link  prefetch={true}
                 href="https://www.facebook.com/sriyogdotcom"
                 target="_blank"
               >
@@ -176,7 +293,7 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <Link href="https://t.me/sriyog" target="_blank">
+              <Link  prefetch={true} href="https://t.me/sriyog" target="_blank">
                 <div className="relative h-[20px] w-[20px]">
                   <Image
                     src="/assets/images/footer/telegram.svg"
@@ -187,7 +304,7 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <Link
+              <Link  prefetch={true}
                 href="https://www.linkedin.com/company/sriyog-consulting/"
                 target="_blank"
               >
@@ -201,7 +318,7 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <Link
+              <Link  prefetch={true}
                 href="https://www.youtube.com/@sriyogdotcom8535"
                 target="_blank"
               >

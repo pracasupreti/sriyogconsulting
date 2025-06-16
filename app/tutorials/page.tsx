@@ -78,13 +78,13 @@ export default function Tutorials() {
       <section className="lg:w-[1180px] mx-auto max-lg:container max-lg:px-3 mb-[45px]">
         <div>
           <h2 className=" mb-4 text-[28px] text-center font-semibold text-[#0D5D59]">
-            SRIYOG Videos
+            Tutorial Videos 
           </h2>
-          <div className="mt-5 grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 w-full place-content-between gap-10">
+          <div className="mt-5 grid md:grid-cols-2  grid-cols-1 w-full place-content-between gap-10">
             {videoData.map((video) => (
               <div key={video.id}>
                 <iframe
-                  className="w-full  h-[200px] rounded-lg"
+                  className="w-full  h-[350px] rounded-lg"
                   src={video.url}
                   title="YouTube video player"
                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

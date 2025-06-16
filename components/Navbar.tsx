@@ -23,7 +23,7 @@ export default function Navbar() {
   ];
   return (
     <>
-      <nav className="bg-[#d3d3d3] w-full sticky top-0 left-0 shadow-sm z-50">
+      <nav className="bg-white w-full sticky top-0 left-0 shadow-sm z-50">
         <section className=" lg:w-[1180px] max-lg:container max-lg:px-3 mx-auto flex justify-between items-center">
           <Link
             href="/"
@@ -38,12 +38,14 @@ export default function Navbar() {
             />
           </Link>
           <div className="hidden lg:block">
-            <ul className="space-x-3 flex">
+            <ul className="space-x-2 flex">
               {navItems.map((item, idx) => (
                 <li key={idx}>
                   <Link
+                  prefetch={true}
+                  scroll={true}
                     href={item.path}
-                    className={`py-2 px-3 font-semibold transition duration-300 ease-in-out ${
+                    className={`py-2 px-2 font-bold transition duration-300 ease-in-out ${
                       pathname === item.path
                         ? "text-[#0D5D59]"
                         : "text-[#4b4b4b] hover:text-[#0D5D59]"
@@ -55,6 +57,7 @@ export default function Navbar() {
               ))}
               <li>
                 <Link
+                 prefetch={true}
                   href="/quote"
                   className="bg-[#0D5D59] px-3 text-white font-semibold rounded-lg p-2 hover:bg-[#2e5250]"
                 >
@@ -65,7 +68,7 @@ export default function Navbar() {
           </div>
           <section className="hidden max-lg:block">
             <div className="flex items-center gap-x-1">
-              <div className="relative h-[50px] w-[50px]">
+              <div className="hidden md:block relative h-[50px] w-[50px]">
                 <Image
                   src="/assets/images/header/notification.svg"
                   alt="notification"
@@ -74,7 +77,7 @@ export default function Navbar() {
                   className="py-3 object-contain"
                 />
               </div>
-              <div className="relative h-[50px] w-[50px]">
+              <div className="hidden md:block relative h-[50px] w-[50px]">
                 <Image
                   src="/assets/images/header/question.svg"
                   alt="query"
@@ -242,6 +245,7 @@ export default function Navbar() {
             {navItems.map((item, idx) => (
               <li key={idx}>
                 <Link
+                 prefetch={true}
                   href={item.path}
                   className={`font-semibold ${
                     pathname === item.path
@@ -257,6 +261,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/quote"
+                 prefetch={true}
                 className="bg-[#0D5D59] px-3 text-white font-semibold rounded-lg p-2 hover:bg-[#2e5250]"
               >
                 Request a Quote
