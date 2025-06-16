@@ -12,6 +12,92 @@ interface card {
 }
 export default function BlogPage() {
 
+  const footerCards = [
+    {
+      id:1,
+      title:"The Best Time to Travel to Cambodia",
+      image:"/assets/images/blog/1.jpg",
+      date:"27 JAN",
+      views:"13K VIEWS",
+      category:"destination",
+      path:""
+    },
+        {
+      id:2,
+      title:"20 Photos to Inspire You to Visit Cambodia",
+      image:"/assets/images/blog/1.jpg",
+      date:"27 AUGUST",
+      views:"14K VIEWS",
+      category:"destination",
+      path:""
+    },
+        {
+      id:3,
+      title:"Epic Arts Cambodia:Charity For the Disabled",
+      image:"/assets/images/blog/1.jpg",
+      date:"29 AUGUST",
+      views:"23K VIEWS",
+      category:"destination",
+      path:""
+    },
+     {
+      id:4,
+      title:"10 Ways to De-Stress Your Day Hour by Hour",
+      image:"/assets/images/blog/4.jpg",
+      date:"12 AUGUST",
+      views:"3K VIEWS",
+      category:"lifestyle",
+      path:""
+    },
+     {
+      id:5,
+      title:"134 Free Weekly MEal Planner Printable",
+      image:"/assets/images/blog/4.jpg",
+      date:"15 AUGUST",
+      views:"4.1K VIEWS",
+      category:"lifestyle",
+      path:""
+    },
+     {
+      id:6,
+      title:"Free Printable Stickers for Your Bullet Journal",
+      image:"/assets/images/blog/4.jpg",
+      date:"16 AUGUST",
+      views:"2.2K VIEWS",
+      category:"lifestyle",
+      path:""
+    },
+
+         {
+      id:7,
+      title:"Which TBA Preset Pack is Right For You?",
+      image:"/assets/images/blog/2.jpg",
+      date:"06 MAY",
+      views:"23K VIEWS",
+      category:"photography",
+      path:""
+    },
+             {
+      id:8,
+      title:"How to Get Amazing Photos at the Pyramids of Giza",
+      image:"/assets/images/blog/2.jpg",
+      date:"05 JUN",
+      views:"5K VIEWS",
+      category:"photography",
+      path:""
+    },
+             {
+      id:9,
+      title:"Beginner's Guide to Travel Drone Photography",
+      image:"/assets/images/blog/2.jpg",
+      date:"08 AUGUST",
+      views:"2K VIEWS",
+      category:"photography",
+      path:""
+    },
+
+    
+  ]
   const bottomCards= [
     {
       id:1,
@@ -318,7 +404,28 @@ export default function BlogPage() {
       </section>
           {/*Different blogs */}
       <section className="w-full px-6 md:max-w-[1180px] md:px-0 mx-auto mb-[45px]">
-          
+          <div>
+
+            <div>
+              {
+                footerCards.map((item,index)=>(
+                <>
+                      {item.category === "destination"?<div className="flex gap-4 "  key={item.id} >
+                        <Image src={item.image} width={100 } height={100} alt={item.title}/>
+                        <div className="">
+                          <h1>{item.title}</h1>
+                          <div>
+                            <p>{item.date}</p>
+                            <p>{item.views}</p>
+                          </div>
+                        </div>
+                      </div>:<></>}
+                 </>
+                ))
+              }
+            </div>
+
+          </div>
       </section>
     </>
   );
