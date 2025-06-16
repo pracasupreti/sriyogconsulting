@@ -276,7 +276,7 @@ export default function ReferPage() {
                   placeholder={
                     focusStates.reason
                       ? ""
-                      : "Tell us why you&apos;re referring them — the more detail, the better."
+                      : "Tell us why you are referring them — the more detail, the better."
                   }
                   onFocus={() =>
                     setFocusStates({ ...focusStates, reason: true })
@@ -321,7 +321,7 @@ export default function ReferPage() {
             <div className="flex items-center gap-2">
               <input type="checkbox" className="bg-[#555555]" />{" "}
               <label>
-                I confirm I have the referred client's permission to share
+                I confirm I have the referred client&apos;s permission to share
                 their contact information.
               </label>
             </div>
