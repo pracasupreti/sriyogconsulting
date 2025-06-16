@@ -5,16 +5,16 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function TechFridayPage() {
-  const sponsors = [
-    "/assets/images/techfriday/1.png",
-    "/assets/images/techfriday/2.png",
-    "/assets/images/techfriday/3.png",
-    "/assets/images/techfriday/4.png",
-    "/assets/images/techfriday/5.png",
-    "/assets/images/techfriday/6.png",
-    "/assets/images/techfriday/7.png",
-    "/assets/images/techfriday/8.png",
-  ];
+  // const sponsors = [
+  //   "/assets/images/techfriday/1.png",
+  //   "/assets/images/techfriday/2.png",
+  //   "/assets/images/techfriday/3.png",
+  //   "/assets/images/techfriday/4.png",
+  //   "/assets/images/techfriday/5.png",
+  //   "/assets/images/techfriday/6.png",
+  //   "/assets/images/techfriday/7.png",
+  //   "/assets/images/techfriday/8.png",
+  // ];
 
   const howItWorks = [
     {
@@ -258,10 +258,10 @@ export default function TechFridayPage() {
       <section className="max-w-full  mb-16 bg-gray-100 py-8 px-6 lg:px-0">
         {/*Image Container */}
         <div className="max-w-[1180px] mx-auto   flex flex-col sm:flex-row items-stretch gap-8 bg-gray-100 ">
-          <div className="sm:max-w-[40%] h-full w-full ">
+          <div className="sm:max-w-[50%] h-full w-full items-stretch ">
             <Link href="blog/corporate-email">
               <Image
-                src="/assets/images/homepage/blog/corporate-email.png"
+               src="/assets/images/homepage/blog/web-development-stages.jpeg"
                 width={500}
                 height={600}
                 alt="banner_Image"
@@ -456,7 +456,7 @@ export default function TechFridayPage() {
               href="#"
               className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#055d59] text-[#055d59] hover:bg-[#055d59] hover:text-white transition-all duration-200"
             >
-              Back to You
+              Back to top
               <Image
                 src="/assets/images/techfriday/up-arrow.svg"
                 width={20}
@@ -561,10 +561,9 @@ export default function TechFridayPage() {
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptates tempore vel? Vero recusandae nemo eaque facilis ullam
-            odio quo hic cum laboriosam consectetur!
+            SRIYOG Consulting Pvt. Ltd. is a premier Managed IT Services provider based in Kamalpokhari, Kathmandu, Nepal. We specialize in delivering innovative, reliable, and scalable IT solutions to businesses of all sizes, helping them achieve digital transformation, operational efficiency and sustainable growth.
           </p>
+          <p>----------------------------------------------------------------------------------------------</p>
         </div>
       </footer>
     </>

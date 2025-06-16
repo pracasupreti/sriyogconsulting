@@ -361,7 +361,7 @@ export default function BlogPage() {
 
       <section className="w-full px-6 md:max-w-[1180px] md:px-0 mx-auto mb-[45px]">
 
-        <div className="flex flex-col md:flex-row gap-6 md:gap-2 items-stretch justify-between px-6 lg:px-0"> 
+        <div className="flex flex-col md:flex-row gap-6 md:gap-2 items-stretch justify-between  lg:px-0"> 
           {
             cards.map((item,index)=>(
               <div key={item.id} className={`${item.isCenter?"scale-[1.05]":""} w-full md:max-w-[350px] shadow-xl transition-all duration-100 ease-in-out border-gray-400 pb-4 rounded-md `}>
@@ -404,23 +404,61 @@ export default function BlogPage() {
       </section>
           {/*Different blogs */}
       <section className="w-full px-6 md:max-w-[1180px] md:px-0 mx-auto mb-[45px]">
-          <div>
+          <div className=" flex flex-col md:flex-row items-center gap-2 md:gap-6">
 
-            <div>
+            <div className="flex flex-col gap-6 w-full md:w-2/3 ">
               {
                 footerCards.map((item,index)=>(
-                <>
-                      {item.category === "destination"?<div className="flex gap-4 "  key={item.id} >
-                        <Image src={item.image} width={100 } height={100} alt={item.title}/>
+                <div key={item.id} >
+                      {item.category === "destination"?<div className="flex gap-4 "  >
+                        <Image src={item.image} width={130 } height={130} alt={item.title} className="rounded-md"/>
                         <div className="">
-                          <h1>{item.title}</h1>
-                          <div>
+                          <h1 className="text-xl font-[800]">{item.title}</h1>
+                          <div className="flex text-sm gap-2 mt-3 ">
                             <p>{item.date}</p>
                             <p>{item.views}</p>
                           </div>
                         </div>
                       </div>:<></>}
-                 </>
+               </div>
+                ))
+              }
+            </div>
+
+            <div className="flex flex-col gap-6 w-full md:w-2/3 ">
+              {
+                footerCards.map((item,index)=>(
+                <div key={item.id} >
+                      {item.category === "destination"?<div className="flex gap-4 "  >
+                        <Image src={item.image} width={130 } height={130} alt={item.title} className="rounded-md"/>
+                        <div className="">
+                          <h1 className="text-xl font-[800]">{item.title}</h1>
+                          <div className="flex text-sm gap-2 mt-3 ">
+                            <p>{item.date}</p>
+                            <p>{item.views}</p>
+                          </div>
+                        </div>
+                      </div>:<></>}
+               </div>
+                ))
+              }
+            </div>
+
+            <div className="flex flex-col gap-6 w-full md:w-2/3 ">
+              {
+                footerCards.map((item,index)=>(
+                <div key={item.id} >
+                      {item.category === "destination"?<div className="flex gap-4 "  >
+                        <Image src={item.image} width={130 } height={130} alt={item.title} className="rounded-md"/>
+                        <div className="">
+                          <h1 className="text-xl font-[800]">{item.title}</h1>
+                          <div className="flex text-sm gap-2 mt-3 ">
+                            <p>{item.date}</p>
+                            <p>{item.views}</p>
+                          </div>
+                        </div>
+                      </div>:<></>}
+               </div>
                 ))
               }
             </div>
