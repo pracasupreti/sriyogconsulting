@@ -1,15 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { desc, div } from "framer-motion/client";
 
-interface card {
-  title:string,
-  desc:string,
-  image:string,
-  isCenter: boolean,
-  category:string,
 
-}
 export default function BlogPage() {
 
   const footerCards = [
@@ -116,7 +108,7 @@ export default function BlogPage() {
 
     }
   ]
-  const cards = [
+  const cards= [
     {
       id:1,
       title:"Project Ideas Around the House",
@@ -216,7 +208,7 @@ export default function BlogPage() {
                 </p>
                 <section className="text-sm max-h-0 translate-y-3 group-hover:translate-y-0 group-hover:max-h-36 transition-all duration-500 ease-in-out">
                   <p className="my-2">
-                    Corporate emails tied to a custom domain shape a company’s identity and credibility.
+                    Corporate emails tied to a custom domain shape a company&apos;s identity and credibility.
                   </p>
                   <p className="text-sm">Lalita Ghimire</p>
                   <p className="text-sm">React JS Developer</p>
@@ -282,7 +274,7 @@ export default function BlogPage() {
                 </p>
                 <section className="text-sm max-h-0 translate-y-4 group-hover:max-h-36 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
                   <p className="my-2">
-                    Websites aren't just layouts — they reflect brand and function too.
+                    Websites aren&apos;t just layouts — they reflect brand and function too.
                   </p>
                   <p className="text-sm">Madan Tamang</p>
                   <p className="text-sm">Web Developer</p>
@@ -307,7 +299,7 @@ export default function BlogPage() {
             />
             <h1 className="text-lg font-bold mt-4">What is Corporate/Business Email?</h1>
             <p className="text-sm mt-2 mb-3">
-              In today’s competitive business environment, professional email branding is key to credibility.
+              In today&apos;s competitive business environment, professional email branding is key to credibility.
             </p>
             <Link href="#" className="inline-block mt-3 border border-gray-500 px-3 py-1 rounded-md text-sm">
                   Read More
@@ -363,7 +355,7 @@ export default function BlogPage() {
 
         <div className="flex flex-col md:flex-row gap-6 md:gap-2 items-stretch justify-between  lg:px-0"> 
           {
-            cards.map((item,index)=>(
+            cards.map((item)=>(
               <div key={item.id} className={`${item.isCenter?"scale-[1.05]":""} w-full md:max-w-[350px] shadow-xl transition-all duration-100 ease-in-out border-gray-400 pb-4 rounded-md `}>
                 <div className="w-full ">
                   <Image src={item.image} width={350} height={250} alt={item.title} className="w-full h-[343px] rounded-t-md sm:h-[250px] object-cover"/>
@@ -387,7 +379,7 @@ export default function BlogPage() {
       </section>
           {/*Bottom cards */}
       <section className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 mb-[45px] flex flex-col md:flex-row gap-7 ">
-          {bottomCards.map((item,index)=>(
+          {bottomCards.map((item)=>(
             <div key={item.id} className=" w-full md:max-w-[50%] shadow-sm">
               <div className="w-full ">
                 <Image src={item.image} width={600} height={500} alt={item.image} className="h-[300px] rounded-t-md"/>
@@ -408,7 +400,7 @@ export default function BlogPage() {
 
             <div className="flex flex-col gap-6 w-full md:w-2/3 ">
               {
-                footerCards.map((item,index)=>(
+                footerCards.map((item)=>(
                 <div key={item.id} >
                       {item.category === "destination"?<div className="flex gap-4 "  >
                         <Image src={item.image} width={130 } height={130} alt={item.title} className="rounded-md"/>
@@ -427,7 +419,7 @@ export default function BlogPage() {
 
             <div className="flex flex-col gap-6 w-full md:w-2/3 ">
               {
-                footerCards.map((item,index)=>(
+                footerCards.map((item)=>(
                 <div key={item.id} >
                       {item.category === "destination"?<div className="flex gap-4 "  >
                         <Image src={item.image} width={130 } height={130} alt={item.title} className="rounded-md"/>
@@ -446,7 +438,7 @@ export default function BlogPage() {
 
             <div className="flex flex-col gap-6 w-full md:w-2/3 ">
               {
-                footerCards.map((item,index)=>(
+                footerCards.map((item)=>(
                 <div key={item.id} >
                       {item.category === "destination"?<div className="flex gap-4 "  >
                         <Image src={item.image} width={130 } height={130} alt={item.title} className="rounded-md"/>

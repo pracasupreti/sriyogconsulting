@@ -1,4 +1,5 @@
 "use client";
+import Ribbon from "@/components/Ribbon";
 import { useEffect, useState } from "react";
 
 type FileMeta = {
@@ -20,6 +21,7 @@ export default function DownloadPage() {
     "/assets/downloadFiles/Internship-Sample-Letter-from-College.pdf",
     "/assets/downloadFiles/SRIYOG-Consulting-Internship-Application-Letter.docx",
     "/assets/downloadFiles/SRIYOG-Consulting-Internship-Recommendation-Letter.docx",
+  "/assets/downloadFiles/sriyog-consulting-logos.zip"
   ];
 
   const getFileType = (fileName: string): string => {
@@ -37,20 +39,7 @@ export default function DownloadPage() {
     }
   };
 
-  const fetchMetadata = async () => {
-    const metadata: FileMeta[] = await Promise.all(
-      fileList.map(async (fileUrl) => {
-        const res = await fetch(fileUrl);
-        const blob = await res.blob();
-        const title = decodeURIComponent(fileUrl.split("/").pop() || "Unknown File");
-        const size = `${(blob.size / 1024).toFixed(2)} KB`;
-        const type = getFileType(title);
-        const lastUpdate = new Date().toLocaleDateString();
-        return { title, url: fileUrl, size, type, lastUpdate };
-      })
-    );
-    setFiles(metadata);
-  };
+
 
   const handleDownload = async (url: string, name: string) => {
     const res = await fetch(url);
@@ -66,10 +55,29 @@ export default function DownloadPage() {
   };
 
   useEffect(() => {
+    const fetchMetadata = async () => {
+    const metadata: FileMeta[] = await Promise.all(
+      fileList.map(async (fileUrl) => {
+        const res = await fetch(fileUrl);
+        const blob = await res.blob();
+        const rawTitle = decodeURIComponent(fileUrl.split("/").pop() ||"Unknown File")
+        const cleanedTitle = rawTitle.replace(/\.[^/.]+$/, "").replace(/-/g, " ")
+        const title = cleanedTitle
+        const size = `${(blob.size / 1024).toFixed(2)} KB`;
+        const type = getFileType(rawTitle);
+        const lastUpdate = new Date().toLocaleDateString();
+        return { title, url: fileUrl, size, type, lastUpdate };
+      })
+    );
+    setFiles(metadata);
+  };
+
     fetchMetadata();
   }, []);
 
   return (
+    <>
+    <Ribbon name="Download" des=""/>
     <section className="max-w-[1180px] mx-auto px-4 md:px-6 py-6">
       <div className="overflow-x-auto">
         <table className="min-w-full border-collapse text-sm md:text-base">
@@ -108,5 +116,6 @@ export default function DownloadPage() {
         </table>
       </div>
     </section>
+    </>
   );
 }
