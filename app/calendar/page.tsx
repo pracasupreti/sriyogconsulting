@@ -147,3 +147,11 @@
 //     </div>
 //   );
 // }
+
+export default function Calendar(){
+  return(
+    <>
+    <p>this is calendar page of our website</p>
+    </>
+  )
+}

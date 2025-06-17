@@ -8,6 +8,7 @@ type FileMeta = {
   size: string;
   type: string;
   lastUpdate: string;
+  rawTitle:string;
 };
 
 export default function DownloadPage() {
@@ -66,7 +67,7 @@ export default function DownloadPage() {
         const size = `${(blob.size / 1024).toFixed(2)} KB`;
         const type = getFileType(rawTitle);
         const lastUpdate = new Date().toLocaleDateString();
-        return { title, url: fileUrl, size, type, lastUpdate };
+        return { title, url: fileUrl, size, type, lastUpdate,rawTitle };
       })
     );
     setFiles(metadata);
@@ -104,7 +105,7 @@ export default function DownloadPage() {
                 <td className="py-3 px-4">{item.lastUpdate}</td>
                 <td className="py-3 px-4">
                   <button
-                    onClick={() => handleDownload(item.url, item.title)}
+                    onClick={() => handleDownload(item.url, item.rawTitle)}
                     className="text-[#055D59] border-[#055D59] border px-3 py-1 rounded hover:bg-[#044c4a] hover:text-white transition-all duration-200 text-xs md:text-sm"
                   >
                     Download
