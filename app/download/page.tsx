@@ -39,7 +39,23 @@ export default function DownloadPage() {
     }
   };
 
-  const fetchMetadata = async () => {
+
+
+  const handleDownload = async (url: string, name: string) => {
+    const res = await fetch(url);
+    const blob = await res.blob();
+    const objectUrl = window.URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = objectUrl;
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    window.URL.revokeObjectURL(objectUrl);
+  };
+
+  useEffect(() => {
+    const fetchMetadata = async () => {
     const metadata: FileMeta[] = await Promise.all(
       fileList.map(async (fileUrl) => {
         const res = await fetch(fileUrl);
@@ -56,22 +72,8 @@ export default function DownloadPage() {
     setFiles(metadata);
   };
 
-  const handleDownload = async (url: string, name: string) => {
-    const res = await fetch(url);
-    const blob = await res.blob();
-    const objectUrl = window.URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = objectUrl;
-    a.download = name;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    window.URL.revokeObjectURL(objectUrl);
-  };
-
-  useEffect(() => {
     fetchMetadata();
-  }, [fetchMetadata()]);
+  }, []);
 
   return (
     <>

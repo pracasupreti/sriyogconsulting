@@ -1,14 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-// interface card {
-//   title:string,
-//   desc:string,
-//   image:string,
-//   isCenter: boolean,
-//   category:string,
 
-// }
 export default function BlogPage() {
 
   const footerCards = [
