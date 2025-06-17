@@ -71,7 +71,7 @@ export default function DownloadPage() {
 
   useEffect(() => {
     fetchMetadata();
-  }, []);
+  }, [fetchMetadata()]);
 
   return (
     <>

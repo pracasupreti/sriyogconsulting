@@ -1,15 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
-import { desc, div } from "framer-motion/client";
 
-interface card {
-  title:string,
-  desc:string,
-  image:string,
-  isCenter: boolean,
-  category:string,
+// interface card {
+//   title:string,
+//   desc:string,
+//   image:string,
+//   isCenter: boolean,
+//   category:string,
 
-}
+// }
 export default function BlogPage() {
 
   const footerCards = [
@@ -116,7 +115,7 @@ export default function BlogPage() {
 
     }
   ]
-  const cards = [
+  const cards= [
     {
       id:1,
       title:"Project Ideas Around the House",
@@ -363,7 +362,7 @@ export default function BlogPage() {
 
         <div className="flex flex-col md:flex-row gap-6 md:gap-2 items-stretch justify-between  lg:px-0"> 
           {
-            cards.map((item,index)=>(
+            cards.map((item)=>(
               <div key={item.id} className={`${item.isCenter?"scale-[1.05]":""} w-full md:max-w-[350px] shadow-xl transition-all duration-100 ease-in-out border-gray-400 pb-4 rounded-md `}>
                 <div className="w-full ">
                   <Image src={item.image} width={350} height={250} alt={item.title} className="w-full h-[343px] rounded-t-md sm:h-[250px] object-cover"/>
@@ -387,7 +386,7 @@ export default function BlogPage() {
       </section>
           {/*Bottom cards */}
       <section className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 mb-[45px] flex flex-col md:flex-row gap-7 ">
-          {bottomCards.map((item,index)=>(
+          {bottomCards.map((item)=>(
             <div key={item.id} className=" w-full md:max-w-[50%] shadow-sm">
               <div className="w-full ">
                 <Image src={item.image} width={600} height={500} alt={item.image} className="h-[300px] rounded-t-md"/>
@@ -408,7 +407,7 @@ export default function BlogPage() {
 
             <div className="flex flex-col gap-6 w-full md:w-2/3 ">
               {
-                footerCards.map((item,index)=>(
+                footerCards.map((item)=>(
                 <div key={item.id} >
                       {item.category === "destination"?<div className="flex gap-4 "  >
                         <Image src={item.image} width={130 } height={130} alt={item.title} className="rounded-md"/>
@@ -427,7 +426,7 @@ export default function BlogPage() {
 
             <div className="flex flex-col gap-6 w-full md:w-2/3 ">
               {
-                footerCards.map((item,index)=>(
+                footerCards.map((item)=>(
                 <div key={item.id} >
                       {item.category === "destination"?<div className="flex gap-4 "  >
                         <Image src={item.image} width={130 } height={130} alt={item.title} className="rounded-md"/>
@@ -446,7 +445,7 @@ export default function BlogPage() {
 
             <div className="flex flex-col gap-6 w-full md:w-2/3 ">
               {
-                footerCards.map((item,index)=>(
+                footerCards.map((item)=>(
                 <div key={item.id} >
                       {item.category === "destination"?<div className="flex gap-4 "  >
                         <Image src={item.image} width={130 } height={130} alt={item.title} className="rounded-md"/>
