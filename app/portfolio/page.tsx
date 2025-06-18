@@ -6,49 +6,49 @@ export default function PortfolioPage() {
       id: 1,
       image: "/assets/images/about/noimage.png",
       title: "Kisanpedia Services",
-      path: "",
+      path: "https://kisanpedia.com/",
     },
     {
       id: 2,
       image: "/assets/images/about/noimage.png",
-      title: "Kisanpedia Services",
-      path: "",
+      title: "Trans Nepal Dry Port",
+      path: "https://transnepaldryport.com/",
     },
     {
       id: 3,
       image: "/assets/images/about/noimage.png",
-      title: "Kisanpedia Services",
-      path: "",
+      title: "BKM Masala",
+      path: "https://bkmasala.com.np/",
     },
     {
       id: 4,
       image: "/assets/images/about/noimage.png",
-      title: "Kisanpedia Services",
-      path: "",
+      title: "Neuro Hospital",
+      path: "https://www.neurohospital.com.np/",
     },
     {
       id: 5,
       image: "/assets/images/about/noimage.png",
-      title: "Kisanpedia Services",
-      path: "",
+      title: "Kopila Clinic",
+      path: "https://kopilaclinic.com.np/",
     },
 
     {
       id: 6,
       image: "/assets/images/about/noimage.png",
-      title: "Kisanpedia Services",
+      title: "Dr. Priyanka’s Clinic",
     },
 
     {
       id: 7,
       image: "/assets/images/about/noimage.png",
-      title: "Kisanpedia Services",
+      title: "Dr. Priyanka’s Clinic",
     },
 
     {
       id: 8,
       image: "/assets/images/about/noimage.png",
-      title: "Kisanpedia Services",
+      title: "Pain Clinic",
     },
 
     {
@@ -57,6 +57,8 @@ export default function PortfolioPage() {
       title: "Kisanpedia Services",
     },
   ];
+
+   
   return (
     <>
       <section className="max-w-[1180px] mx-auto px-6 lg:px-0 mb-[45px] mt-[45px] w-full flex flex-col sm:flex-row gap-4 justify-between flex-wrap ">
@@ -75,7 +77,8 @@ export default function PortfolioPage() {
             <h1 className="text-center">{item.title}</h1>
 
             <Link
-              href=""
+              href={`${item.path}`}
+              target="_blank"
               className="px-4 py-2 border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white w-[40%] mx-auto text-center rounded-[15px] transition-all ease-in duration-[100] "
             >
               Join Now

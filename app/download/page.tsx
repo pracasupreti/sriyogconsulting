@@ -67,6 +67,9 @@ export default function DownloadPage() {
         const size = `${(blob.size / 1024).toFixed(2)} KB`;
         const type = getFileType(rawTitle);
         const lastUpdate = new Date().toLocaleDateString();
+        console.log(rawTitle)
+        console.log(title)
+
         return { title, url: fileUrl, size, type, lastUpdate,rawTitle };
       })
     );
@@ -82,8 +85,8 @@ export default function DownloadPage() {
     <section className="max-w-[1180px] mx-auto px-4 md:px-6 py-6">
       <div className="overflow-x-auto">
         <table className="min-w-full border-collapse text-sm md:text-base">
-          <thead className="bg-gray-200">
-            <tr>
+          <thead className="bg-gray-200 hidden md:table-header-group">
+            <tr >
               <th className="text-left py-3 px-4 whitespace-nowrap">Title</th>
               <th className="text-left py-3 px-4 whitespace-nowrap">Size</th>
               <th className="text-left py-3 px-4 whitespace-nowrap">Type</th>
@@ -97,18 +100,21 @@ export default function DownloadPage() {
                 key={index}
                 className={`${
                   index % 2 === 0 ? "bg-gray-100" : "bg-white"
-                } rounded-md shadow-sm`}
+                } md:table-row rounded-md shadow-sm p-4 mb-4 block`}
               >
-                <td className="py-3 px-4">{item.title}</td>
-                <td className="py-3 px-4">{item.size}</td>
-                <td className="py-3 px-4">{item.type}</td>
-                <td className="py-3 px-4">{item.lastUpdate}</td>
-                <td className="py-3 px-4">
+                <td className="py-3 px-4 font-medium block md:table-cell">{item.title}</td>
+                <td className="py-2 px-4 block md:table-cell">{item.size}</td>
+                <td className="py-2 px-4 block md:table-cell">{item.type}</td>
+                <td className="py-2 px-4 block md:table-cell md:align"><span className="md:hidden font-semibold">{item.lastUpdate}</span></td>
+                <td className="py-2 px-4 block md:table-cell md:align-middle">
+                  <span className="md:hidden font-semibold mr-4">
+                    Download:
+                  </span>
                   <button
                     onClick={() => handleDownload(item.url, item.rawTitle)}
                     className="text-[#055D59] border-[#055D59] border px-3 py-1 rounded hover:bg-[#044c4a] hover:text-white transition-all duration-200 text-xs md:text-sm"
                   >
-                    Download
+                    Download:
                   </button>
                 </td>
               </tr>
