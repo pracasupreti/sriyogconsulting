@@ -4,47 +4,47 @@ export default function MeetPage() {
   const meet = [
     {
       id: 1,
-      image: "/assets/images/about/noimage.png",
+      image: "/assets/images/meet/1.jpg",
       title: "Next JS ",
       day: "Sunday",
       time: "9:00 PM",
-      path: "",
+      path: "https://meet.google.com/isv-vynb-qrp",
     },
     {
       id: 2,
       title: "UI/UX ",
-      image: "/assets/images/about/noimage.png",
+      image: "/assets/images/meet/2.jpg",
       day: "Monday",
       time: "9:00 PM",
-      path: "",
+      path: "https://meet.google.com/isv-vynb-qrp",
     },
     {
       id: 3,
-      image: "/assets/images/about/noimage.png",
+      image: "/assets/images/meet/3.jpg",
       title: "General Meeting",
       day: "Wednesday",
       time: "9:00 PM",
-      path: "",
+      path: "https://meet.google.com/isv-vynb-qrp",
     },
     {
       id: 4,
-      image: "/assets/images/about/noimage.png",
+      image: "/assets/images/meet/4.jpg",
       title: "React JS ",
       day: "Thursday",
       time: "9:00 PM",
-      path: "",
+      path: "https://meet.google.com/isv-vynb-qrp",
     },
     {
       id: 5,
-      image: "/assets/images/about/noimage.png",
+      image: "/assets/images/meet/5.jpg",
       title: "Interview",
       day: "Friday",
       time: "1:00 PM  to  9:00 PM",
-      path: "",
+      path: "https://meet.google.com/isv-vynb-qrp",
     },
     {
       id: 6,
-      image: "/assets/images/about/noimage.png",
+      image: "/assets/images/meet/6.jpg",
       title: "# Tech Friday ",
       day: "Friday",
       time: "9:00 PM",
@@ -64,7 +64,7 @@ export default function MeetPage() {
               width={400}
               height={200}
               alt={item.title}
-              className="w-full rounded-[15px]  border-1 border-gray-600 "
+              className="w-full rounded-[15px]  border-1 border-gray-600 object-cover"
             />
             <h1 className="text-center">{item.title}</h1>
             <div className="flex justify-center gap-2 px-4 py-2 text-gray-600 -mt-2 items-center ">

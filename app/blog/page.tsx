@@ -1,7 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
 
-
+export const metadata:Metadata= {
+  title: "Blog | SRIYOG Consulting"
+} 
 export default function BlogPage() {
 
   const footerCards = [
@@ -148,7 +151,7 @@ export default function BlogPage() {
   return (
     <>
       {/* Top Blog Grid */}
-      <section className="w-full md:max-w-[1180px] mx-auto px-4 sm:px-6 md:px-8">
+      <section className="w-full md:max-w-[1180px] mx-auto px-4 sm:px-6 md:px-8 pt-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
           {/* Blog Card 1 */}
           
@@ -301,7 +304,7 @@ export default function BlogPage() {
             <p className="text-sm mt-2 mb-3">
               In today&apos;s competitive business environment, professional email branding is key to credibility.
             </p>
-            <Link href="#" className="inline-block mt-3 border border-gray-500 px-3 py-1 rounded-md text-sm">
+            <Link href="blog/corporate-email" className="inline-block mt-3 border border-gray-500 px-3 py-1 rounded-md text-sm">
                   Read More
                 </Link>
           </div>
@@ -396,67 +399,38 @@ export default function BlogPage() {
       </section>
           {/*Different blogs */}
       <section className="w-full px-6 md:max-w-[1180px] md:px-0 mx-auto mb-[45px]">
-          <div className=" flex flex-col md:flex-row items-center gap-2 md:gap-6">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {["destination", "lifestyle", "photography"].map((category) => (
+      <div key={category}>
+        <h2 className="text-xl font-bold mb-4 uppercase">{category}</h2>
+        <hr className="w-[20%] rounded-full border-none outline-none bg-gray-500 h-1 mb-2 -mt-3" />
+        <div className="flex flex-col gap-4 border-t pt-3 border-gray-400">
+          {footerCards
+            .filter((item) => item.category === category)
+            .map((item) => (
+              <Link href={item.path} key={item.id} className="flex gap-4  " >
+                <Image
+                  src={item.image}
+                  width={120}
+                  height={90}
+                  alt={item.title}
+                  className="rounded-md object-cover w-[120px] h-[90px] shrink-0"
+                />
+                <div className="flex flex-col justify-between ">
+                  <h3 className="text-base font-semibold leading-snug line-clamp-2">{item.title}</h3>
+                  <div className="text-sm text-gray-500 flex gap-3 mt-2">
+                    <p>{item.date}</p>
+                    <p>{item.views}</p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
 
-            <div className="flex flex-col gap-6 w-full md:w-2/3 ">
-              {
-                footerCards.map((item)=>(
-                <div key={item.id} >
-                      {item.category === "destination"?<div className="flex gap-4 "  >
-                        <Image src={item.image} width={130 } height={130} alt={item.title} className="rounded-md"/>
-                        <div className="">
-                          <h1 className="text-xl font-[800]">{item.title}</h1>
-                          <div className="flex text-sm gap-2 mt-3 ">
-                            <p>{item.date}</p>
-                            <p>{item.views}</p>
-                          </div>
-                        </div>
-                      </div>:<></>}
-               </div>
-                ))
-              }
-            </div>
-
-            <div className="flex flex-col gap-6 w-full md:w-2/3 ">
-              {
-                footerCards.map((item)=>(
-                <div key={item.id} >
-                      {item.category === "destination"?<div className="flex gap-4 "  >
-                        <Image src={item.image} width={130 } height={130} alt={item.title} className="rounded-md"/>
-                        <div className="">
-                          <h1 className="text-xl font-[800]">{item.title}</h1>
-                          <div className="flex text-sm gap-2 mt-3 ">
-                            <p>{item.date}</p>
-                            <p>{item.views}</p>
-                          </div>
-                        </div>
-                      </div>:<></>}
-               </div>
-                ))
-              }
-            </div>
-
-            <div className="flex flex-col gap-6 w-full md:w-2/3 ">
-              {
-                footerCards.map((item)=>(
-                <div key={item.id} >
-                      {item.category === "destination"?<div className="flex gap-4 "  >
-                        <Image src={item.image} width={130 } height={130} alt={item.title} className="rounded-md"/>
-                        <div className="">
-                          <h1 className="text-xl font-[800]">{item.title}</h1>
-                          <div className="flex text-sm gap-2 mt-3 ">
-                            <p>{item.date}</p>
-                            <p>{item.views}</p>
-                          </div>
-                        </div>
-                      </div>:<></>}
-               </div>
-                ))
-              }
-            </div>
-
-          </div>
-      </section>
     </>
   );
 }
