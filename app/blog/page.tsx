@@ -114,14 +114,15 @@ export default function BlogPage() {
   const cards= [
     {
       id:1,
-      title:"Project Ideas Around the House",
-      image:"/assets/images/blog/1.jpg",
+      title:"16-60 Theory : Design your best life",
+      image:"/assets/images/blog/lifedesign-1.jpg",
       category:"Lifestyle",
-      desc:" Websites shape your online presence. Get tips on content, structure, and trust signals for business growth.",
+      desc:" We have always seen that fish mostly lies in two places, i.e. River and Aquarium. A fish living in aquarium has regular food, well maintained (artificial) ... ",
      date:"27 August",
      views:"25k VIEWS",
      read:"12 MINS READ",
-     isCenter:false
+     isCenter:false,
+     path:"blog/design-your-life"
     },
       {
       id:2,
@@ -132,7 +133,9 @@ export default function BlogPage() {
      date:"18 August",
      views:"25k VIEWS",
      read:"14 MINS READ",
-    isCenter:true
+    isCenter:true,
+         path:"blog/design-your-life"
+
 
     },
         {
@@ -144,7 +147,9 @@ export default function BlogPage() {
      date:"27 August",
      views:"25k VIEWS",
      read:"12 MINS READ",
-     isCenter:false
+     isCenter:false,
+          path:"blog/design-your-life"
+
 
     },
   ]
@@ -338,12 +343,12 @@ export default function BlogPage() {
                 <p className="mt-2">
                   Just two decades ago, basic phones ruled Nepal. Today, spyware and hacking threats are part of our digital reality.
                 </p>
-                <Link href="#" className="inline-block mt-3 border border-gray-500 px-3 py-1 rounded-md text-sm">
+                <Link href="blog/pegasus-sypyware" className="inline-block mt-3 border border-gray-500 px-3 py-1 rounded-md text-sm">
                   Read More
                 </Link>
               </div>
               <Image
-                src="/assets/images/homepage/blog/things-to-keep-in-website.png"
+                src="/assets/images/blog/5.jpg"
                 width={150}
                 height={150}
                 alt="pegasus"
@@ -359,7 +364,7 @@ export default function BlogPage() {
         <div className="flex flex-col md:flex-row gap-6 md:gap-2 items-stretch justify-between  lg:px-0"> 
           {
             cards.map((item)=>(
-              <div key={item.id} className={`${item.isCenter?"scale-[1.05]":""} w-full md:max-w-[350px] shadow-xl transition-all duration-100 ease-in-out border-gray-400 pb-4 rounded-md `}>
+              <Link href={item.path} key={item.id} className={`${item.isCenter?"scale-[1.05]":""} w-full md:max-w-[350px] shadow-xl transition-all duration-100 ease-in-out border-gray-400 pb-4 rounded-md `}>
                 <div className="w-full ">
                   <Image src={item.image} width={350} height={250} alt={item.title} className="w-full h-[343px] rounded-t-md sm:h-[250px] object-cover"/>
                 </div>
@@ -374,7 +379,7 @@ export default function BlogPage() {
                   <p>{item.views}</p>
                  </div>
                 </div>
-              </div>
+              </Link>
             ))
           }
         </div>
