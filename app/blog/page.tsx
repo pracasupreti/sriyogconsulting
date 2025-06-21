@@ -1,7 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
 
-
+export const metadata:Metadata= {
+  title: "Blog | SRIYOG Consulting"
+} 
 export default function BlogPage() {
 
   const footerCards = [
@@ -111,14 +114,15 @@ export default function BlogPage() {
   const cards= [
     {
       id:1,
-      title:"Project Ideas Around the House",
-      image:"/assets/images/blog/1.jpg",
+      title:"16-60 Theory : Design your best life",
+      image:"/assets/images/blog/lifedesign-1.jpg",
       category:"Lifestyle",
-      desc:" Websites shape your online presence. Get tips on content, structure, and trust signals for business growth.",
+      desc:" We have always seen that fish mostly lies in two places, i.e. River and Aquarium. A fish living in aquarium has regular food, well maintained (artificial) ... ",
      date:"27 August",
      views:"25k VIEWS",
      read:"12 MINS READ",
-     isCenter:false
+     isCenter:false,
+     path:"blog/design-your-life"
     },
       {
       id:2,
@@ -129,7 +133,9 @@ export default function BlogPage() {
      date:"18 August",
      views:"25k VIEWS",
      read:"14 MINS READ",
-    isCenter:true
+    isCenter:true,
+         path:"blog/design-your-life"
+
 
     },
         {
@@ -141,14 +147,16 @@ export default function BlogPage() {
      date:"27 August",
      views:"25k VIEWS",
      read:"12 MINS READ",
-     isCenter:false
+     isCenter:false,
+          path:"blog/design-your-life"
+
 
     },
   ]
   return (
     <>
       {/* Top Blog Grid */}
-      <section className="w-full md:max-w-[1180px] mx-auto px-4 sm:px-6 md:px-8">
+      <section className="w-full md:max-w-[1180px] mx-auto px-4 sm:px-6 md:px-8 pt-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
           {/* Blog Card 1 */}
           
@@ -301,7 +309,7 @@ export default function BlogPage() {
             <p className="text-sm mt-2 mb-3">
               In today&apos;s competitive business environment, professional email branding is key to credibility.
             </p>
-            <Link href="#" className="inline-block mt-3 border border-gray-500 px-3 py-1 rounded-md text-sm">
+            <Link href="blog/corporate-email" className="inline-block mt-3 border border-gray-500 px-3 py-1 rounded-md text-sm">
                   Read More
                 </Link>
           </div>
@@ -311,16 +319,18 @@ export default function BlogPage() {
             {/* Top */}
             <div className="flex gap-4 shadow-lg p-4 rounded-lg">
               <div className="flex-1 text-sm">
-                <h1 className="text-lg font-bold">Things to Keep in Business Website</h1>
+                <h1 className="text-lg font-bold">Digital Dashain : Practicing FinTech in family.
+
+</h1>
                 <p className="mt-2">
-                  Websites shape your online presence. Get tips on content, structure, and trust signals for business growth.
+                 Dashain, festival of victory and in another hand a charm of Durga Puja, holidays in Nepal, Ravana Dahan in India and this is celebrated as Navaratri
                 </p>
-                <Link href="#" className="inline-block mt-3 border border-gray-500 px-3 py-1 rounded-md text-sm">
+                <Link href="blog/digital-dashain" className="inline-block mt-3 border border-gray-500 px-3 py-1 rounded-md text-sm">
                   Read More
                 </Link>
               </div>
               <Image
-                src="/assets/images/homepage/blog/things-to-keep-in-website.png"
+                src="/assets/images/blog/dashain-1.jpg"
                 width={150}
                 height={150}
                 alt="things-to-keep"
@@ -335,12 +345,12 @@ export default function BlogPage() {
                 <p className="mt-2">
                   Just two decades ago, basic phones ruled Nepal. Today, spyware and hacking threats are part of our digital reality.
                 </p>
-                <Link href="#" className="inline-block mt-3 border border-gray-500 px-3 py-1 rounded-md text-sm">
+                <Link href="blog/pegasus-sypyware" className="inline-block mt-3 border border-gray-500 px-3 py-1 rounded-md text-sm">
                   Read More
                 </Link>
               </div>
               <Image
-                src="/assets/images/homepage/blog/things-to-keep-in-website.png"
+                src="/assets/images/blog/5.jpg"
                 width={150}
                 height={150}
                 alt="pegasus"
@@ -356,7 +366,7 @@ export default function BlogPage() {
         <div className="flex flex-col md:flex-row gap-6 md:gap-2 items-stretch justify-between  lg:px-0"> 
           {
             cards.map((item)=>(
-              <div key={item.id} className={`${item.isCenter?"scale-[1.05]":""} w-full md:max-w-[350px] shadow-xl transition-all duration-100 ease-in-out border-gray-400 pb-4 rounded-md `}>
+              <Link href={item.path} key={item.id} className={`${item.isCenter?"scale-[1.05]":""} w-full md:max-w-[350px] shadow-xl transition-all duration-100 ease-in-out border-gray-400 pb-4 rounded-md `}>
                 <div className="w-full ">
                   <Image src={item.image} width={350} height={250} alt={item.title} className="w-full h-[343px] rounded-t-md sm:h-[250px] object-cover"/>
                 </div>
@@ -371,7 +381,7 @@ export default function BlogPage() {
                   <p>{item.views}</p>
                  </div>
                 </div>
-              </div>
+              </Link>
             ))
           }
         </div>
@@ -396,67 +406,38 @@ export default function BlogPage() {
       </section>
           {/*Different blogs */}
       <section className="w-full px-6 md:max-w-[1180px] md:px-0 mx-auto mb-[45px]">
-          <div className=" flex flex-col md:flex-row items-center gap-2 md:gap-6">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {["destination", "lifestyle", "photography"].map((category) => (
+      <div key={category}>
+        <h2 className="text-xl font-bold mb-4 uppercase">{category}</h2>
+        <hr className="w-[20%] rounded-full border-none outline-none bg-gray-500 h-1 mb-2 -mt-3" />
+        <div className="flex flex-col gap-4 border-t pt-3 border-gray-400">
+          {footerCards
+            .filter((item) => item.category === category)
+            .map((item) => (
+              <Link href={item.path} key={item.id} className="flex gap-4  " >
+                <Image
+                  src={item.image}
+                  width={120}
+                  height={90}
+                  alt={item.title}
+                  className="rounded-md object-cover w-[120px] h-[90px] shrink-0"
+                />
+                <div className="flex flex-col justify-between ">
+                  <h3 className="text-base font-semibold leading-snug line-clamp-2">{item.title}</h3>
+                  <div className="text-sm text-gray-500 flex gap-3 mt-2">
+                    <p>{item.date}</p>
+                    <p>{item.views}</p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
 
-            <div className="flex flex-col gap-6 w-full md:w-2/3 ">
-              {
-                footerCards.map((item)=>(
-                <div key={item.id} >
-                      {item.category === "destination"?<div className="flex gap-4 "  >
-                        <Image src={item.image} width={130 } height={130} alt={item.title} className="rounded-md"/>
-                        <div className="">
-                          <h1 className="text-xl font-[800]">{item.title}</h1>
-                          <div className="flex text-sm gap-2 mt-3 ">
-                            <p>{item.date}</p>
-                            <p>{item.views}</p>
-                          </div>
-                        </div>
-                      </div>:<></>}
-               </div>
-                ))
-              }
-            </div>
-
-            <div className="flex flex-col gap-6 w-full md:w-2/3 ">
-              {
-                footerCards.map((item)=>(
-                <div key={item.id} >
-                      {item.category === "destination"?<div className="flex gap-4 "  >
-                        <Image src={item.image} width={130 } height={130} alt={item.title} className="rounded-md"/>
-                        <div className="">
-                          <h1 className="text-xl font-[800]">{item.title}</h1>
-                          <div className="flex text-sm gap-2 mt-3 ">
-                            <p>{item.date}</p>
-                            <p>{item.views}</p>
-                          </div>
-                        </div>
-                      </div>:<></>}
-               </div>
-                ))
-              }
-            </div>
-
-            <div className="flex flex-col gap-6 w-full md:w-2/3 ">
-              {
-                footerCards.map((item)=>(
-                <div key={item.id} >
-                      {item.category === "destination"?<div className="flex gap-4 "  >
-                        <Image src={item.image} width={130 } height={130} alt={item.title} className="rounded-md"/>
-                        <div className="">
-                          <h1 className="text-xl font-[800]">{item.title}</h1>
-                          <div className="flex text-sm gap-2 mt-3 ">
-                            <p>{item.date}</p>
-                            <p>{item.views}</p>
-                          </div>
-                        </div>
-                      </div>:<></>}
-               </div>
-                ))
-              }
-            </div>
-
-          </div>
-      </section>
     </>
   );
 }
