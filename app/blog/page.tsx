@@ -319,16 +319,18 @@ export default function BlogPage() {
             {/* Top */}
             <div className="flex gap-4 shadow-lg p-4 rounded-lg">
               <div className="flex-1 text-sm">
-                <h1 className="text-lg font-bold">Things to Keep in Business Website</h1>
+                <h1 className="text-lg font-bold">Digital Dashain : Practicing FinTech in family.
+
+</h1>
                 <p className="mt-2">
-                  Websites shape your online presence. Get tips on content, structure, and trust signals for business growth.
+                 Dashain, festival of victory and in another hand a charm of Durga Puja, holidays in Nepal, Ravana Dahan in India and this is celebrated as Navaratri
                 </p>
-                <Link href="#" className="inline-block mt-3 border border-gray-500 px-3 py-1 rounded-md text-sm">
+                <Link href="blog/digital-dashain" className="inline-block mt-3 border border-gray-500 px-3 py-1 rounded-md text-sm">
                   Read More
                 </Link>
               </div>
               <Image
-                src="/assets/images/homepage/blog/things-to-keep-in-website.png"
+                src="/assets/images/blog/dashain-1.jpg"
                 width={150}
                 height={150}
                 alt="things-to-keep"

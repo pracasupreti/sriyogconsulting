@@ -374,6 +374,7 @@ export default function Tdul() {
           things.
           <br />
           <br />
+          </p> 
           <ul className="list-decimal space-y-1 px-3">
             <li>Talent always has a great price.</li>
 
@@ -382,6 +383,7 @@ export default function Tdul() {
               price.
             </li>
           </ul>
+          <p>
           <br />
           <br />
           Higher competition has less scope: A parents spends (invests) millions
