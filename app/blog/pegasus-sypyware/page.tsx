@@ -1,9 +1,8 @@
-
 import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pegasus Spyware – You Are Hacked",
+  title: "Pegasus Spyware &ndash; You Are Hacked",
 };
 
 export default function psrh() {
@@ -40,8 +39,8 @@ export default function psrh() {
         <p>
           A mixture of Pager and Landline, at that time was known as Cell phone
           or phone with mobility synonym as Mobile phone and till now most of
-          the people still call it "Mobile" which uses cellular network and its
-          full name is "Mobile Phone or Cell Phone".
+          the people still call it &quot;Mobile&quot; which uses cellular network and its
+          full name is &quot;Mobile Phone or Cell Phone&quot;.
         </p>
 
         <p>
@@ -75,14 +74,14 @@ export default function psrh() {
         <p>
           The more we upgraded from Voice and Text based phones with tons of
           apps widely available in market, the more risk we have. RAT is a
-          system which can be easily installed in victim's laptop, desktop or
+          system which can be easily installed in victim&apos;s laptop, desktop or
           even servers to get access to their screenshots, data, files and
           almost a person can operate the laptop/computer from any corner of
           the world with a basic system.
         </p>
 
         <p>
-          Coming to the recent spyware surveillance named as "Pegasus spyware,"
+          Coming to the recent spyware surveillance named as &quot;Pegasus spyware,&quot;
           now smartphone users are aware that their end-to-end encryption is
           not fully encrypted or anyone can install spyware system in their
           mobile phones not only by sending links in WhatsApp but also the
@@ -90,8 +89,8 @@ export default function psrh() {
           phones from WhatsApp.
           <br />
           <br />
-          "As most people are aware, 'Telegram', 'Discord', 'Signal' which are
-          synonyms of the most secured chat applications are not secured."
+          &quot;As most people are aware, &apos;Telegram&apos;, &apos;Discord&apos;, &apos;Signal&apos; which are
+          synonyms of the most secured chat applications are not secured.&quot;
           <br />
           <br />
           Android has basic limitations as compared to iOS for publishing apps
@@ -136,24 +135,24 @@ export default function psrh() {
         </div>
 
         <p>
-          Google Maps access everyone's location, YouTube is built with an
-          algorithm which collects and measures users' interests and shows
+          Google Maps access everyone&apos;s location, YouTube is built with an
+          algorithm which collects and measures users&apos; interests and shows
           related videos. A person is forced to watch whole night killing his or
           her time. NSO Group, the company behind Pegasus (so-called spyware),
-          was founded by Niv Carmi, Shalev Hulio & Omri Lavie in 2010. Their
+          was founded by Niv Carmi, Shalev Hulio &amp; Omri Lavie in 2010. Their
           website is www.nsogroup.com and mentioning
           <br />
           <br />
           <span className="text-xl text-gray-500">
-            "HELPING GOVERNMENTS MAINTAIN PUBLIC SAFETY"
+            &quot;HELPING GOVERNMENTS MAINTAIN PUBLIC SAFETY&quot;
           </span>
           <br />
           <br />
-          From NSO Group Website: "NSO Group develops best-in-class technology
+          From NSO Group Website: &quot;NSO Group develops best-in-class technology
           to help government agencies detect and prevent a wide range of local
           and global threats. Our products help government intelligence and
           law-enforcement agencies use technology to meet the challenges of
-          encryption to prevent and investigate terror and crime."
+          encryption to prevent and investigate terror and crime.&quot;
         </p>
 
         <div className="relative w-full md:h-[1200px] h-[750px] rounded-3xl overflow-hidden">
@@ -173,8 +172,8 @@ export default function psrh() {
           <br />
           <br />
           <span className="text-xl text-gray-500">
-            "The good and bad thing about internet is 'EVERYTHING IS
-            CONNECTED.'"
+            &quot;The good and bad thing about internet is &apos;EVERYTHING IS
+            CONNECTED.&apos;&quot;
           </span>
           <br />
           <br />
