@@ -30,7 +30,7 @@ export default function Tdul() {
 
         <p>
           <span className="text-lg font-[900] italic">
-            “Life is all about how you lead life; not only yours but others too.“
+            &ldquo;Life is all about how you lead life; not only yours but others too.&rdquo;
           </span>
           <br />
           <br />
@@ -38,15 +38,15 @@ export default function Tdul() {
           <br />
           <br />
           <span className="text-lg font-[900] italic">
-            “Choose a job you love, and you will never have to work a day in your life. -Confucius“
+            &ldquo;Choose a job you love, and you will never have to work a day in your life. -Confucius&rdquo;
           </span>
           <br />
           <br />
-          What life is exactly about? It is all about Being Rich or Being Success and most of the people choose both which says "money & success" is very difficult to achieve. It is like keeping two feet in two boats. One can be Bill Gates and another can be Gautam Buddha. This is what life will teach to lead.
+          What life is exactly about? It is all about Being Rich or Being Success and most of the people choose both which says &quot;money &amp; success&quot; is very difficult to achieve. It is like keeping two feet in two boats. One can be Bill Gates and another can be Gautam Buddha. This is what life will teach to lead.
           <br />
           <br />
           <span className="text-lg font-[900] italic">
-            Money can’t buy happiness and happiness can’t buy a Ferrari. - [Prakash Upreti]
+            Money can&rsquo;t buy happiness and happiness can&rsquo;t buy a Ferrari. - [Prakash Upreti]
           </span>
           <br />
           <br />
@@ -58,7 +58,7 @@ export default function Tdul() {
           <Link className="text-blue-700 font-[900]" href="https://en.wikipedia.org/wiki/Pasang_Lhamu_Sherpa">
             Pasang Lhamu Sherpa
           </Link>{" "}
-          didn’t climb the Mount Everest in her first day of her life or in a single day and more there are lots of hidden dedication, pain, plan and vision to become{" "}
+          didn&rsquo;t climb the Mount Everest in her first day of her life or in a single day and more there are lots of hidden dedication, pain, plan and vision to become{" "}
           <Link className="text-blue-700 font-[900]" href={"https://en.wikipedia.org/wiki/Anuradha_Koirala"}>
             Anuradha Koirala
           </Link>
@@ -91,18 +91,18 @@ export default function Tdul() {
           <Link className="text-blue-700 font-[900]" href={"https://en.wikipedia.org/wiki/Mahindra_Last_Mile_Mobility_Limited"}>
             Reva Electric Car Company{" "}
           </Link>
-          (RECC) [Mahindra Electric Mobility Limited, formerly known as the Reva Electric Car Company] in 1994 which started it's production since then with lots of hassles and problems which now has great value and demand. Tesla is the great example for Electric Cars which oversold Mercedes. It is all about first runner and fast runner. To become success in everything, the time and demand must be in same ratio so it can make impact in the mind and society that how they are taking the product. Success has certain timeframe. Once it reaches the height, it has to run horizontally or need to scale.
+          (RECC) [Mahindra Electric Mobility Limited, formerly known as the Reva Electric Car Company] in 1994 which started it&rsquo;s production since then with lots of hassles and problems which now has great value and demand. Tesla is the great example for Electric Cars which oversold Mercedes. It is all about first runner and fast runner. To become success in everything, the time and demand must be in same ratio so it can make impact in the mind and society that how they are taking the product. Success has certain timeframe. Once it reaches the height, it has to run horizontally or need to scale.
           <br />
           <br />
           <span className="text-2xl italic text-gray-500">
-            "It is very hard to plan a life which may or may not fruitful in coming years or coming career path."
+            &quot;It is very hard to plan a life which may or may not fruitful in coming years or coming career path.&quot;
           </span>
           <br />
           <br />
-          <b>The “How to become RICH?” books certainly never makes a person rich instantly.</b> The rule of 16-60 which has been defined in such way that it designs the life of everyone, either he or she is student or a parent who are worried about their child future and in another hand the student is panic about his Career and life. This confusion comes in the conscious and sometimes in subconscious mind where anyone figures a successful person and wants to follow his/her path. Following a successful person is good thing but it may not give good future on someone’s future after 10-15 years. The struggle, plan, pains and other major factors which impacts directly to someone’s life is quite different in country, zone, area and subject which someone choose.
+          <b>The “How to become RICH?” books certainly never makes a person rich instantly.</b> The rule of 16-60 which has been defined in such way that it designs the life of everyone, either he or she is student or a parent who are worried about their child future and in another hand the student is panic about his Career and life. This confusion comes in the conscious and sometimes in subconscious mind where anyone figures a successful person and wants to follow his/her path. Following a successful person is good thing but it may not give good future on someone&rsquo;s future after 10-15 years. The struggle, plan, pains and other major factors which impacts directly to someone&rsquo;s life is quite different in country, zone, area and subject which someone choose.
           <br />
           <br />
-          Let's assume a boy was born in 2000 AD, his journey starts and he completes his SEE (10th grade examination in Nepal- Formerly SLC) in 2016, now the real story begins about 16-60 theory. This has been classified in 7 categories, i.e. childhood (till class ten) 3-16 years of age, Plus Two (K12) 16-18, Bachelor's Degree (18-22) where someone can finish his/her graduation, Experience 22-25 either master’s degree or any job experience, Career Growth (25-40), Sell your experience (40-60) and after that someone can do social service or roam the whole world or live life happily.
+          Let&rsquo;s assume a boy was born in 2000 AD, his journey starts and he completes his SEE (10th grade examination in Nepal- Formerly SLC) in 2016, now the real story begins about 16-60 theory. This has been classified in 7 categories, i.e. childhood (till class ten) 3-16 years of age, Plus Two (K12) 16-18, Bachelor&apos;s Degree (18-22) where someone can finish his/her graduation, Experience 22-25 either master&rsquo;s degree or any job experience, Career Growth (25-40), Sell your experience (40-60) and after that someone can do social service or roam the whole world or live life happily.
           <br />
           <br />
           <b className="italic">Money wipes almost all tears. - [ Prakash Upreti ]</b>
@@ -152,7 +152,7 @@ export default function Tdul() {
           <b className="italic">Plan your future:</b>
           <br />
           <br />
-          When planning your future, you must be focused in your study majorly after 10 class. If the parents have brainwashed/ guided any child since their early stage then they can manage them to study as they want like some parents have dream to make their child a doctor, but not in every case this happens. It is purely the choice of the student either he wants to choose the subject himself or he is forced to choose or he is waiting his friend’s approval.
+          When planning your future, you must be focused in your study majorly after 10 class. If the parents have brainwashed/ guided any child since their early stage then they can manage them to study as they want like some parents have dream to make their child a doctor, but not in every case this happens. It is purely the choice of the student either he wants to choose the subject himself or he is forced to choose or he is waiting his friend&rsquo;s approval.
           <br />
           <br />
           <b>It is necessary to become THE TALENT rather than a weak one.</b>
@@ -192,7 +192,7 @@ export default function Tdul() {
           Life must have plan to overcome all the problems, pains and it must have a proper plan which is listed below. Now coming to the main scenario; A person starts his career (not late in 23rd of his/her age) somehow we say 25th, he works, runs a business till his 40, the experience in the same field will be 15 running years, if he or she works by heart then the experience could count as 30 years (virtually).
           <br />
           <br />
-          The 15 running years of experience is enough to turn any stone into gem, the research, dedication, hard work, the sweat and blood makes anyone very perfect in his field. The 15 years working experience will start the journey of 40-60, this will make him talent and that 15 will give him more opportunities, customer, ideas, innovation, social network, a good team player and more. Life doesn't end on 60, now society waits for you, you can be Investor, seed funder, part of any social organization and lead a very better life.
+          The 15 running years of experience is enough to turn any stone into gem, the research, dedication, hard work, the sweat and blood makes anyone very perfect in his field. The 15 years working experience will start the journey of 40-60, this will make him talent and that 15 will give him more opportunities, customer, ideas, innovation, social network, a good team player and more. Life doesn&#39;t end on 60, now society waits for you, you can be Investor, seed funder, part of any social organization and lead a very better life.
         </p>
 
         <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
