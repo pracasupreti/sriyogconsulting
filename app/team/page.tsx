@@ -4,17 +4,17 @@ import Link from "next/link";
 import { Metadata } from "next";
 const images = [
   "/assets/images/team/1.png",
-  "/assets/images/team/6.png",
   "/assets/images/team/2.png",
   "/assets/images/team/3.png",
   "/assets/images/team/4.png",
   "/assets/images/team/5.png",
+  "/assets/images/team/6.png",
   "/assets/images/team/7.png",
-  "/assets/images/team/8.png",
   "/assets/images/team/9.png",
   "/assets/images/team/10.png",
   "/assets/images/team/11.png",
   "/assets/images/team/12.png",
+   "/assets/images/team/13.png",
 ];
 
 const names = [
@@ -22,28 +22,28 @@ const names = [
   "Madan",
   "Sakchyam",
   "Aashma",
-  "Bitisha",
-  "Lasta",
-  "Milan",
-  "Sarad",
-  "Prakrit",
-  "Priyanka",
+  "Pooja",
+  "Shreeya",
+  "Dipak",
+  "Gaurav",
+  "Sanjana",
   "Sagar",
-  "Rahul",
+  "Nikesh",
+  "Youndhen"
 ];
 const roles = [
   "Project Manager",
-  "Information Officer",
+  "Business Manager",
   "Flutter Developer",
   "Backend Developer",
-  "React Js Developer",
-  "React Js Developer",
+  "Next Js Developer",
   "UI/UX Designer",
-  "React Native Developer",
   "UI/UX Designer",
-  "React JS Developer",
-  "Next JS Developer",
-  "React JS Developer",
+  "Next js Developer",
+  "Next js Developer",
+  "Web Developer",
+  "UI/UX Designer",
+  "Next js Developer",
 ];
 
 export const metadata: Metadata = {
@@ -151,7 +151,7 @@ export default function Example() {
                 <div className="relative h-76 w-full md:h-56 md:w-full lg:h-64 lg:w-[85%] ">
                   <Image
                     fill
-                    className="mx-auto object-contain"
+                    className="mx-auto object-contain "
                     src={img}
                     alt={`Team Member ${index + 1}`}
                   />

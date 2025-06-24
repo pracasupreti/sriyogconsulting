@@ -64,7 +64,7 @@ export default function MeetPage() {
               width={400}
               height={200}
               alt={item.title}
-              className="w-full rounded-[15px]  border-1 border-gray-600 object-cover"
+              className="w-full rounded-[15px] bg-transparent  border-1 border-gray-600 object-cover"
             />
             <h1 className="text-center">{item.title}</h1>
             <div className="flex justify-center gap-2 px-4 py-2 text-gray-600 -mt-2 items-center ">
