@@ -126,29 +126,29 @@ export default function BlogPage() {
     },
       {
       id:2,
-      title:"How to Give Yourself a Spa Day From Home",
-      image:"/assets/images/blog/2.jpg",
+      title:'Story behind "the airbnb story"​ book',
+      image:"/assets/images/blog/airbnb-1.jpg",
       category:"Hotels",
-      desc:" Graduating from a top accelerator or incubator an be as career-defining for a startup founder as an elite university diploma> The intensive programmes, which...",
+      desc:"People worked for vision not to change the society but to make a Digital Empire to print money, create opportunities and inject few things which disrupted an industry but not the thoughts and even feelings.",
      date:"18 August",
      views:"25k VIEWS",
      read:"14 MINS READ",
     isCenter:true,
-         path:"blog/design-your-life"
+         path:"blog/story-behind-the-airbnb-story"
 
 
     },
         {
       id:3,
       title:"Project Ideas Around the House",
-      image:"/assets/images/blog/1.jpg",
+      image:"/assets/images/blog/pitchdesk-1.jpg",
       category:"Lifestyle",
-      desc:" Websites shape your online presence. Get tips on content, structure, and trust signals for business growth.",
+      desc:" Creating pitch deck is the most essential part of startup growth. Few number of slides helps to build multinational brands from hundreds...",
      date:"27 August",
      views:"25k VIEWS",
      read:"12 MINS READ",
      isCenter:false,
-          path:"blog/design-your-life"
+          path:"blog/pitch-deck-magic"
 
 
     },
