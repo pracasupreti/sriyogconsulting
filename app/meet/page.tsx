@@ -1,10 +1,11 @@
+import Ribbon from "@/components/Ribbon";
 import Image from "next/image";
 import Link from "next/link";
 export default function MeetPage() {
   const meet = [
     {
       id: 1,
-      image: "/assets/images/meet/1.jpg",
+      image: "/assets/images/meet/meet.jpg",
       title: "Next JS ",
       day: "Sunday",
       time: "9:00 PM",
@@ -13,14 +14,14 @@ export default function MeetPage() {
     {
       id: 2,
       title: "UI/UX ",
-      image: "/assets/images/meet/2.jpg",
+      image: "/assets/images/meet/meet.jpg",
       day: "Monday",
       time: "9:00 PM",
       path: "https://meet.google.com/isv-vynb-qrp",
     },
     {
       id: 3,
-      image: "/assets/images/meet/3.jpg",
+      image: "/assets/images/meet/meet.jpg",
       title: "General Meeting",
       day: "Wednesday",
       time: "9:00 PM",
@@ -28,7 +29,7 @@ export default function MeetPage() {
     },
     {
       id: 4,
-      image: "/assets/images/meet/4.jpg",
+      image: "/assets/images/meet/meet.jpg",
       title: "React JS ",
       day: "Thursday",
       time: "9:00 PM",
@@ -36,7 +37,7 @@ export default function MeetPage() {
     },
     {
       id: 5,
-      image: "/assets/images/meet/5.jpg",
+      image: "/assets/images/meet/meet.jpg",
       title: "Interview",
       day: "Friday",
       time: "1:00 PM  to  9:00 PM",
@@ -44,19 +45,21 @@ export default function MeetPage() {
     },
     {
       id: 6,
-      image: "/assets/images/meet/6.jpg",
+      image: "/assets/images/meet/meet.jpg",
       title: "# Tech Friday ",
       day: "Friday",
       time: "9:00 PM",
       path: "https://meet.google.com/tat-vvcq-pzu",
     },
+    
   ];
   return (
     <>
+    <Ribbon name="Meet" des=""/>
       <section className="max-w-[1180px] mx-auto px-6 lg:px-0 mb-[45px] mt-[45px] w-full flex flex-col sm:flex-row gap-4 justify-between flex-wrap ">
         {meet.map((item) => (
           <div
-            className=" w-full sm:max-w-[316px] h-auto flex flex-col gap-1 mb-6"
+            className=" w-full sm:max-w-[316px] h-auto flex flex-col gap-3 mb-6"
             key={item.id}
           >
             <Image

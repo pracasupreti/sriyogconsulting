@@ -1,5 +1,12 @@
+import Ribbon from "@/components/Ribbon";
 import Image from "next/image";
 import Link from "next/link";
+
+import { Metadata } from "next";
+
+export const metadata:Metadata={
+  title:"Portfolio | SRIYOG Consulting"
+}
 export default function PortfolioPage() {
   const portfolio = [
     {
@@ -66,11 +73,78 @@ export default function PortfolioPage() {
       title: "Birat Info",
       path:"https://www.biratinfo.com/"
     },
+            {
+      id: 11,
+      image: "/assets/images/portfolio/1.png",
+      title: "SRIYOG App",
+      path:"https://sriyog.app/"
+    },
+            {
+      id: 12,
+      image: "/assets/images/portfolio/2.png",
+      title: "Prabidhi",
+      path:"https://pracasinfosys.com/"
+    },
+            {
+      id: 13,
+      image: "/assets/images/portfolio/3.png",
+      title: "SNG Solution",
+      path:"https://sngsolution.com/"
+    },
+            {
+      id: 14,
+      image: "/assets/images/portfolio/4.png",
+      title: "Lumantic Group",
+      path:"https://lumantigroup.com/"
+    },
+            {
+      id: 15,
+      image: "/assets/images/portfolio/5.png",
+      title: "Tackles Technicals",
+      path:"https://tackles.pro/"
+    },
+            {
+      id: 16,
+      image: "/assets/images/portfolio/6.png",
+      title: "PUSOM",
+      path:"https://pusom.edu.np/"
+    },
+            {
+      id: 17,
+      image: "/assets/images/portfolio/7.png",
+      title: "Bastoka Consulting",
+      path:"https://baskotaconsulting.com.np/"
+    },
+                {
+      id: 18,
+      image: "/assets/images/portfolio/8.png",
+      title: "Singh Engineering Works",
+      path:"http://singhengineeringworks.com.np/"
+    },
+                    {
+      id: 19,
+      image: "/assets/images/portfolio/9.png",
+      title: "Sudarshan Agro Resort",
+      path:"https://sudarshanagroresort.com.np/"
+    },
+                    {
+      id: 20,
+      image: "/assets/images/portfolio/10.png",
+      title: "Sudarshan Security Services",
+      path:"https://sudarshansecurity.com.np/"
+    },
+                    {
+      id: 21,
+      image: "/assets/images/portfolio/11.png",
+      title: "Krishna Ganga HOPE TRUST.",
+      path:"https://krishnaganga.org.np/"
+    },
   ];
 
    
   return (
     <>
+    <Ribbon name="Portfolio" des=""/>
       <section className="max-w-[1180px] mx-auto px-6 lg:px-0 mb-[45px] mt-[45px] w-full flex flex-col sm:flex-row gap-4 justify-between flex-wrap ">
         {portfolio.map((item) => (
           <div
@@ -82,14 +156,14 @@ export default function PortfolioPage() {
               width={400}
               height={400}
               alt={item.title}
-              className="w-full rounded-[15px] h-full object-cover "
+              className="w-full rounded-[15px] h-full object-cover  "
             />
-            <h1 className="text-center">{item.title}</h1>
+            <h1 className="text-center my-2">{item.title}</h1>
 
             <Link
               href={`${item.path}`}
               target="_blank"
-              className="px-4 py-2 border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white w-[40%] mx-auto text-center rounded-[15px] transition-all ease-in duration-[100] "
+              className="px-4 py-2 border border-[#055D59] text-[#055D59] hover:bg-[#055D59] hover:text-white w-[40%] mx-auto text-center rounded-lg transition-all ease-in duration-[100] "
             >
               Browse More
             </Link>
