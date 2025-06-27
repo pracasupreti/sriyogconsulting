@@ -285,7 +285,7 @@ export default function TechFridayPage() {
               </p>
             </div>
             <h1 className="text-4xl text-gray-800 font-[900]">
-Story behind "the airbnb story"​ book            </h1>
+Story behind &quot;the airbnb story&quot;​ book </h1>
             <p className="font-semibold text-gray-800 text-xl">
 People worked for vision not to change the society but to make a Digital Empire to print money, create opportunities and inject few things which disrupted an industry but not the thoughts and even feelings.
 

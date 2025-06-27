@@ -10,85 +10,85 @@ export default function BlogPage() {
   const footerCards = [
     {
       id:1,
-      title:"The Best Time to Travel to Cambodia",
-      image:"/assets/images/blog/1.jpg",
+      title:"Top 5 UI/UX Tips to Make Your Website Look Better",
+      image:"/assets/images/blog/UI-UX-3.0.jpg",
       date:"27 JAN 2025",
       views:"13K VIEWS",
       category:"UI/UX",
-      path:""
+      path:"blog/top-five-ui-ux-tips"
     },
         {
       id:2,
-      title:"20 Photos to Inspire You to Visit Cambodia",
-      image:"/assets/images/blog/1.jpg",
+      title:"What is UI/UX Design? A Beginner’s Guide",
+      image:"/assets/images/blog/UI-UX-1.0.jpg",
       date:"27 AUGUST 2025",
       views:"14K VIEWS",
       category:"UI/UX",
-      path:""
+      path:"blog/what-is-ui-ux-design"
     },
         {
       id:3,
-      title:"Epic Arts Cambodia:Charity For the Disabled",
-      image:"/assets/images/blog/1.jpg",
+      title:"Why Good UI/UX Design Matters for Any Website or App",
+      image:"/assets/images/blog/UI-UX-2.0.jpg",
       date:"29 AUGUST 2025",
       views:"23K VIEWS ",
       category:"UI/UX",
-      path:""
+      path:"blog/why-good-ui-ux-matters"
     },
      {
       id:4,
-      title:"10 Ways to De-Stress Your Day Hour by Hour",
-      image:"/assets/images/blog/4.jpg",
+      title:"What is SEO and Why Is It Important for Your Website?",
+      image:"/assets/images/blog/SEO-1.0.jpg",
       date:"12 AUGUST 2025",
       views:"3K VIEWS",
       category:"SEO",
-      path:""
+      path:"blog/what-is-seo-and-its-important"
     },
      {
       id:5,
-      title:"134 Free Weekly MEal Planner Printable",
-      image:"/assets/images/blog/4.jpg",
+      title:"     SEO Techniques That Really Work in 2025     ",
+      image:"/assets/images/blog/SEO-2.0.jpg",
       date:"15 AUGUST 2025",
       views:"4.1K VIEWS",
       category:"SEO",
-      path:""
+      path:"blog/seo-techniques-that-really-work"
     },
      {
       id:6,
-      title:"Free Printable Stickers for Your Bullet Journal",
-      image:"/assets/images/blog/4.jpg",
+      title:"How to Do Keyword Research for SEO: A Step-by-Step Guide  ",
+      image:"/assets/images/blog/SEO-3.0.jpg",
       date:"16 AUGUST 2025",
       views:"2.2K VIEWS",
       category:"SEO",
-      path:""
+      path:"blog/how-to-do-keyword-research-for-seo"
     },
 
          {
       id:7,
-      title:"Which TBA Preset Pack is Right For You?",
-      image:"/assets/images/blog/2.jpg",
+      title:" What is Digital Marketing? A Beginner’s Guide to Growing Your Business Online",
+      image:"/assets/images/blog/digital-1.1.jpg",
       date:"06 MAY 2025",
       views:"23K VIEWS ",
       category:"Digital Marketing",
-      path:""
+      path:"blog/what-is-digital-marketing"
     },
              {
       id:8,
-      title:"How to Get Amazing Photos at the Pyramids of Giza",
-      image:"/assets/images/blog/2.jpg",
+      title:"How SEO Helps Your Digital Marketing Strategy",
+      image:"/assets/images/blog/digital-3.0.jpg",
       date:"05 JUN 2025",
       views:"5K VIEWS ",
       category:"Digital Marketing",
-      path:""
+      path:"blog/how-seo-helps-your-digital-marketing-strategy"
     },
              {
       id:9,
-      title:"Beginner's Guide to Travel Drone Photography",
-      image:"/assets/images/blog/2.jpg",
+      title:"The Importance of Social Media in Digital Marketing",
+      image:"/assets/images/blog/digital-2.0.jpg",
       date:"08 AUGUST 2025",
       views:"2K VIEWS",
       category:"Digital Marketing",
-      path:""
+      path:"blog/the-importance-of-social-media"
     },
 
     

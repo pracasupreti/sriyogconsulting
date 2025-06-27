@@ -59,203 +59,34 @@ export default function TwentyBooks() {
           but if you rub properly in stone then it will be more sharp.
         </p>
         <p>
-          Brain copies things, Even a single line can change someone's life.
+          Brain copies things, Even a single line can change someone&apos;s life.
           Reading books can be very helpful to know the past, present and future
           too. Few books are listed below which can be very helpful for Startup,
-          Entrepreneurs, Business Owner, Students, Founders & Co-Founders and
-          those who plans to make changes human's life.
+          Entrepreneurs, Business Owner, Students, Founders &amp; Co-Founders and
+          those who plans to make changes human&apos;s life.
         </p>
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-3.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
 
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-4.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
+        {Array.from({ length: 21 }, (_, i) => {
+          const index = i + 3;
+          return (
+            <div
+              key={index}
+              className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden "
+            >
+              <Image
+                src={`/assets/images/blog/books-${index}.jpg`}
+                alt="things-to-keep-in-website"
+                className="object-cover h-full w-full"
+                fill
+              />
+            </div>
+          );
+        })}
 
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-5.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-6.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-7.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-8.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-9.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-10.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-11.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-12.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-13.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-14.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-15.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-16.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-17.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-18.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-19.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-20.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-21.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-22.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
-        <div className="relative w-full md:h-[450px] h-[250px] rounded-3xl overflow-hidden ">
-          <Image
-            src="/assets/images/blog/books-23.jpg"
-            alt="things-to-keep-in-website"
-            className="object-cover h-full w-full"
-            fill
-          />
-        </div>
         <p>
           The collection are based truly on personal experience and thoughts. It
           may differ from person to person or may be different for others from
-          different domain. - Prakash Upreti
+          different domain. &mdash; Prakash Upreti
         </p>
       </section>
     </>
