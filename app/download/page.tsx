@@ -17,12 +17,12 @@ export default function DownloadPage() {
   const fileList = [
     "/assets/downloadFiles/SRIYOG-Consulting-Meeting-Minutes.pdf",
     "/assets/downloadFiles/SRIYOG-Consulting-Order.docx",
-    "/assets/downloadFiles/SRIYOG-Consulting-guestbook-feedback-form.pdf",
-    "/assets/downloadFiles/SRIYOG.Consulting.-.Customer.Feedback.Form.pdf",
-    "/assets/downloadFiles/Internship-Sample-Letter-from-College.pdf",
-    "/assets/downloadFiles/SRIYOG.Consulting.Internship.Recommondation.Letter.from.College-.docx",
+    "/assets/downloadFiles/SRIYOG-Consulting-Guestbook-Feedback-Form.pdf",
+    "/assets/downloadFiles/SRIYOG-Consulting-Customer-Feedback-Form.pdf",
+    "/assets/downloadFiles/Internship-Sample-Letter-From-College.pdf",
+    "/assets/downloadFiles/SRIYOG-Consulting-Internship-Recommondation-Letter-from-College.docx",
     "/assets/downloadFiles/SRIYOG-Consulting-Internship-Recommendation-Letter.docx",
-    "/assets/downloadFiles/sriyog-consulting-logos.zip",
+    "/assets/downloadFiles/SRIYOG-Consulting-Logos.zip",
   ];
 
   const getFileType = (fileName: string): string => {
@@ -87,9 +87,9 @@ export default function DownloadPage() {
       <section className="max-w-[1180px] mx-auto px-4 md:px-6 py-6">
         <div className="overflow-x-auto">
           <table className="min-w-full border-collapse text-sm md:text-base">
-            <thead className="bg-gray-200 hidden md:table-header-group">
+            <thead className="bg-gray-200 hidden md:table-header-group rounded-xl">
               <tr>
-                <th className="text-left py-3 px-4 whitespace-nowrap">Title</th>
+                <th className="text-left py-3 px-4 whitespace-nowrap ">Title</th>
                 <th className="text-left py-3 px-4 whitespace-nowrap">Size</th>
                 <th className="text-left py-3 px-4 whitespace-nowrap">Type</th>
                 <th className="text-left py-3 px-4 whitespace-nowrap">
@@ -106,30 +106,32 @@ export default function DownloadPage() {
                   key={index}
                   className={`${
                     index % 2 === 0 ? "bg-gray-100" : "bg-white"
-                  } md:table-row rounded-md shadow-sm p-4 mb-4 block`}
+                  } md:table-row ${
+                    index % 2 === 0 ? "rounded-xl" : "rounded-md"
+                  } shadow-sm p-4 mb-4 block`}  
                 >
-                  <td className="py-3 px-4 font-medium block md:table-cell">
+                  <td className="py-3 px-4 mt-2 font-medium block md:table-cell">
                     {item.title}
                   </td>
-                  <td className="py-2 px-4 block md:table-cell">
+                  <td className="py-2 px-4  mt-2 block md:table-cell">
                     <span className="md:hidden font-semibold mr-4">
                       File Size:
                     </span>
                     {item.size}
                   </td>
-                  <td className="py-2 px-4 block md:table-cell">
+                  <td className="py-2 px-4  mt-2 block md:table-cell">
                     <span className="md:hidden font-semibold mr-4">
                       File Type:
                     </span>
                     {item.type}
                   </td>
-                  <td className="py-2 px-4 block md:table-cell md:align">
+                  <td className="py-2 px-4 block  mt-2 md:table-cell md:align">
                     <span className="md:hidden font-semibold mr-4">
                       Published Date:
                     </span>
                     {item.lastUpdate}
                   </td>
-                  <td className="py-2 px-4 block md:table-cell md:align-middle">
+                  <td className="py-2 px-4 block  mt-2 md:table-cell md:align-middle">
                     <span className="md:hidden font-semibold mr-4">
                       Download:
                     </span>
@@ -137,7 +139,7 @@ export default function DownloadPage() {
                       onClick={() => handleDownload(item.url, item.rawTitle)}
                       className="text-[#055D59] border-[#055D59] border px-3 py-1 rounded hover:bg-[#044c4a] hover:text-white transition-all duration-200 text-xs md:text-sm"
                     >
-                      Download:
+                      Download
                     </button>
                   </td>
                 </tr>

@@ -14,7 +14,7 @@ const images = [
   "/assets/images/team/10.png",
   "/assets/images/team/11.png",
   "/assets/images/team/12.png",
-   "/assets/images/team/13.png",
+   "/assets/images/team/8.png",
 ];
 
 const names = [
@@ -22,28 +22,28 @@ const names = [
   "Madan",
   "Sakchyam",
   "Aashma",
-  "Pooja",
-  "Shreeya",
-  "Dipak",
-  "Gaurav",
-  "Sanjana",
+  "Bitisha",
+  "Lasta",
+  "Milan",
+  "Prakrit",
+  "Priyanka",
   "Sagar",
-  "Nikesh",
-  "Youndhen"
+  "Rahul",
+  "Sarad"
 ];
 const roles = [
   "Project Manager",
-  "Business Manager",
+  "Information Manager",
   "Flutter Developer",
   "Backend Developer",
-  "Next Js Developer",
+  "React JS Developer",
+  "React JS Developer",
   "UI/UX Designer",
   "UI/UX Designer",
-  "Next js Developer",
-  "Next js Developer",
+  "React JS Developer",
   "Web Developer",
-  "UI/UX Designer",
-  "Next js Developer",
+  "React JS Developer",
+  "React Native Developer",
 ];
 
 export const metadata: Metadata = {

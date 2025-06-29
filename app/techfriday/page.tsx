@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function TechFridayPage() {
   // const sponsors = [
-  //   "/assets/images/techfriday/1.png",
+  //   "/assets/images/tech friday/1.png",
   //   "/assets/images/techfriday/2.png",
   //   "/assets/images/techfriday/3.png",
   //   "/assets/images/techfriday/4.png",
@@ -115,8 +115,8 @@ export default function TechFridayPage() {
           </div>
           <div>
             <Link
-              href={""}
-              className="bg-[#055d59] text-white font-[700] mr-10 px-4 py-2"
+              href='https://whatsapp.com/channel/0029VbAXQvwAzNbywuYqrZ0U' target="_blank"
+              className="bg-[#055d59] text-white font-[700] mr-16 lg:mr-44 px-4 py-2"
             >
               Subscribe Now
             </Link>
@@ -259,9 +259,9 @@ export default function TechFridayPage() {
         {/*Image Container */}
         <div className="max-w-[1180px] mx-auto   flex flex-col sm:flex-row items-stretch gap-8 bg-gray-100 ">
           <div className="sm:max-w-[50%] h-full w-full items-stretch ">
-            <Link href="blog/corporate-email">
+            <Link href="blog/story-behind-the-airbnb-story">
               <Image
-               src="/assets/images/homepage/blog/web-development-stages.jpeg"
+               src="/assets/images/blog/airbnb-1.jpg"
                 width={500}
                 height={600}
                 alt="banner_Image"
@@ -272,7 +272,7 @@ export default function TechFridayPage() {
 
           {/* Description*/}
 
-          <div className="flex flex-col gap-3 px-2 lg:pr-[150px] w-full sm:max-w-[60%] mb-0 md:mb-16  ">
+          <div className="flex flex-col gap-3 px-2  w-full sm:max-w-[60%] mb-0 md:mb-16  ">
             <div className="flex items-center justify-start gap-2 text-gray-800">
               <Image
                 src="/assets/images/techfriday/book.svg"
@@ -285,18 +285,14 @@ export default function TechFridayPage() {
               </p>
             </div>
             <h1 className="text-4xl text-gray-800 font-[900]">
-              Illuminate Your Evening Exquisite Night
-            </h1>
+Story behind &quot;the airbnb story&quot;​ book </h1>
             <p className="font-semibold text-gray-800 text-xl">
-              Embrace Peaceful Nights And Add A Touch Or Elegence To Your Home
-              With Our Night Lamp
+People worked for vision not to change the society but to make a Digital Empire to print money, create opportunities and inject few things which disrupted an industry but not the thoughts and even feelings.
+
+
             </p>
             <p className="text-sm text-gray-800 ">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Molestiae pariatur iste necessitatibus delectus dolorem a itaque
-              quaerat recusandae modi quia numquam impedit, asperiores facere
-              voluptates. Fugit at sapiente odit consequatur blanditiis quam
-              sint.
+             A business must be bounded by feelings, emotions and thoughts to change a society. We created thousands to billion dollars of empire, business, startups and a system where people can simply earn from few clicks in his/her smartphones. The use of technology has been in rapid growth stage that there are thousands of ways to earn, learn and lead the life easily. Technology has helped in many ways to get connected, either it is to become personal, professional or social. Thousands of Mobile Applications, different platforms, Gigabytes of storages and many megapixels of front and back camera.
             </p>
           </div>
         </div>
@@ -317,7 +313,8 @@ export default function TechFridayPage() {
           <div className="mt-4 md:mt-0 md:self-center">
             <Link
               prefetch={true}
-              href="/quote"
+              href="https://api.whatsapp.com/send?phone=9779852025735&text=Hi,%20I%20want%20to%20sponsor%20#TechFriday.%20"
+              target="_blank"
               className="bg-white px-3 text-[#0D5D59] font-semibold rounded-lg p-2 "
             >
               Sponsor <span className="italic"># Techfriday</span>
@@ -334,7 +331,7 @@ export default function TechFridayPage() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat -z-4"
             style={{
-              backgroundImage: "url('/assets/images/techfriday)",
+              backgroundImage: "url('/assets/images/techfriday/)",
             }}
           ></div>
           <h1 className="text-3xl font-extrabold ">
@@ -375,10 +372,11 @@ export default function TechFridayPage() {
           </ul>
           <div className="mt-4 flex flex-col sm:flex-row gap-4 ">
             <Link
-              href={""}
+              href={"https://whatsapp.com/channel/0029VbAXQvwAzNbywuYqrZ0U"} 
+              target="_blank"
               className="px-4 py-2 bg-[#055d59] rounded-md text-white border-none text-center"
             >
-              Join The Channel
+              Subscribe Now
             </Link>
             <Link
               href={""}
@@ -409,7 +407,7 @@ export default function TechFridayPage() {
           </p>
 
           <Link
-            href={""}
+            href={"/intership"}
             className="px-4 py-2 bg-transparent rounded-md  text-[#055d59] border-1 hover:bg-[#055d59] hover:text-white   border-[#055d59] mt-4  w-full sm:max-w-[50%] text-center"
           >
             Apply Now
@@ -563,7 +561,7 @@ export default function TechFridayPage() {
           <p>
             SRIYOG Consulting Pvt. Ltd. is a premier Managed IT Services provider based in Kamalpokhari, Kathmandu, Nepal. We specialize in delivering innovative, reliable, and scalable IT solutions to businesses of all sizes, helping them achieve digital transformation, operational efficiency and sustainable growth.
           </p>
-          <p>----------------------------------------------------------------------------------------------</p>
+
         </div>
       </footer>
     </>

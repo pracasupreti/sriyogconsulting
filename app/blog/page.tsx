@@ -10,85 +10,85 @@ export default function BlogPage() {
   const footerCards = [
     {
       id:1,
-      title:"The Best Time to Travel to Cambodia",
-      image:"/assets/images/blog/1.jpg",
-      date:"27 JAN",
+      title:"Top 5 UI/UX Tips to Make Your Website Look Better",
+      image:"/assets/images/blog/UI-UX-3.0.jpg",
+      date:"24 DEC 2024",
       views:"13K VIEWS",
-      category:"destination",
-      path:""
+      category:"UI/UX",
+      path:"blog/top-five-ui-ux-tips"
     },
         {
       id:2,
-      title:"20 Photos to Inspire You to Visit Cambodia",
-      image:"/assets/images/blog/1.jpg",
-      date:"27 AUGUST",
+      title:"What is UI/UX Design? A Beginner’s Guide",
+      image:"/assets/images/blog/UI-UX-1.0.jpg",
+      date:"26 JUNE 2025",
       views:"14K VIEWS",
-      category:"destination",
-      path:""
+      category:"UI/UX",
+      path:"blog/what-is-ui-ux-design"
     },
         {
       id:3,
-      title:"Epic Arts Cambodia:Charity For the Disabled",
-      image:"/assets/images/blog/1.jpg",
-      date:"29 AUGUST",
-      views:"23K VIEWS",
-      category:"destination",
-      path:""
+      title:"Why Good UI/UX Design Matters for Any Website or App",
+      image:"/assets/images/blog/UI-UX-2.0.jpg",
+      date:"13 JAN 2025",
+      views:"23K VIEWS ",
+      category:"UI/UX",
+      path:"blog/why-good-ui-ux-matters"
     },
      {
       id:4,
-      title:"10 Ways to De-Stress Your Day Hour by Hour",
-      image:"/assets/images/blog/4.jpg",
-      date:"12 AUGUST",
+      title:"What is SEO and Why Is It Important for Your Website?",
+      image:"/assets/images/blog/SEO-1.0.jpg",
+      date:"17 FEB 2025",
       views:"3K VIEWS",
-      category:"lifestyle",
-      path:""
+      category:"SEO",
+      path:"blog/what-is-seo-and-its-important"
     },
      {
       id:5,
-      title:"134 Free Weekly MEal Planner Printable",
-      image:"/assets/images/blog/4.jpg",
-      date:"15 AUGUST",
+      title:"     SEO Techniques That Really Work in 2025     ",
+      image:"/assets/images/blog/SEO-2.0.jpg",
+      date:"10 FEB 2025",
       views:"4.1K VIEWS",
-      category:"lifestyle",
-      path:""
+      category:"SEO",
+      path:"blog/seo-techniques-that-really-work"
     },
      {
       id:6,
-      title:"Free Printable Stickers for Your Bullet Journal",
-      image:"/assets/images/blog/4.jpg",
-      date:"16 AUGUST",
+      title:"How to Do Keyword Research for SEO: A Step-by-Step Guide  ",
+      image:"/assets/images/blog/SEO-3.0.jpg",
+      date:"29 APRIL 2025",
       views:"2.2K VIEWS",
-      category:"lifestyle",
-      path:""
+      category:"SEO",
+      path:"blog/how-to-do-keyword-research-for-seo"
     },
 
          {
       id:7,
-      title:"Which TBA Preset Pack is Right For You?",
-      image:"/assets/images/blog/2.jpg",
-      date:"06 MAY",
-      views:"23K VIEWS",
-      category:"photography",
-      path:""
+      title:" What is Digital Marketing? A Beginner’s Guide to Growing Your Business Online",
+      image:"/assets/images/blog/digital-1.1.jpg",
+      date:"23 MAY 2025",
+      views:"23K VIEWS ",
+      category:"Digital Marketing",
+      path:"blog/what-is-digital-marketing"
     },
              {
       id:8,
-      title:"How to Get Amazing Photos at the Pyramids of Giza",
-      image:"/assets/images/blog/2.jpg",
-      date:"05 JUN",
-      views:"5K VIEWS",
-      category:"photography",
-      path:""
+      title:"How SEO Helps Your Digital Marketing Strategy",
+      image:"/assets/images/blog/digital-3.0.jpg",
+      date:"21 JAN 2025",
+      views:"5K VIEWS ",
+      category:"Digital Marketing",
+      path:"blog/how-seo-helps-your-digital-marketing-strategy"
     },
              {
       id:9,
-      title:"Beginner's Guide to Travel Drone Photography",
-      image:"/assets/images/blog/2.jpg",
-      date:"08 AUGUST",
+      title:"The Importance of Social Media in Digital Marketing",
+      image:"/assets/images/blog/digital-2.0.jpg",
+      date:"08 AUGUST 2025",
       views:"2K VIEWS",
-      category:"photography",
-      path:""
+      category:"Digital Marketing",
+      path:"blog/the-importance-of-social-media"
     },
 
     
@@ -97,17 +97,17 @@ export default function BlogPage() {
     {
       id:1,
       title:"The Great Hack: How Social Media impacts politics?",
-      image:"/assets/images/blog/3.jpg",
-      desc:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque aliquam nulla officiis est aperiam quam in libero enim a maiores nostrum, magni voluptatum deleniti, tempora iusto rerum illo, expedita suscipit.",
-      path:""
+      image:"/assets/images/blog/hack-1.jpg",
+      desc:"A great mixture of political and social media influence which shows how few millions of data can be used to win an election of the entire country easily.",
+      path:"blog/the-great-hack-how-social-media-impacts-politics"
 
     },
       {
       id:2,
       title:"The Great Hack: How Social Media impacts politics?",
       image:"/assets/images/blog/4.jpg",
-      desc:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque aliquam nulla officiis est aperiam quam in libero enim a maiores nostrum, magni voluptatum deleniti, tempora iusto rerum illo, expedita suscipit.",
-      path:""
+      desc:"Life is all about creating news things, changing the world. It depends upon a passion, dedication, a good mentorship, effective plan, good investment and must have a vision to serve the community.",
+      path:"blog/20-books-that-can-change-you"
 
     }
   ]
@@ -118,9 +118,9 @@ export default function BlogPage() {
       image:"/assets/images/blog/lifedesign-1.jpg",
       category:"Lifestyle",
       desc:" We have always seen that fish mostly lies in two places, i.e. River and Aquarium. A fish living in aquarium has regular food, well maintained (artificial) ... ",
-     date:"27 August",
+     date:"27 August 2025",
      views:"25k VIEWS",
-     read:"12 MINS READ",
+     read:"4 Mins Read",
      isCenter:false,
      path:"blog/design-your-life"
     },
@@ -130,9 +130,9 @@ export default function BlogPage() {
       image:"/assets/images/blog/airbnb-1.jpg",
       category:"Hotels",
       desc:"People worked for vision not to change the society but to make a Digital Empire to print money, create opportunities and inject few things which disrupted an industry but not the thoughts and even feelings.",
-     date:"18 August",
+     date:"18 August 2025",
      views:"25k VIEWS",
-     read:"14 MINS READ",
+     read:"3 Mins Read",
     isCenter:true,
          path:"blog/story-behind-the-airbnb-story"
 
@@ -144,9 +144,9 @@ export default function BlogPage() {
       image:"/assets/images/blog/pitchdesk-1.jpg",
       category:"Lifestyle",
       desc:" Creating pitch deck is the most essential part of startup growth. Few number of slides helps to build multinational brands from hundreds...",
-     date:"27 August",
+     date:"27 August 2025",
      views:"25k VIEWS",
-     read:"12 MINS READ",
+     read:"2 Mins Read",
      isCenter:false,
           path:"blog/pitch-deck-magic"
 
@@ -156,7 +156,7 @@ export default function BlogPage() {
   return (
     <>
       {/* Top Blog Grid */}
-      <section className="w-full md:max-w-[1180px] mx-auto px-4 sm:px-6 md:px-8 pt-10">
+      <section className="w-full md:max-w-[1180px] mx-auto px-0 md:px-0 pt-10 mb-[45px]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
           {/* Blog Card 1 */}
           
@@ -176,7 +176,7 @@ export default function BlogPage() {
               <div className="absolute p-4 z-10 bottom-0 bg-gradient-to-t from-black/85 via-black/70 to-transparent text-white w-full">
                 <section className="flex gap-4 text-sm mb-1">
                   <p>Web Dev</p>
-                  <p>9<sup>th</sup> March , 2025</p>
+                  <p>2<sup>nd</sup> April , 2025</p>
                 </section>
                 <p className="text-2xl translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
                   21 Stages of Web Development
@@ -209,7 +209,7 @@ export default function BlogPage() {
               <div className="absolute p-4 z-10 bottom-0 bg-gradient-to-t from-black/85 via-black/70 to-transparent text-white w-full">
                 <section className="flex gap-4 text-sm mb-1">
                   <p>Email</p>
-                  <p>9<sup>th</sup> March , 2025</p>
+                  <p>27<sup>nd</sup> December , 2025</p>
                 </section>
                 <p className="text-2xl translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
                   What is a Corporate/Business Email?
@@ -242,7 +242,7 @@ export default function BlogPage() {
               <div className="absolute p-4 z-10 bottom-0 bg-gradient-to-t from-black/85 via-black/70 to-transparent text-white w-full">
                 <section className="flex gap-4 mb-1 text-sm">
                   <p>Technology</p>
-                  <p>9<sup>th</sup> March, 2025</p>
+                  <p>1<sup>st</sup> January, 2025</p>
                 </section>
                 <p className="text-2xl translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
                   Things to Keep in Business Website
@@ -294,7 +294,7 @@ export default function BlogPage() {
       </section>
 
       {/* Two Column Blog Feature */}
-      <section className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 mb-[45px] ">
+      <section className="max-w-[1180px] mx-auto px-6: md:px-0 mb-[45px] ">
         <div className="flex flex-col md:flex-row gap-6">
           {/* Left Column */}
           <div className="md:w-1/2 border border-gray-300 p-4 shadow-lg rounded-lg">
@@ -332,9 +332,9 @@ export default function BlogPage() {
               <Image
                 src="/assets/images/blog/dashain-1.jpg"
                 width={150}
-                height={150}
+                height={250}
                 alt="things-to-keep"
-                className="object-cover rounded-md"
+                className="object-cover h-[200px] rounded-md"
               />
             </div>
 
@@ -354,7 +354,7 @@ export default function BlogPage() {
                 width={150}
                 height={150}
                 alt="pegasus"
-                className="object-cover rounded-md"
+                className="object-cover h-[200px] rounded-md"
               />
             </div>
           </div>
@@ -378,7 +378,7 @@ export default function BlogPage() {
                  <div className="flex text-sm text-gray-700 gap-4 mt-4">
                   <p>{item.date}</p>
                   <p>{item.read}</p>
-                  <p>{item.views}</p>
+                  {/* <p>{item.views}</p> */}
                  </div>
                 </div>
               </Link>
@@ -388,7 +388,7 @@ export default function BlogPage() {
         
       </section>
           {/*Bottom cards */}
-      <section className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 mb-[45px] flex flex-col md:flex-row gap-7 ">
+      <section className="max-w-[1180px]  mx-auto  px-6 md:px-0 mb-[45px] flex flex-col md:flex-row gap-7 ">
           {bottomCards.map((item)=>(
             <div key={item.id} className=" w-full md:max-w-[50%] shadow-sm">
               <div className="w-full ">
@@ -407,7 +407,7 @@ export default function BlogPage() {
           {/*Different blogs */}
       <section className="w-full px-6 md:max-w-[1180px] md:px-0 mx-auto mb-[45px]">
   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-    {["destination", "lifestyle", "photography"].map((category) => (
+    {["UI/UX", "SEO", "Digital Marketing"].map((category) => (
       <div key={category}>
         <h2 className="text-xl font-bold mb-4 uppercase">{category}</h2>
         <hr className="w-[20%] rounded-full border-none outline-none bg-gray-500 h-1 mb-2 -mt-3" />
@@ -427,7 +427,7 @@ export default function BlogPage() {
                   <h3 className="text-base font-semibold leading-snug line-clamp-2">{item.title}</h3>
                   <div className="text-sm text-gray-500 flex gap-3 mt-2">
                     <p>{item.date}</p>
-                    <p>{item.views}</p>
+                    {/* <p>{item.views}</p> */}
                   </div>
                 </div>
               </Link>
