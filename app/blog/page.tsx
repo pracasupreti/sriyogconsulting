@@ -12,7 +12,7 @@ export default function BlogPage() {
       id:1,
       title:"Top 5 UI/UX Tips to Make Your Website Look Better",
       image:"/assets/images/blog/UI-UX-3.0.jpg",
-      date:"27 JAN 2025",
+      date:"24 DEC 2024",
       views:"13K VIEWS",
       category:"UI/UX",
       path:"blog/top-five-ui-ux-tips"
@@ -21,7 +21,7 @@ export default function BlogPage() {
       id:2,
       title:"What is UI/UX Design? A Beginner’s Guide",
       image:"/assets/images/blog/UI-UX-1.0.jpg",
-      date:"27 AUGUST 2025",
+      date:"26 JUNE 2025",
       views:"14K VIEWS",
       category:"UI/UX",
       path:"blog/what-is-ui-ux-design"
@@ -30,7 +30,7 @@ export default function BlogPage() {
       id:3,
       title:"Why Good UI/UX Design Matters for Any Website or App",
       image:"/assets/images/blog/UI-UX-2.0.jpg",
-      date:"29 AUGUST 2025",
+      date:"13 JAN 2025",
       views:"23K VIEWS ",
       category:"UI/UX",
       path:"blog/why-good-ui-ux-matters"
@@ -39,7 +39,7 @@ export default function BlogPage() {
       id:4,
       title:"What is SEO and Why Is It Important for Your Website?",
       image:"/assets/images/blog/SEO-1.0.jpg",
-      date:"12 AUGUST 2025",
+      date:"17 FEB 2025",
       views:"3K VIEWS",
       category:"SEO",
       path:"blog/what-is-seo-and-its-important"
@@ -48,7 +48,7 @@ export default function BlogPage() {
       id:5,
       title:"     SEO Techniques That Really Work in 2025     ",
       image:"/assets/images/blog/SEO-2.0.jpg",
-      date:"15 AUGUST 2025",
+      date:"10 FEB 2025",
       views:"4.1K VIEWS",
       category:"SEO",
       path:"blog/seo-techniques-that-really-work"
@@ -57,7 +57,7 @@ export default function BlogPage() {
       id:6,
       title:"How to Do Keyword Research for SEO: A Step-by-Step Guide  ",
       image:"/assets/images/blog/SEO-3.0.jpg",
-      date:"16 AUGUST 2025",
+      date:"29 APRIL 2025",
       views:"2.2K VIEWS",
       category:"SEO",
       path:"blog/how-to-do-keyword-research-for-seo"
@@ -67,7 +67,7 @@ export default function BlogPage() {
       id:7,
       title:" What is Digital Marketing? A Beginner’s Guide to Growing Your Business Online",
       image:"/assets/images/blog/digital-1.1.jpg",
-      date:"06 MAY 2025",
+      date:"23 MAY 2025",
       views:"23K VIEWS ",
       category:"Digital Marketing",
       path:"blog/what-is-digital-marketing"
@@ -76,7 +76,7 @@ export default function BlogPage() {
       id:8,
       title:"How SEO Helps Your Digital Marketing Strategy",
       image:"/assets/images/blog/digital-3.0.jpg",
-      date:"05 JUN 2025",
+      date:"21 JAN 2025",
       views:"5K VIEWS ",
       category:"Digital Marketing",
       path:"blog/how-seo-helps-your-digital-marketing-strategy"

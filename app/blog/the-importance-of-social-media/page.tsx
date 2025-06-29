@@ -18,7 +18,7 @@ export default function TISMIDM() {
           <p className="text-center italic">
             By: Pracas Upreti, Information Technology Consultant
           </p>
-          <p className="text-center italic">January 11, 2025</p>
+          <p className="text-center italic">August 8, 2025</p>
         </div>
         <p>
           In today&apos;s fast-moving digital world, social media has become one of the most powerful tools in digital marketing. Millions of people spend hours on platforms like Facebook, Instagram, LinkedIn, and TikTok every day. They use social media not just to chat with friends but also to find products, follow brands, and make purchases. That&apos;s why smart businesses use social media as a part of their marketing strategy. In this blog, we&apos;ll explore how social media supports digital marketing and why it is so important for business success.

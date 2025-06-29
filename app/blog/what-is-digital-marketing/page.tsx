@@ -19,7 +19,7 @@ export default function WhatisDigitalMArketing() {
           <p className="text-center italic">
             By: Pracas Upreti, Information Technology Consultant
           </p>
-          <p className="text-center italic">February 10, 2025</p>
+          <p className="text-center italic">May 23, 2025</p>
         </div>
         <p>
           In the past, businesses used newspapers, TV, and radio to advertise

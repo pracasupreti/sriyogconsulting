@@ -18,7 +18,7 @@ export default function WGUIUXM() {
           <p className="text-center italic">
             By: Pracas Upreti, Information Technology Consultant
           </p>
-          <p className="text-center italic">January 26, 2025</p>
+          <p className="text-center italic">January 13, 2025</p>
         </div>
         <p>
           In today’s digital world, people use websites and mobile apps for
