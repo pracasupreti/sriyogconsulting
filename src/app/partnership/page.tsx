@@ -6,7 +6,24 @@ import "react-phone-input-2/lib/style.css";
 import Ribbon from "@/components/Ribbon";
 import toast from "react-hot-toast";
 
-const initialFormValues = {
+interface FormValues {
+  organizationName: string;
+  organizationEmail: string;
+  website: string;
+  city: string;
+  country: string;
+  personalName: string;
+  personalEmail: string;
+  designation: string;
+  message: string;
+  reason: string;
+}
+
+type PartnershipResponse =
+  | { success: boolean; message: string }
+  | { error: string };
+
+const initialFormValues: FormValues = {
   organizationName: "",
   organizationEmail: "",
   website: "",
@@ -19,10 +36,10 @@ const initialFormValues = {
   reason: "",
 };
 
-export default function PartnershipPage() {
-  const [formValues, setFormValues] = useState(initialFormValues);
+const PartnershipPage: React.FC = () => {
+  const [formValues, setFormValues] = useState<FormValues>(initialFormValues);
   const [phoneOrganization, setPhoneOrganization] = useState<string>("");
-  const [personalPhone, setPersonPhone] = useState<string>("");
+  const [personalPhone, setPersonalPhone] = useState<string>("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -31,52 +48,52 @@ export default function PartnershipPage() {
     setFormValues((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-  const payload = {
-    ...formValues,
-    phoneOrganization,
-    personalPhone,
+    const payload = {
+      ...formValues,
+      phoneOrganization,
+      personalPhone,
+    };
+
+    try {
+      const res = await fetch("/api/submit-partnership", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      let result: PartnershipResponse;
+
+      const contentType = res.headers.get("content-type") || "";
+      if (contentType.includes("application/json")) {
+        result = await res.json();
+      } else {
+        const rawText = await res.text();
+        console.error("NON-JSON RESPONSE:", rawText);
+        throw new Error("Server returned invalid response format");
+      }
+
+      if (!res.ok) {
+        console.error("API error:", result);
+        toast.error("error" in result ? result.error : "Submission failed.");
+        return;
+      }
+
+      toast.success(
+        "success" in result ? result.message : "Form submitted successfully!"
+      );
+      setFormValues(initialFormValues);
+      setPhoneOrganization("");
+      setPersonalPhone("");
+    } catch (err) {
+      console.error("Fetch/network error:", err);
+      toast.error("Something went wrong. Check console.");
+    }
   };
-
-  try {
-    const res = await fetch("/api/submit-partnership", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(payload),
-    });
-
-    let result: any = null;
-
-    const contentType = res.headers.get("content-type") || "";
-    if (contentType.includes("application/json")) {
-      result = await res.json();
-    } else {
-      const rawText = await res.text();
-      console.error(" NON-JSON RESPONSE:", rawText);
-      throw new Error("Server returned invalid response format");
-    }
-
-    if (!res.ok) {
-      console.error("API error:", result);
-      toast.error(result?.error || "Submission failed.");
-      return;
-    }
-
-    toast.success("Form submitted successfully!");
-    setFormValues(initialFormValues);
-    setPhoneOrganization("");
-    setPersonPhone("");
-  } catch (err: any) {
-    console.error(" Fetch/network error:", err);
-    toast.error("Something went wrong. Check console.");
-  }
-};
-
-
 
   return (
     <>
@@ -86,7 +103,9 @@ export default function PartnershipPage() {
           <div className="flex flex-col md:flex-row gap-4 items-start md:items-stretch justify-center">
             {/* Left Column */}
             <div className="flex-1">
-              <h1 className="font-[800] text-2xl mb-4">Organization Information</h1>
+              <h1 className="font-[800] text-2xl mb-4">
+                Organization Information
+              </h1>
 
               <label>Name of Organization</label>
               <input
@@ -149,7 +168,9 @@ export default function PartnershipPage() {
 
             {/* Right Column */}
             <div className="flex-1 w-full">
-              <h1 className="font-[800] text-2xl mb-4">Contact Person Information</h1>
+              <h1 className="font-[800] text-2xl mb-4">
+                Contact Person Information
+              </h1>
 
               <label>Your Name</label>
               <input
@@ -173,7 +194,7 @@ export default function PartnershipPage() {
               <PhoneInput
                 country={"np"}
                 value={personalPhone}
-                onChange={(phone: string) => setPersonPhone(phone)}
+                onChange={(phone: string) => setPersonalPhone(phone)}
                 inputStyle={{
                   width: "100%",
                   paddingLeft: "48px",
@@ -222,4 +243,6 @@ export default function PartnershipPage() {
       </section>
     </>
   );
-}
+};
+
+export default PartnershipPage;

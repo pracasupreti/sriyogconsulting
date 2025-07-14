@@ -1,7 +1,12 @@
 "use client";
 
-import Ribbon from "@/components/Ribbon";
 import { useState } from "react";
+import Ribbon from "@/components/Ribbon";
+
+const inputStyle =
+  "w-full mt-1 outline-none bg-white shadow-[#CBD0DB2E] shadow-xl p-2 border-[#EAEAEA] border rounded mb-4";
+
+const labelStyle = "text-sm font-medium";
 
 const Page = () => {
   const [form, setForm] = useState({
@@ -90,205 +95,100 @@ const Page = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Submitted Form Data: ", form);
-    // TODO: Add API call here
   };
+
+  const renderInput = (id: keyof typeof form, label: string, type = "text") => (
+    <div>
+      <label htmlFor={id} className={labelStyle}>
+        {label}
+      </label>
+      <input
+        id={id}
+        type={type}
+        value={form[id]}
+        onChange={handleChange}
+        placeholder={`Enter ${label.toLowerCase()}`}
+        className={inputStyle}
+      />
+    </div>
+  );
+
+  const renderSelect = (id: keyof typeof form, label: string, options: string[]) => (
+    <div>
+      <label htmlFor={id} className={labelStyle}>
+        {label}
+      </label>
+      <select
+        id={id}
+        value={form[id]}
+        onChange={handleChange}
+        className={inputStyle}
+      >
+        <option value="">Select</option>
+        {options.map((opt) => (
+          <option key={opt} value={opt}>
+            {opt}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
 
   return (
     <>
       <Ribbon name="Quote" des="" />
-      <div className="max-w-[1180px] px-6 md:px-0 mx-auto">
-        <h1 className="text-2xl font">IT Service Quotation</h1>
-        <p>
-          We prioritize understanding your unique requirements, delivering
-          personalized solutions that align with your goals, and maintaining
-          high levels of security to protect your data. Whether you're a
-          startup, an established business, or a government entity, our focus on
-          excellence and customer satisfaction makes us the IT partner you can
-          trust.
+      <section className="max-w-[1180px] mx-auto p-4 md:px-0">
+        <h1 className="text-3xl font-bold mb-4">IT Service Quotation</h1>
+        <p className="text-sm mb-2">
+          We prioritize understanding your unique requirements, delivering personalized solutions
+          that align with your goals, and maintaining high levels of security to protect your data.
         </p>
-        <p>
-          Let us help you stay ahead in a competitive world with cutting-edge
-          technology and exceptional support. Choose us for unparalleled IT
-          service in Nepal.
+        <p className="text-sm mb-2">
+          Whether you’re a startup, an established business, or a government entity, our focus on
+          excellence and customer satisfaction makes us the IT partner you can trust.
         </p>
-        <p>
-          Please fill your requirements so that we can provide you the best
-          proposal & pricing.
+        <p className="text-sm mb-6">
+          Please fill your requirements so that we can provide you the best proposal & pricing.
         </p>
-      </div>
-      <form
-        onSubmit={handleSubmit}
-        className=" px-4 md:px-0  max-w-[1180px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6"
-      >
-        {[
-          { id: "name", label: "Name of Organization" },
-          { id: "address", label: "Address/City" },
-          { id: "contact", label: "Name of Contact Person" },
-          { id: "phonenumber", label: "Phone Number" },
-          { id: "email", label: "Email", type: "email" },
-          { id: "whatsapp", label: "WhatsApp Number" },
-        ].map(({ id, label, type = "text" }) => (
-          <div key={id}>
-            <label htmlFor={id}>{label}</label>
-            <input
-              id={id}
-              type={type}
-              value={form[id as keyof typeof form]}
-              onChange={handleChange}
-              className="border w-full p-2 rounded mt-1"
-            />
+
+        <form onSubmit={handleSubmit}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {renderInput("name", "Name of Organization")}
+            {renderInput("address", "Address / City")}
+            {renderInput("contact", "Contact Person")}
+            {renderInput("phonenumber", "Phone Number")}
+            {renderInput("email", "Email", "email")}
+            {renderInput("whatsapp", "WhatsApp Number")}
+            {renderSelect("service", "Select a Service", services)}
+            {renderSelect("budget", "Project Budget (NPR)", budgets)}
+            {renderInput("competitor", "Competitor Name")}
+            {renderInput("reference", "Reference Website URL")}
+            {renderInput("startDate", "Project Start Date")}
+            {renderInput("endDate", "Project End Date")}
+            {renderInput("scope", "Scope of Work")}
+            {renderInput("technology", "Preferred Tech Stack")}
+            {renderSelect("business", "Is your business profitable?", businessStatuses)}
+            {renderInput("monthlyBudget", "Monthly IT Budget")}
+            {renderInput("vendor", "Existing IT Vendor")}
+            {renderSelect("registration", "Registration Type", registrationTypes)}
+            {renderInput("industry", "Industry Type")}
+            {renderInput("panvat", "PAN / VAT Number")}
+            {renderInput("referralName", "Referral Name")}
+            {renderInput("referralPhone", "Referral Phone")}
+            {renderInput("how", "How did you know about us?")}
+            {renderInput("message", "Additional Message / Requirements")}
           </div>
-        ))}
 
-        <div>
-          <label htmlFor="service">Select a Service</label>
-          <select
-            id="service"
-            value={form.service}
-            onChange={handleChange}
-            className="border w-full p-2 rounded mt-1"
-          >
-            <option value="">Select</option>
-            {services.map((item) => (
-              <option key={item} value={item}>
-                {item}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <div>
-          <label htmlFor="budget">Project Budget in NPR</label>
-          <select
-            id="budget"
-            value={form.budget}
-            onChange={handleChange}
-            className="border w-full p-2 rounded mt-1"
-          >
-            <option value="">Select</option>
-            {budgets.map((item) => (
-              <option key={item} value={item}>
-                {item}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        {[
-          { id: "competitor", label: "Name of Your Competitor" },
-          { id: "reference", label: "Reference Website Link (URL)" },
-          { id: "startDate", label: "Project Start Date" },
-          { id: "endDate", label: "Project Ending Date" },
-          { id: "scope", label: "Scope of Work" },
-          { id: "technology", label: "Preferred Technology Stack" },
-        ].map(({ id, label }) => (
-          <div key={id}>
-            <label htmlFor={id}>{label}</label>
-            <input
-              id={id}
-              type="text"
-              value={form[id as keyof typeof form]}
-              onChange={handleChange}
-              className="border w-full p-2 rounded mt-1"
-            />
+          <div className="w-full flex justify-center mt-10 mb-16">
+            <button
+              type="submit"
+              className="py-2 px-10 text-white font-[800] bg-[#383838] rounded-sm hover:bg-[#555]"
+            >
+              Submit Request
+            </button>
           </div>
-        ))}
-
-        <div>
-          <label htmlFor="business">Is your business on profit?</label>
-          <select
-            id="business"
-            value={form.business}
-            onChange={handleChange}
-            className="border w-full p-2 rounded mt-1"
-          >
-            <option value="">Select</option>
-            {businessStatuses.map((item) => (
-              <option key={item} value={item}>
-                {item}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <div>
-          <label htmlFor="monthlyBudget">Monthly IT Budget</label>
-          <input
-            id="monthlyBudget"
-            type="text"
-            value={form.monthlyBudget}
-            onChange={handleChange}
-            className="border w-full p-2 rounded mt-1"
-          />
-        </div>
-
-        <div>
-          <label htmlFor="vendor">Existing IT Vendor</label>
-          <input
-            id="vendor"
-            type="text"
-            value={form.vendor}
-            onChange={handleChange}
-            className="border w-full p-2 rounded mt-1"
-          />
-        </div>
-
-        <div>
-          <label htmlFor="registration">Organization Registration Type</label>
-          <select
-            id="registration"
-            value={form.registration}
-            onChange={handleChange}
-            className="border w-full p-2 rounded mt-1"
-          >
-            <option value="">Select</option>
-            {registrationTypes.map((item) => (
-              <option key={item} value={item}>
-                {item}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <div>
-          <label htmlFor="industry">Industry Type</label>
-          <input
-            id="industry"
-            type="text"
-            value={form.industry}
-            onChange={handleChange}
-            className="border w-full p-2 rounded mt-1"
-          />
-        </div>
-
-        {[
-          { id: "panvat", label: "PAN/VAT Number" },
-          { id: "referralName", label: "Referral Person Name" },
-          { id: "referralPhone", label: "Referral Phone Number" },
-          { id: "how", label: "How did you know about us?" },
-          { id: "message", label: "Requirements / Messages" },
-        ].map(({ id, label }) => (
-          <div key={id}>
-            <label htmlFor={id}>{label}</label>
-            <input
-              id={id}
-              type="text"
-              value={form[id as keyof typeof form]}
-              onChange={handleChange}
-              className="border w-full p-2 rounded mt-1"
-            />
-          </div>
-        ))}
-
-        <div className="md:col-span-2 text-center">
-          <button
-            type="submit"
-            className="bg-gray-700  text-white px-6 py-2 rounded mt-4"
-          >
-            Submit
-          </button>
-        </div>
-      </form>
+        </form>
+      </section>
     </>
   );
 };
