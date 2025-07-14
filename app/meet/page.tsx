@@ -87,13 +87,13 @@ export default function MeetPage() {
         {Object.entries(fullSchedule).map(([day, sessions]) => (
           <div
             key={day}
-            className="w-full bg-white border border-gray-200 rounded-[15px] shadow p-4"
+            className="w-full bg-white border border-gray-200 rounded-[15px] shadow p-4 mt-12"
           >
             <div className="flex items-center gap-4 mb-4">
               <Image
                 src="/assets/images/meet/meet.jpg"
-                width={80}
-                height={80}
+                width={250}
+                height={250}
                 alt={day}
                 className="rounded-[12px] border border-gray-400"
               />
