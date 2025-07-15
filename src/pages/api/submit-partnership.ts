@@ -1,5 +1,20 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
+interface PartnershipFormValues {
+  organizationName: string;
+  organizationEmail: string;
+  website: string;
+  city: string;
+  country: string;
+  personalName: string;
+  personalEmail: string;
+  designation: string;
+  message: string;
+  reason: string;
+  phoneOrganization: string;
+  personalPhone: string;
+}
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
@@ -28,7 +43,7 @@ export default async function handler(
       reason,
       phoneOrganization,
       personalPhone,
-    } = req.body;
+    }: PartnershipFormValues = req.body;
 
     const airtableRes = await fetch(
       `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/Partnership`,
@@ -76,10 +91,12 @@ export default async function handler(
     }
 
     return res.status(200).json({ success: true, data: result });
-  } catch (err: any) {
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : "Unknown error";
     console.error("API route error:", err);
-    return res
-      .status(500)
-      .json({ error: "Unexpected server error", detail: err.message || err });
+    return res.status(500).json({
+      error: "Unexpected server error",
+      detail: message,
+    });
   }
 }
