@@ -5,25 +5,13 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import Ribbon from "@/components/Ribbon";
 import toast from "react-hot-toast";
-
-interface FormValues {
-  organizationName: string;
-  organizationEmail: string;
-  website: string;
-  city: string;
-  country: string;
-  personalName: string;
-  personalEmail: string;
-  designation: string;
-  message: string;
-  reason: string;
-}
+import type { PartnershipFormValues } from "@/src/lib/defination";
 
 type PartnershipResponse =
   | { success: boolean; message: string }
   | { error: string };
 
-const initialFormValues: FormValues = {
+const initialFormValues: Omit<PartnershipFormValues, "phoneOrganization" | "personalPhone"> = {
   organizationName: "",
   organizationEmail: "",
   website: "",
@@ -37,9 +25,9 @@ const initialFormValues: FormValues = {
 };
 
 const PartnershipPage: React.FC = () => {
-  const [formValues, setFormValues] = useState<FormValues>(initialFormValues);
-  const [phoneOrganization, setPhoneOrganization] = useState<string>("");
-  const [personalPhone, setPersonalPhone] = useState<string>("");
+  const [formValues, setFormValues] = useState(initialFormValues);
+  const [phoneOrganization, setPhoneOrganization] = useState("");
+  const [personalPhone, setPersonalPhone] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -51,7 +39,7 @@ const PartnershipPage: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const payload = {
+    const payload: PartnershipFormValues = {
       ...formValues,
       phoneOrganization,
       personalPhone,
@@ -60,38 +48,36 @@ const PartnershipPage: React.FC = () => {
     try {
       const res = await fetch("/api/submit-partnership", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
 
       let result: PartnershipResponse;
-
       const contentType = res.headers.get("content-type") || "";
+
       if (contentType.includes("application/json")) {
         result = await res.json();
       } else {
-        const rawText = await res.text();
-        console.error("NON-JSON RESPONSE:", rawText);
-        throw new Error("Server returned invalid response format");
+        const raw = await res.text();
+        console.error("Unexpected response format:", raw);
+        throw new Error("Invalid server response.");
       }
 
       if (!res.ok) {
-        console.error("API error:", result);
+        console.error("Error response:", result);
         toast.error("error" in result ? result.error : "Submission failed.");
         return;
       }
 
       toast.success(
-        "success" in result ? result.message : "Form submitted successfully!"
+        "success" in result ? result.message : "Submitted successfully!"
       );
       setFormValues(initialFormValues);
       setPhoneOrganization("");
       setPersonalPhone("");
     } catch (err) {
-      console.error("Fetch/network error:", err);
-      toast.error("Something went wrong. Check console.");
+      console.error("Submission error:", err);
+      toast.error("Something went wrong.");
     }
   };
 
@@ -101,7 +87,7 @@ const PartnershipPage: React.FC = () => {
       <section className="p-4 max-w-[1180px] mx-auto">
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col md:flex-row gap-4 items-start md:items-stretch justify-center">
-            {/* Left Column */}
+            {/* Left */}
             <div className="flex-1">
               <h1 className="font-[800] text-2xl mb-4">
                 Organization Information
@@ -121,13 +107,13 @@ const PartnershipPage: React.FC = () => {
                 name="organizationEmail"
                 value={formValues.organizationEmail}
                 onChange={handleChange}
-                placeholder="Enter your organization email"
+                placeholder="Enter organization email"
                 className="w-full mt-1 p-2 border border-gray-300 rounded mb-4"
               />
 
               <label>Landline Number</label>
               <PhoneInput
-                country={"np"}
+                country="np"
                 value={phoneOrganization}
                 onChange={(phone: string) => setPhoneOrganization(phone)}
                 inputStyle={{
@@ -138,12 +124,12 @@ const PartnershipPage: React.FC = () => {
                 placeholder="+977 1XXXXXXX"
               />
 
-              <label className="mt-4 block">Website URL</label>
+              <label className="mt-4 block">Website</label>
               <input
                 name="website"
                 value={formValues.website}
                 onChange={handleChange}
-                placeholder="Enter your website URL"
+                placeholder="Enter website URL"
                 className="w-full mt-1 p-2 border border-gray-300 rounded mb-4"
               />
 
@@ -152,7 +138,7 @@ const PartnershipPage: React.FC = () => {
                 name="city"
                 value={formValues.city}
                 onChange={handleChange}
-                placeholder="Enter your city"
+                placeholder="City"
                 className="w-full mt-1 p-2 border border-gray-300 rounded mb-4"
               />
 
@@ -161,13 +147,13 @@ const PartnershipPage: React.FC = () => {
                 name="country"
                 value={formValues.country}
                 onChange={handleChange}
-                placeholder="Enter your country"
+                placeholder="Country"
                 className="w-full mt-1 p-2 border border-gray-300 rounded mb-4"
               />
             </div>
 
-            {/* Right Column */}
-            <div className="flex-1 w-full">
+            {/* Right */}
+            <div className="flex-1">
               <h1 className="font-[800] text-2xl mb-4">
                 Contact Person Information
               </h1>
@@ -192,7 +178,7 @@ const PartnershipPage: React.FC = () => {
 
               <label>Mobile Number</label>
               <PhoneInput
-                country={"np"}
+                country="np"
                 value={personalPhone}
                 onChange={(phone: string) => setPersonalPhone(phone)}
                 inputStyle={{
@@ -217,19 +203,19 @@ const PartnershipPage: React.FC = () => {
                 name="message"
                 value={formValues.message}
                 onChange={handleChange}
-                placeholder="Write anything else you'd like us to know…"
+                placeholder="Anything else to share…"
                 className="w-full mt-1 p-2 border border-gray-300 rounded mb-4 h-[200px]"
               />
             </div>
           </div>
 
-          {/* Bottom Section */}
+          {/* Bottom */}
           <label>Why do you want to become a partner?</label>
           <textarea
             name="reason"
             value={formValues.reason}
             onChange={handleChange}
-            placeholder="Tell us your reason for partnering with us…"
+            placeholder="Tell us your reason…"
             className="w-full mt-1 p-2 border border-gray-300 rounded mb-4 h-[200px]"
           />
 
