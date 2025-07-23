@@ -183,7 +183,7 @@ export default function Aboutpage() {
               <div className="pt-12 flex flex-col gap-1">
                 <p className="font-bold">PRACAS Upreti</p>
                 <ul className="flex gap-2 items-center">
-                  <li>
+                  {/* <li>
                     <Link href="https://t.me/pracasupreti" target="_blank">
                       <Image
                         src={"/assets/icons/telegram1.svg"}
@@ -192,7 +192,7 @@ export default function Aboutpage() {
                         alt="telegram"
                       />
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href=" https://x.com/pracas" target="_blank">
                       <Image

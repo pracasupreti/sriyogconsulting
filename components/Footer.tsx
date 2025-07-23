@@ -379,7 +379,7 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <Link prefetch={true} href="https://t.me/sriyog" target="_blank">
+              {/* <Link prefetch={true} href="https://t.me/sriyog" target="_blank">
                 <div className="relative h-[20px] w-[20px]">
                   <Image
                     src="/assets/images/footer/telegram.svg"
@@ -389,7 +389,7 @@ export default function Footer() {
                     alt="telegram"
                   />
                 </div>
-              </Link>
+              </Link> */}
               <Link
                 prefetch={true}
                 href="https://www.linkedin.com/company/sriyog-consulting/"

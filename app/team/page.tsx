@@ -108,14 +108,14 @@ export default function Example() {
                 <div className="flex  flex-col gap-3">
                   <p>Follow Pracas on social media</p>
                   <div className="flex gap-3 items-center">
-                    <Link href="https://t.me/pracasupreti" target="_blank">
+                    {/* <Link href="https://t.me/pracasupreti" target="_blank">
                       <Image
                         src={"/assets/icons/telegram1.svg"}
                         width={20}
                         height={20}
                         alt="Linkedin Image"
                       />
-                    </Link>
+                    </Link> */}
 
                     <Link href="https://x.com/pracas" target="_blank">
                       <Image

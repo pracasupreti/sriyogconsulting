@@ -471,14 +471,14 @@ export default function TechFridayPage() {
     <div className="flex flex-col gap-2">
       <h3 className="font-semibold text-lg">Follow us</h3>
       <div className="flex gap-4 items-center">
-        <Link href="https://t.me/pracasupreti" target="_blank">
+        {/* <Link href="https://t.me/pracasupreti" target="_blank">
           <Image
             src="/assets/icons/telegram1.svg"
             width={30}
             height={30}
             alt="Telegram"
           />
-        </Link>
+        </Link> */}
         <Link href="https://x.com/pracas" target="_blank">
           <Image
             src="/assets/icons/tweeter.svg"
